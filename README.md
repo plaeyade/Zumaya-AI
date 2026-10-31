@@ -32,5 +32,5 @@ Repositorio del proyecto de instalación: blindajes (ciclotrón, linac, Gamma Kn
 
 ```bash
 cd blindaje/pipelines
-RPOS_EVIDENCIA=../evidencia KIUBE_RAIZ=<ruta a Cyclotron-SIM/machines/iba_kiube> python -m pytest -q
+python -m pytest -q        # rutas por defecto dentro del repo; se pueden cambiar con ZUMAYA_BD, ZUMAYA_LOSA, ZUMAYA_MC_IBA, RPOS_EVIDENCIA
 ```

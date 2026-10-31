@@ -11,10 +11,9 @@ import datetime, json, math, os, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import blindaje_zumaya_f86 as F86
 
-EV = pathlib.Path(os.environ.get("RPOS_EVIDENCIA", "/mnt/agents/work/evidencia_v072"))
+EV = F86.EV
 OUT = EV / "fase89"
-KIUBE = pathlib.Path(os.environ.get("KIUBE_RAIZ", "/home/claude/kiube"))
-MC = KIUBE / "out/mc_iba/resultado_iba.json"
+MC = pathlib.Path(os.environ.get("ZUMAYA_MC_IBA", pathlib.Path(__file__).resolve().parents[2] / "mc_ciclotron/resultado_iba.json"))
 TAB = 13.0
 G_CONC, G_RC = 2.40, 2.40          # t/m³: concreto simple / reforzado
 SUP = {

@@ -13,10 +13,10 @@ import datetime, glob, hashlib, json, math, os, pathlib
 import numpy as np
 
 RAIZ = pathlib.Path(__file__).resolve().parents[1]
-BD = RAIZ / "data/blindaje_zumaya/bd_blindaje_zumaya.json"
-KIUBE = pathlib.Path(os.environ.get("KIUBE_RAIZ", "/mnt/agents/work/kiube_v035/kiube"))
-LOSA = KIUBE / "out/losa_tvl"
-EV = pathlib.Path(os.environ.get("RPOS_EVIDENCIA", "/mnt/agents/work/evidencia_v072"))
+BD = pathlib.Path(os.environ.get("ZUMAYA_BD", RAIZ / "datos/bd_blindaje_zumaya.json"))
+KIUBE = pathlib.Path(os.environ.get("KIUBE_RAIZ", RAIZ.parent / "mc_ciclotron"))
+LOSA = pathlib.Path(os.environ.get("ZUMAYA_LOSA", RAIZ.parent / "mc_ciclotron/losa_tvl"))
+EV = pathlib.Path(os.environ.get("RPOS_EVIDENCIA", RAIZ / "evidencia"))
 OUT = EV / "fase86"
 TAB = 13.0                                         # módulo de tabique [cm]
 

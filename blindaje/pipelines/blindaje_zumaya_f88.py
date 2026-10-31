@@ -15,7 +15,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import blindaje_zumaya_f86 as F86
 import blindaje_zumaya_f87 as F87
 
-EV = pathlib.Path(os.environ.get("RPOS_EVIDENCIA", "/mnt/agents/work/evidencia_v072"))
+EV = F86.EV
 OUT = EV / "fase88"
 TAB = 13.0
 TDS = ("TD-350", "TD-400", "TD-500", "TD-550")
