@@ -1,0 +1,103 @@
+From 7047f97b267c6dfcaff12922c0dca0f07e23314d Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sat, 31 Oct 2026 15:17:47 -0600
+Subject: [PATCH 3/3] =?UTF-8?q?F89=20v3.15.0:=20MC=20Geant4=20b=C3=BAnker?=
+ =?UTF-8?q?=20IBA=20(tabique=202.5)=20+=20espesores=20recomendados=20por?=
+ =?UTF-8?q?=20cara=20+=20bajada=20de=20cargas=20con=20geotecnia?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- mc_ciclotron(): lee resultado_iba.json; recomendado = máx(F88, MC ajuste, MC directo parche 50x50)
+- este 195 / oeste 182 / sur 156 / techo 182 cm (IBA 220/240/250/230)
+- cimentación con pilas Ø1.00 (qa superficial 4.9–5.5 t/m²); linac sin junta
+- 13 pruebas pasan
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01UsuNxxGDpmcCyJTGFRkq7k
+---
+ pipelines/blindaje_zumaya_f89.py      | 19 ++++++++++++----
+ pipelines/test_blindaje_zumaya_f86.py | 32 +++++++++++++++++++++++++++
+ 2 files changed, 47 insertions(+), 4 deletions(-)
+
+diff --git a/pipelines/blindaje_zumaya_f89.py b/pipelines/blindaje_zumaya_f89.py
+index 3b46e4a..c468975 100644
+--- a/pipelines/blindaje_zumaya_f89.py
++++ b/pipelines/blindaje_zumaya_f89.py
+@@ -147,9 +147,12 @@ def mc_ciclotron():
+     if not MC.exists():
+         return {"estado": "pendiente: corridas en curso"}
+     R = json.load(open(MC))
+-    return {"corridas": R["corridas"], "caras": {k: {kk: v.get(kk) for kk in ("espesor_IBA_cm", "ajuste", "exterior_0_30cm_uSv_h", "exterior_se",
++    return {"geometria": "bóveda 4.00×3.94×2.50 m, muros E 2.20 / O 2.40 / S 2.50 / techo 2.30 (IBA); DWG PB 31/10: 4.00×4.00",
++            "fisica": "Geant4 11.4.3 QGSP_BIC_HP, espectro BON21 ¹⁸O(p,n) 4.93e-3 n/p, H*(10) ICRP-74, importancia planar f=3 por 10 cm",
++            "corridas": R["corridas"], "caras": {k: {kk: v.get(kk) for kk in ("espesor_IBA_cm", "ajuste", "exterior_0_30cm_uSv_h", "exterior_se",
+                                                                              "exterior_ajuste_uSv_h", "objetivo_uSv_h", "objetivo", "factor_parche",
+-                                                                             "espesor_requerido_cm", "modulo_13cm", "ahorro_vs_IBA_cm")}
++                                                                             "espesor_requerido_cm", "modulo_13cm", "ahorro_vs_IBA_cm",
++                                                                             "espesor_requerido_directo_cm", "modulo_13cm_directo")}
+                                                 for k, v in R["caras"].items()}}
+ 
+ 
+@@ -157,8 +160,16 @@ def ejecutar():
+     OUT.mkdir(parents=True, exist_ok=True)
+     M = mc_ciclotron()
+     e = None
+-    if "caras" in M and all(M["caras"].get(k, {}).get("modulo_13cm") for k in ("este", "oeste", "sur", "techo")):
+-        e = {k: max(M["caras"][k]["modulo_13cm"], 0) for k in ("este", "oeste", "sur", "techo")}
++    if "caras" in M:
++        # recomendado = el mayor entre F88 (losa_tvl escalada), MC ajuste exponencial y MC método directo (parche 50×50)
++        F88m = {"este": 182, "oeste": 182, "sur": 156, "techo": 156}
++        e, M["recomendado"] = {}, {}
++        for k in ("este", "oeste", "sur", "techo"):
++            c = M["caras"].get(k, {})
++            cand = {"F88": F88m[k], "MC_ajuste": c.get("modulo_13cm"), "MC_directo": c.get("modulo_13cm_directo")}
++            e[k] = max(v for v in cand.values() if v)
++            M["recomendado"][k] = dict(cand, recomendado_cm=e[k], IBA_cm=c.get("espesor_IBA_cm"),
++                                       ahorro_cm=(c.get("espesor_IBA_cm") or 0) - e[k])
+         e["norte_laberinto_suma"] = 195
+     out = {"fase": 89, "version": "3.15.0", "tipo": "simulacion_teorica + predimensionamiento_estructural", "pq": "no_declarada_nunca",
+            "fecha": datetime.datetime.now().isoformat(timespec="seconds"), "md5_bd": F86.md5(F86.BD),
+diff --git a/pipelines/test_blindaje_zumaya_f86.py b/pipelines/test_blindaje_zumaya_f86.py
+index fe533f8..ea25f60 100644
+--- a/pipelines/test_blindaje_zumaya_f86.py
++++ b/pipelines/test_blindaje_zumaya_f86.py
+@@ -79,3 +79,35 @@ def test_f88_mn_conversion_real_mayor_que_nominal():
+     M = F88.mn_pet(BD, T)
+     f = M["pet_ct"]["caras"]["norte_puerta"]
+     assert f["TD-500"]["cm"] > f["GAMMA_nominal"]["5.0"]       # GAMMA usó densidad nominal
++
++
++# ---------------------------------------------------------------- F89 (MC IBA, geotecnia, cargas)
++import blindaje_zumaya_f89 as F89
++
++
++def test_f89_td250_peso_de_pieza_coherente_con_nominal():
++    t = BD["fichas_CONTUPLEX"]["TD-250"]
++    assert abs(t["rho_por_peso_de_pieza"] - t["rho_nominal"]) < 0.05
++    assert "ESTIMADAS" in t["origen_TVL"]
++
++
++def test_f89_bunkeres_no_caben_en_cimentacion_superficial():
++    C = F89.ciclotron()
++    assert not C["cimentacion"]["superficial_viable"]
++    assert C["cimentacion"]["pilas_D100_minimo_por_capacidad"] >= 3
++    L = F89.linac(104, {"primaria_oeste": 117, "primaria_este": 104, "secundaria_norte": 78})
++    assert L["cimentacion"]["presion_media_t_m2"] > 2 * max(BD["geotecnia"]["qa_superficial_t_m2"][k] for k in ("SM-1", "SM-2"))
++
++
++def test_f89_tabiques_delgados_en_entrepiso_son_inestables_en_seco():
++    E = F89.tabiques_entrepiso(4.0)
++    assert all(v["estabilidad_junta_seca"]["vuelco_c030"] == "RIESGO" for v in E.values())
++
++
++@pytest.mark.skipif(not F89.MC.exists(), reason="sin resultado del MC IBA")
++def test_f89_mc_iba_espesores_menores_que_IBA():
++    M = F89.mc_ciclotron()
++    for k in ("este", "sur", "techo"):
++        c = M["caras"][k]
++        assert c["exterior_0_30cm_uSv_h"] < 0.01 * c["objetivo_uSv_h"]          # IBA sobrado ≥ 2 décadas
++        assert c["modulo_13cm_directo"] < c["espesor_IBA_cm"]
+-- 
+2.43.0
+

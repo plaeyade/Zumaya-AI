@@ -1,0 +1,446 @@
+{
+ "fase": 87,
+ "version": "3.13.0",
+ "tipo": "simulacion_teorica",
+ "pq": "no_declarada_nunca",
+ "fecha": "2026-10-29T09:19:21",
+ "md5_bd": "bfdc5af4df9344167870c07d57606913",
+ "materiales": {
+  "TD-350": {
+   "rho_nominal": 3.5,
+   "rho_real": 3.317,
+   "rho_real_origen": "IMCYC OT-521 (seca)",
+   "primaria_ficha": {
+    "6MV": 24.6,
+    "10MV": 27.8,
+    "15MV": 28.7,
+    "18MV": 29.2
+   },
+   "fuga_ficha": {
+    "6MV": 23.1,
+    "10MV": 25.1,
+    "15MV": 26.8,
+    "18MV": 27.8
+   },
+   "primaria_real": {
+    "6MV": 24.6,
+    "10MV": 27.8,
+    "15MV": 28.7,
+    "18MV": 29.2
+   },
+   "fuga_real": {
+    "6MV": 23.1,
+    "10MV": 25.1,
+    "15MV": 26.8,
+    "18MV": 27.8
+   },
+   "factor_real_sobre_ficha_15MV": 1.0
+  },
+  "TD-400": {
+   "rho_nominal": 4.0,
+   "rho_real": 3.683,
+   "rho_real_origen": "IMCYC OT-521 (seca)",
+   "primaria_ficha": {
+    "6MV": 21.8,
+    "10MV": 24.4,
+    "15MV": 25.1,
+    "18MV": 25.5
+   },
+   "fuga_ficha": {
+    "6MV": 20.2,
+    "10MV": 22.0,
+    "15MV": 23.4,
+    "18MV": 24.3
+   },
+   "primaria_real": {
+    "6MV": 22.2,
+    "10MV": 25.0,
+    "15MV": 25.8,
+    "18MV": 26.3
+   },
+   "fuga_real": {
+    "6MV": 20.8,
+    "10MV": 22.6,
+    "15MV": 24.1,
+    "18MV": 25.0
+   },
+   "factor_real_sobre_ficha_15MV": 1.028
+  },
+  "TD-500": {
+   "rho_nominal": 5.0,
+   "rho_real": 3.987,
+   "rho_real_origen": "IMCYC OT-521 (seca)",
+   "primaria_ficha": {
+    "6MV": 16.9,
+    "10MV": 19.2,
+    "15MV": 20.0,
+    "18MV": 20.4
+   },
+   "fuga_ficha": {
+    "6MV": 16.2,
+    "10MV": 17.6,
+    "15MV": 18.7,
+    "18MV": 19.4
+   },
+   "primaria_real": {
+    "6MV": 20.5,
+    "10MV": 23.1,
+    "15MV": 23.9,
+    "18MV": 24.3
+   },
+   "fuga_real": {
+    "6MV": 19.2,
+    "10MV": 20.9,
+    "15MV": 22.3,
+    "18MV": 23.1
+   },
+   "factor_real_sobre_ficha_15MV": 1.195
+  },
+  "TD-550": {
+   "rho_nominal": 5.5,
+   "rho_real": 4.29,
+   "rho_real_origen": "estimada 5,5×(seca/aparente del '5') — pendiente_fuente",
+   "primaria_ficha": {
+    "6MV": 15.3,
+    "10MV": 17.5,
+    "15MV": 18.2,
+    "18MV": 18.6
+   },
+   "fuga_ficha": {
+    "6MV": 14.7,
+    "10MV": 16.0,
+    "15MV": 17.1,
+    "18MV": 17.7
+   },
+   "primaria_real": {
+    "6MV": 19.0,
+    "10MV": 21.5,
+    "15MV": 22.2,
+    "18MV": 22.6
+   },
+   "fuga_real": {
+    "6MV": 17.9,
+    "10MV": 19.4,
+    "15MV": 20.7,
+    "18MV": 21.5
+   },
+   "factor_real_sobre_ficha_15MV": 1.22
+  },
+  "chequeo_masico_TD350": {
+   "6MV": {
+    "TD350_g_cm2": 81.6,
+    "hormigon_TVLe_g_cm2": 77.5
+   },
+   "10MV": {
+    "TD350_g_cm2": 92.2,
+    "hormigon_TVLe_g_cm2": 87.0
+   },
+   "15MV": {
+    "TD350_g_cm2": 95.2,
+    "hormigon_TVLe_g_cm2": 96.4
+   }
+  }
+ },
+ "linac": {
+  "W_Gy_sem": 900.0,
+  "energia_diseno": "15 MV (Versa HD 6/10/15)",
+  "caras": {
+   "primaria_lateral_T1": {
+    "n_TVL": 5.58,
+    "DWG_cm": 65,
+    "hormigon_235_cm": 231.6,
+    "TD-500": {
+     "ficha_cm": 111.5,
+     "ficha_modulos_cm": 117.0,
+     "real_cm": 133.3,
+     "real_modulos_cm": 143.0,
+     "DWG_transmision_real_vs_P": 719.6
+    },
+    "TD-550": {
+     "ficha_cm": 101.5,
+     "ficha_modulos_cm": 104.0,
+     "real_cm": 123.8,
+     "real_modulos_cm": 130.0,
+     "DWG_transmision_real_vs_P": 445.5
+    },
+    "TD-500_6MV_ficha_cm": 94.2
+   },
+   "primaria_lateral_T1_20_banos": {
+    "n_TVL": 4.28,
+    "DWG_cm": 65,
+    "hormigon_235_cm": 178.3,
+    "TD-500": {
+     "ficha_cm": 85.5,
+     "ficha_modulos_cm": 91.0,
+     "real_cm": 102.2,
+     "real_modulos_cm": 104.0,
+     "DWG_transmision_real_vs_P": 36.0
+    },
+    "TD-550": {
+     "ficha_cm": 77.8,
+     "ficha_modulos_cm": 78.0,
+     "real_cm": 94.9,
+     "real_modulos_cm": 104.0,
+     "DWG_transmision_real_vs_P": 22.3
+    },
+    "TD-500_6MV_ficha_cm": 72.3
+   },
+   "losa_sala_espera_T1": {
+    "n_TVL": 5.97,
+    "DWG_cm": 100,
+    "hormigon_235_cm": 247.9,
+    "TD-500": {
+     "ficha_cm": 119.5,
+     "ficha_modulos_cm": 130.0,
+     "real_cm": 142.8,
+     "real_modulos_cm": 143.0,
+     "DWG_transmision_real_vs_P": 61.5
+    },
+    "TD-550": {
+     "ficha_cm": 108.7,
+     "ficha_modulos_cm": 117.0,
+     "real_cm": 132.6,
+     "real_modulos_cm": 143.0,
+     "DWG_transmision_real_vs_P": 29.4
+    },
+    "TD-500_6MV_ficha_cm": 100.9
+   },
+   "losa_area_verde_T1_40": {
+    "n_TVL": 4.37,
+    "DWG_cm": 100,
+    "hormigon_235_cm": 182.2,
+    "TD-500": {
+     "ficha_cm": 87.4,
+     "ficha_modulos_cm": 91.0,
+     "real_cm": 104.5,
+     "real_modulos_cm": 117.0,
+     "DWG_transmision_real_vs_P": 1.5
+    },
+    "TD-550": {
+     "ficha_cm": 79.6,
+     "ficha_modulos_cm": 91.0,
+     "real_cm": 97.0,
+     "real_modulos_cm": 104.0,
+     "DWG_transmision_real_vs_P": 0.7
+    },
+    "TD-500_6MV_ficha_cm": 73.9
+   },
+   "secundaria_norte_fuga_T1": {
+    "n_TVL": 3.45,
+    "DWG_cm": 39,
+    "hormigon_235_cm": 116.9,
+    "TD-500": {
+     "ficha_cm": 64.5,
+     "ficha_modulos_cm": 65.0,
+     "real_cm": 77.0,
+     "real_modulos_cm": 78.0,
+     "DWG_transmision_real_vs_P": 50.4
+    },
+    "TD-550": {
+     "ficha_cm": 59.0,
+     "ficha_modulos_cm": 65.0,
+     "real_cm": 71.4,
+     "real_modulos_cm": 78.0,
+     "DWG_transmision_real_vs_P": 36.9
+    },
+    "TD-500_6MV_ficha_cm": 55.9
+   }
+  },
+  "neutrones": "15 MV: fotoneutrones relevantes en laberinto/puerta; TD de bajo hidrógeno no modera — puerta con BPE/Pb y laberinto a evaluar (NCRP 151 §2.4, método de Kersey/Wu-McGinley) — pendiente"
+ },
+ "hdr_co60": {
+  "W_mGy_sem_1m": 471.7,
+  "actividad_GBq": 74.0,
+  "TVL_cm": {
+   "hormigon_235": 21.8,
+   "TD350_ficha": 14.6,
+   "TD350_real": 15.4
+  },
+  "caras": {
+   "oeste_cuarto_caliente": {
+    "d_m": 2.61,
+    "DWG_cm": 39,
+    "material": "TD-350",
+    "T": 1.0,
+    "controlada": true,
+    "publico|T1": {
+     "n": 3.54,
+     "cm_ficha": 51.8,
+     "cm_real": 54.7
+    },
+    "publico|Treal": {
+     "n": 3.54,
+     "cm_ficha": 51.8,
+     "cm_real": 54.7
+    },
+    "controlada|T1": {
+     "n": 2.84,
+     "cm_ficha": 41.6,
+     "cm_real": 43.9
+    },
+    "controlada|Treal": {
+     "n": 2.84,
+     "cm_ficha": 41.6,
+     "cm_real": 43.9
+    },
+    "criterio": "controlada|T1",
+    "requerido_cm": 43.9,
+    "cumple": 0.0
+   },
+   "norte_pasillo": {
+    "d_m": 3.61,
+    "DWG_cm": 52,
+    "material": "TD-350",
+    "T": 1.0,
+    "controlada": false,
+    "publico|T1": {
+     "n": 3.26,
+     "cm_ficha": 47.7,
+     "cm_real": 50.3
+    },
+    "publico|Treal": {
+     "n": 3.26,
+     "cm_ficha": 47.7,
+     "cm_real": 50.3
+    },
+    "controlada|T1": {
+     "n": 2.56,
+     "cm_ficha": 37.5,
+     "cm_real": 39.5
+    },
+    "controlada|Treal": {
+     "n": 2.56,
+     "cm_ficha": 37.5,
+     "cm_real": 39.5
+    },
+    "criterio": "publico|Treal",
+    "requerido_cm": 50.3,
+    "cumple": 1.0
+   },
+   "sur_fachada": {
+    "d_m": 3.5,
+    "DWG_cm": 39,
+    "material": "TD-350",
+    "T": 0.025,
+    "controlada": false,
+    "publico|T1": {
+     "n": 3.28,
+     "cm_ficha": 48.1,
+     "cm_real": 50.7
+    },
+    "publico|Treal": {
+     "n": 1.68,
+     "cm_ficha": 24.6,
+     "cm_real": 26.0
+    },
+    "controlada|T1": {
+     "n": 2.59,
+     "cm_ficha": 37.8,
+     "cm_real": 39.9
+    },
+    "controlada|Treal": {
+     "n": 0.98,
+     "cm_ficha": 14.4,
+     "cm_real": 15.2
+    },
+    "criterio": "publico|Treal",
+    "requerido_cm": 26.0,
+    "cumple": 1.0
+   },
+   "este_control_tabique+muro": {
+    "d_m": 4.97,
+    "DWG_cm": 39,
+    "material": "TD-350",
+    "T": 1.0,
+    "controlada": true,
+    "publico|T1": {
+     "n": 2.98,
+     "cm_ficha": 43.6,
+     "cm_real": 46.0
+    },
+    "publico|Treal": {
+     "n": 2.98,
+     "cm_ficha": 43.6,
+     "cm_real": 46.0
+    },
+    "controlada|T1": {
+     "n": 2.28,
+     "cm_ficha": 33.4,
+     "cm_real": 35.2
+    },
+    "controlada|Treal": {
+     "n": 2.28,
+     "cm_ficha": 33.4,
+     "cm_real": 35.2
+    },
+    "criterio": "controlada|T1",
+    "requerido_cm": 35.2,
+    "cumple": 1.0
+   },
+   "techo_sanitarios_publicos": {
+    "d_m": 4.7,
+    "DWG_cm": 39,
+    "material": "TD-350",
+    "T": 0.05,
+    "controlada": false,
+    "publico|T1": {
+     "n": 3.03,
+     "cm_ficha": 44.3,
+     "cm_real": 46.8
+    },
+    "publico|Treal": {
+     "n": 1.73,
+     "cm_ficha": 25.3,
+     "cm_real": 26.7
+    },
+    "controlada|T1": {
+     "n": 2.33,
+     "cm_ficha": 34.1,
+     "cm_real": 36.0
+    },
+    "controlada|Treal": {
+     "n": 1.03,
+     "cm_ficha": 15.1,
+     "cm_real": 15.9
+    },
+    "criterio": "publico|Treal",
+    "requerido_cm": 26.7,
+    "cumple": 1.0
+   },
+   "piso_gamma_knife": {
+    "d_m": 4.7,
+    "DWG_cm": 70,
+    "material": "hormigon",
+    "T": 1.0,
+    "controlada": true,
+    "publico|T1": {
+     "n": 3.03,
+     "cm": 66.0
+    },
+    "publico|Treal": {
+     "n": 3.03,
+     "cm": 66.0
+    },
+    "controlada|T1": {
+     "n": 2.33,
+     "cm": 50.8
+    },
+    "controlada|Treal": {
+     "n": 2.33,
+     "cm": 50.8
+    },
+    "criterio": "controlada|T1",
+    "requerido_cm": 50.8,
+    "cumple": true
+   }
+  },
+  "nota": "Co-60 (1,25 MeV): región Compton → escalado másico fiable; la ficha CONTUPLEX no da TVL para Co-60"
+ },
+ "ciclotron": "sin cambio frente a F86: la ficha confirma matriz Fe+Ba+Ca, dentro de las dos hipótesis simuladas (magnetita/barita) → concreto ordinario 2,35–2,5",
+ "advertencias": [
+  "TVL de TD-400/500/550 escaladas por densidad nominal; IMCYC midió '5' = 3,99 g/cm³ (la propia ficha TD-500 declara 2,66–2,68 de obra)",
+  "inconsistencias de ficha registradas en la BD (TVL 13,6/18,6/20,4 cm para TD-550; densidad 5,00 en TD-550)",
+  "actividad de la fuente Co-60 del Flexitron supuesta 74 GBq (pendiente_fuente)",
+  "U(k=2) ≈ 25 % en las TVL del proveedor no está incluida en los espesores"
+ ]
+}

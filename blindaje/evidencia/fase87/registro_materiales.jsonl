@@ -1,0 +1,3 @@
+{"fecha": "2026-10-29T09:19:21", "material": "TD-400", "supuesto_previo": "TVL de ficha (densidad nominal)", "valor_corregido_15MV_cm": 25.8, "estado": "discrepancia_cuantificada"}
+{"fecha": "2026-10-29T09:19:21", "material": "TD-500", "supuesto_previo": "TVL de ficha (densidad nominal)", "valor_corregido_15MV_cm": 23.9, "estado": "discrepancia_cuantificada"}
+{"fecha": "2026-10-29T09:19:21", "material": "TD-550", "supuesto_previo": "TVL de ficha (densidad nominal)", "valor_corregido_15MV_cm": 22.2, "estado": "discrepancia_cuantificada"}

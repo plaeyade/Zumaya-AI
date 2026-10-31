@@ -1,0 +1,1183 @@
+{
+ "titulo": "BD de blindaje — Centro Internacional de Neuro-Oncología Zumaya (Villahermosa)",
+ "version": "1.1 (F87, adenda append-only) +F89(adenda 2026-10-31)",
+ "reglas": [
+  "simulacion_teorica",
+  "pq no_declarada_nunca",
+  "append-only: valores nuevos se agregan, nunca se sobrescriben",
+  "pendiente_fuente = no inventado"
+ ],
+ "fuentes": {
+  "IMCYC_OT521_D35": {
+   "archivo": "OT-521_TM_NIPOL_DENSIDAD_3.5.pdf",
+   "md5": "caeb0e4cc363ecd4538640a3104e1830",
+   "tipo": "informe de laboratorio IMCYC (NMX-C-263-ONNCCE-2010), IT 152, muestra 152B, ensaye 2022-05-31, cliente Técnicos y Constructores del Golfo",
+   "acreditacion": "fuera del alcance de acreditación ema (marcado *)",
+   "muestreo": "no responsabilidad del IMCYC"
+  },
+  "IMCYC_OT521_D4": {
+   "archivo": "OT-521_TM_NIPOL_DENSIDAD_4.pdf",
+   "md5": "242552948c63a71dea872c3be6bd05f5",
+   "tipo": "informe IMCYC NMX-C-263, IT 152, muestra 152A, ensaye 2022-05-27, cliente Hospital Christus Muguerza",
+   "acreditacion": "fuera del alcance de acreditación ema (marcado *)",
+   "muestreo": "no responsabilidad del IMCYC"
+  },
+  "IMCYC_OT521_D5": {
+   "archivo": "OT-521_TM_NIPOL_DENSIDAD_5.pdf",
+   "md5": "5779493ed907ceb4efcf2bccdc543b24",
+   "tipo": "informe IMCYC NMX-C-263, IT 152, muestra 152, ensaye 2022-05-26, cliente EYMSA Electrónica y Medicina",
+   "acreditacion": "fuera del alcance de acreditación ema (marcado *)",
+   "muestreo": "no responsabilidad del IMCYC"
+  },
+  "GAMMA_ONCO_20261028": {
+   "archivo": "ESTIMACI_N_DE_BLINDAJES_ONCOLOG_A_ZUMAYA.pdf",
+   "md5": "fccf37067fe7b68c86e1f710d5a80972",
+   "tipo": "estimación preliminar GAMMA Consultoría (±15–20 %), 28/10/2026"
+  },
+  "GAMMA_CICLO_20260716": {
+   "archivo": "ESTIMACI_N_DE_BLINDAJE_CICLOTRON_ONCOLOG_A_ZUMAYA.pdf",
+   "md5": "be2cb1ef4f9cd380170cb7f537af181c",
+   "tipo": "estimación preliminar GAMMA (±15–20 %) sobre plano IBA, 16/07/2026"
+  },
+  "DWG_BIND_20261028": {
+   "archivo": "PLANTAS_ARQ_CENTRO_INTERNACIONAL_DE_NEURO-ONCOLOGIA_BIND_28-10-26.dwg",
+   "md5": "b4dc237fd388a5335e6316efcd5da0e5",
+   "tipo": "plantas arquitectónicas AC1032 (extraído con LibreDWG 0.13 compilado)"
+  },
+  "USUARIO_20261029": {
+   "tipo": "declaración del usuario",
+   "texto": "tabiques del linac de 5 g/cm3 (escalar a 5.5 de ser necesario); para el ciclotrón se consideraron 2.5 y 3.5 g/cm3"
+  },
+  "CONTUPLEX_TD350": {
+   "archivo": "Tabique_TD-350_CONTUPLEX.pdf",
+   "md5": "5f746d4037a0e10bef52302798940211",
+   "tipo": "ficha técnica proveedor (CONTUPLEX / tmnipol)"
+  },
+  "CONTUPLEX_TD400": {
+   "archivo": "Tabique_TD-400_CONTUPLEX.pdf",
+   "md5": "bd34344ad7c0cf86f34d5471057682f1",
+   "tipo": "ficha técnica proveedor"
+  },
+  "CONTUPLEX_TD500": {
+   "archivo": "Tabique_TD-500_CONTUPLEX.pdf",
+   "md5": "4cd46d5026b00b8714e3b02f45e05981",
+   "tipo": "ficha técnica proveedor"
+  },
+  "CONTUPLEX_TD550": {
+   "archivo": "Tabique_TD-550_CONTUPLEX.pdf",
+   "md5": "71db40337e534bb4d84af92b5f15932c",
+   "tipo": "ficha técnica proveedor"
+  },
+  "USUARIO_20261029b": {
+   "tipo": "declaración del usuario",
+   "texto": "linac Elekta Versa HD multienergético 6, 10, 15 MV; braquiterapia Flexitron con fuente de Co-60; Leksell Gamma Knife Co-60"
+  },
+  "CONTUPLEX_TD250": {
+   "archivo": "Tabique_TD-250_CONTUPLEX_1.pdf",
+   "md5": "472492986d4e290ce0f854538a94551c",
+   "tipo": "ficha técnica del proveedor (3 pp.)"
+  },
+  "GEOTECNIA_OD_202505": {
+   "archivo": "2_INFORME_GEOTECNICO_HZUMAYA_25_MAYO_2025_FINAL.pdf",
+   "md5": "ea4509ebf9eb2d99034705fdae12443d",
+   "tipo": "estudio de mecánica de suelos, OD Ingeniería Geotécnica (Ing. Narciso Ovando García), 2 sondeos mixtos SM-1/SM-2 a 30 m, abril–mayo 2025"
+  },
+  "DWG_PB_20261031": {
+   "archivo": "PLANTA_BAJA_ARQ_NEURO-ONCOLOGIA.dwg",
+   "md5": "bcf19f08d13a0a8dc71cc202ede5e7f7",
+   "tipo": "planta baja arquitectónica AR-IN-PB-1-01 (fase DD) con capas CONTRAVENTEOS y PILAS nuevas"
+  },
+  "reenvios_identicos_20261031": [
+   "OT-521_TM_NIPOL_DENSIDAD_3.5.pdf",
+   "OT-521_TM_NIPOL_DENSIDAD_4.pdf",
+   "OT-521_TM_NIPOL_DENSIDAD_5.pdf (md5 iguales a los ya registrados)"
+  ]
+ },
+ "materiales": {
+  "tabique_NIPOL_3.5": {
+   "fuente": "IMCYC_OT521_D35",
+   "mediciones": {
+    "masa_especifica_seca": [
+     3.32,
+     3.32,
+     3.31
+    ],
+    "masa_especifica_inmersion": [
+     3.36,
+     3.36,
+     3.35
+    ],
+    "masa_especifica_ebullicion": [
+     3.44,
+     3.45,
+     3.43
+    ],
+    "masa_especifica_aparente": [
+     3.78,
+     3.82,
+     3.78
+    ],
+    "absorcion_inmersion_pct": [
+     1.25,
+     1.14,
+     1.13
+    ],
+    "absorcion_ebullicion_pct": [
+     3.72,
+     3.93,
+     3.76
+    ],
+    "vacios_pct": [
+     12.3,
+     13.1,
+     12.4
+    ]
+   },
+   "densidad_blindaje_g_cm3": 3.32,
+   "densidad_en_servicio_rango_g_cm3": [
+    3.32,
+    3.36
+   ],
+   "nominal_vs_real": "el nominal 3.5 ≈ entre seca (3.32) y aparente (3.79); para blindaje vale la seca/en servicio",
+   "agua_libre_max_pct_masa": 3.8,
+   "hidrogeno_libre_max_pct_masa": 0.43,
+   "composicion": "pendiente_fuente (no está en el documento)",
+   "TVL_proveedor": "pendiente_fuente (no está en el documento)"
+  },
+  "tabique_NIPOL_4": {
+   "fuente": "IMCYC_OT521_D4",
+   "mediciones": {
+    "masa_especifica_seca": [
+     3.66,
+     3.69,
+     3.7
+    ],
+    "masa_especifica_inmersion": [
+     3.83,
+     3.85,
+     3.81
+    ],
+    "masa_especifica_ebullicion": [
+     3.87,
+     3.9,
+     3.9
+    ],
+    "masa_especifica_aparente": [
+     4.66,
+     4.7,
+     4.61
+    ],
+    "absorcion_inmersion_pct": [
+     4.75,
+     4.52,
+     2.81
+    ],
+    "absorcion_ebullicion_pct": [
+     5.86,
+     5.84,
+     5.32
+    ],
+    "vacios_pct": [
+     21.5,
+     21.5,
+     19.7
+    ]
+   },
+   "densidad_blindaje_g_cm3": 3.68,
+   "densidad_en_servicio_rango_g_cm3": [
+    3.68,
+    3.83
+   ],
+   "nominal_vs_real": "el nominal 4 ≈ densidad aparente (4.66); la volumétrica seca es 3.68 (−8 % vs nominal)",
+   "agua_libre_max_pct_masa": 5.7,
+   "hidrogeno_libre_max_pct_masa": 0.64,
+   "composicion": "pendiente_fuente",
+   "TVL_proveedor": "pendiente_fuente"
+  },
+  "tabique_NIPOL_5": {
+   "fuente": "IMCYC_OT521_D5",
+   "mediciones": {
+    "masa_especifica_seca": [
+     3.96,
+     4.02,
+     3.98
+    ],
+    "masa_especifica_inmersion": [
+     4.12,
+     4.19,
+     4.15
+    ],
+    "masa_especifica_ebullicion": [
+     4.18,
+     4.24,
+     4.21
+    ],
+    "masa_especifica_aparente": [
+     5.05,
+     5.16,
+     5.12
+    ],
+    "absorcion_inmersion_pct": [
+     4.16,
+     4.16,
+     4.22
+    ],
+    "absorcion_ebullicion_pct": [
+     5.47,
+     5.49,
+     5.58
+    ],
+    "vacios_pct": [
+     21.6,
+     22.1,
+     22.2
+    ]
+   },
+   "densidad_blindaje_g_cm3": 3.99,
+   "densidad_en_servicio_rango_g_cm3": [
+    3.99,
+    4.15
+   ],
+   "nominal_vs_real": "el nominal 5 = densidad aparente (5.11); la volumétrica seca es 3.99 (−20 % vs 5.0; −27 % vs 5.5)",
+   "agua_libre_max_pct_masa": 5.5,
+   "hidrogeno_libre_max_pct_masa": 0.61,
+   "composicion": "pendiente_fuente",
+   "TVL_proveedor": "pendiente_fuente"
+  },
+  "concreto_ordinario_2.35": {
+   "densidad_blindaje_g_cm3": 2.35,
+   "composicion_wt_pct": {
+    "H": 1.0,
+    "C": 0.1,
+    "O": 52.91,
+    "Na": 1.6,
+    "Mg": 0.2,
+    "Al": 3.39,
+    "Si": 33.7,
+    "K": 1.3,
+    "Ca": 4.4,
+    "Fe": 1.4
+   },
+   "fuente": "kiube v0.35 mapa_config (concreto BIND; tipo NIST/Portland)"
+  },
+  "concreto_ordinario_2.5": {
+   "densidad_blindaje_g_cm3": 2.5,
+   "composicion_wt_pct": "igual a 2.35 (densidad mayor por agregado); supuesto declarado",
+   "fuente": "USUARIO_20261029"
+  },
+  "hipotesis_magnetita_3.32": {
+   "densidad_blindaje_g_cm3": 3.32,
+   "composicion_wt_pct": {
+    "H": 0.33,
+    "O": 33.74,
+    "Mg": 0.94,
+    "Al": 2.49,
+    "Si": 2.16,
+    "S": 0.07,
+    "Ca": 6.07,
+    "Ti": 5.51,
+    "V": 0.3,
+    "Cr": 0.19,
+    "Mn": 0.17,
+    "Fe": 47.97
+   },
+   "fuente": "[EST] compendio PNNL-15870 'concrete, magnetite' aproximado, a la densidad medida del tabique 3.5 — hipótesis hasta tener la ficha"
+  },
+  "hipotesis_barita_3.32": {
+   "densidad_blindaje_g_cm3": 3.32,
+   "composicion_wt_pct": {
+    "H": 0.36,
+    "O": 31.16,
+    "Mg": 0.12,
+    "Al": 0.42,
+    "Si": 1.05,
+    "S": 10.79,
+    "Ca": 5.02,
+    "Fe": 4.75,
+    "Ba": 46.34
+   },
+   "fuente": "[EST] compendio PNNL-15870 'concrete, barite' aproximado, a la densidad medida — hipótesis"
+  }
+ },
+ "estimaciones_GAMMA": {
+  "linac": {
+   "fuente": "GAMMA_ONCO_20261028",
+   "norma": "NCRP 151",
+   "carga": "30 pac/jornada 8 h, 2 turnos, L–V, 300 cGy/pac",
+   "arriba": "sala de espera",
+   "lado": "baños públicos",
+   "orden_caras": [
+    "superior",
+    "izq_primaria",
+    "der_primaria",
+    "laberinto_int",
+    "inf_izq",
+    "inf_der",
+    "inferior",
+    "losa_primaria"
+   ],
+   "casos": {
+    "1_2.35_calc_h3.5": [
+     100,
+     230,
+     180,
+     50,
+     120,
+     100,
+     50,
+     240
+    ],
+    "2_5.0_calc_h3.5": [
+     50,
+     75,
+     75,
+     30,
+     50,
+     50,
+     30,
+     105
+    ],
+    "2_5.0_tabiques_h3.5": [
+     52,
+     78,
+     78,
+     39,
+     52,
+     52,
+     39,
+     108
+    ],
+    "3_5.5_calc_h3.5": [
+     37.86,
+     63.1,
+     62.48,
+     20,
+     37.86,
+     37.48,
+     20,
+     95.72
+    ],
+    "3_5.5_tabiques_h3.5": [
+     39,
+     65,
+     65,
+     26,
+     39,
+     39,
+     26,
+     108
+    ],
+    "4_5.5_calc_h3.2": [
+     37.86,
+     63.1,
+     62.48,
+     20,
+     37.86,
+     37.48,
+     20,
+     96.58
+    ],
+    "4_5.5_tabiques_h3.2": [
+     39,
+     65,
+     65,
+     26,
+     39,
+     39,
+     26,
+     108
+    ]
+   },
+   "altura_total_bunker_cm": {
+    "3_5.5_tabiques": 458,
+    "4_5.5_tabiques": 428
+   },
+   "tabique_cm": 13
+  },
+  "braquiterapia_HDR": {
+   "fuente": "GAMMA_ONCO_20261028",
+   "norma": "IAEA SRS-47",
+   "carga": "40–50 pac/sem, 25 min, 7 Gy",
+   "arriba": "baños públicos",
+   "muros_h_m": 5,
+   "calc_cm_2.35_3.5": {
+    "norte": [
+     71,
+     47
+    ],
+    "este_sup": [
+     12,
+     13
+    ],
+    "este_inf": [
+     12,
+     13
+    ],
+    "oeste": [
+     58,
+     39
+    ],
+    "tabique_interior": [
+     40,
+     26
+    ],
+    "sur": [
+     49,
+     33
+    ],
+    "techo": [
+     50,
+     34
+    ],
+    "piso": [
+     70,
+     47
+    ]
+   },
+   "tabiques_3.5_cm": {
+    "norte": 52,
+    "oeste": 39,
+    "tabique_interior": 26,
+    "este": 13,
+    "sur": 39,
+    "techo": 39,
+    "piso": 52
+   },
+   "puerta_Pb_mm": 3
+  },
+  "gamma_knife": {
+   "fuente": "GAMMA_ONCO_20261028",
+   "criterio": "ICRP",
+   "carga": "20 pac/sem, 6600 Ci +10 %",
+   "arriba": "braquiterapia",
+   "muros_h_m": 5.4,
+   "calc_cm_2.35_3.5": {
+    "norte": [
+     35,
+     23
+    ],
+    "noreste": [
+     35,
+     23
+    ],
+    "oeste": [
+     28,
+     19
+    ],
+    "techo": [
+     70,
+     47
+    ],
+    "este_control": [
+     14,
+     10
+    ],
+    "sur": [
+     10,
+     7
+    ]
+   },
+   "puerta_Pb_mm": 3
+  },
+  "pet_ct": {
+   "fuente": "GAMMA_ONCO_20261028",
+   "norma": "AAPM TG-108",
+   "carga": "60 pac/sem, 20 mCi",
+   "arriba": "medicina nuclear",
+   "blindar_hasta_m": 2.5,
+   "calc_cm_2.35_3.5_5.0": {
+    "norte_puerta": [
+     45,
+     30,
+     22
+    ],
+    "este_control": [
+     3,
+     2,
+     null
+    ],
+    "oeste": [
+     15,
+     10,
+     7
+    ],
+    "sur": [
+     7,
+     5,
+     4
+    ],
+    "techo": [
+     25,
+     17,
+     12
+    ],
+    "piso": [
+     9,
+     7,
+     5
+    ]
+   },
+   "puertas_Pb_mm": 3,
+   "ventana_Pb_eq_mm": 2
+  },
+  "inyeccion_pet_1_2": {
+   "calc_cm_2.35_3.5_5.0": {
+    "norte": [
+     30,
+     21,
+     14
+    ],
+    "oeste": [
+     25,
+     17,
+     12
+    ],
+    "intermedio": [
+     45,
+     30,
+     22
+    ],
+    "este": [
+     25,
+     17,
+     12
+    ],
+    "sur": [
+     45,
+     31,
+     22
+    ],
+    "techo": [
+     25,
+     17,
+     12
+    ],
+    "piso": [
+     12,
+     8,
+     6
+    ]
+   },
+   "puertas_Pb_mm": 5
+  },
+  "inyeccion_pet_3_4": {
+   "calc_cm_2.35_3.5_5.0": {
+    "norte": [
+     20,
+     14,
+     10
+    ],
+    "oeste": [
+     20,
+     14,
+     10
+    ],
+    "intermedio": [
+     40,
+     26,
+     18
+    ],
+    "este": [
+     45,
+     31,
+     22
+    ],
+    "interior": [
+     20,
+     14,
+     10
+    ],
+    "sur": [
+     30,
+     20,
+     14
+    ],
+    "techo": [
+     25,
+     17,
+     12
+    ],
+    "piso": [
+     12,
+     8,
+     6
+    ]
+   },
+   "puertas_Pb_mm": 6
+  },
+  "cuarto_caliente_pet": {
+   "calc_cm_2.35_3.5": {
+    "norte": [
+     12,
+     8
+    ],
+    "este": [
+     52,
+     35
+    ],
+    "techo": [
+     24,
+     16
+    ],
+    "piso": [
+     27,
+     18
+    ]
+   },
+   "castillo_Pb_cm": 5,
+   "oeste_sur": "no requiere"
+  },
+  "spect_ct": {
+   "norma": "IAEA-TECDOC-1608",
+   "carga": "40 Tc99m + 2 I131 + 1 Lu177 /sem",
+   "arriba": "área no controlada",
+   "muros_Pb_mm": [
+    2,
+    6,
+    2
+   ],
+   "techo_cm_2.35_3.5": [
+    12,
+    8
+   ],
+   "piso_cm_2.35_3.5": [
+    10,
+    6
+   ],
+   "puerta_ventana_Pb_mm": 2
+  },
+  "inyeccion_mn_esfuerzo": {
+   "Pb_mm": [
+    5,
+    5,
+    2,
+    2,
+    3,
+    2,
+    7,
+    7
+   ],
+   "concreto_cm_2.35_3.5": {
+    "pasillo": [
+     27,
+     18
+    ],
+    "recuperacion": [
+     20,
+     14
+    ],
+    "banda_esfuerzo": [
+     33,
+     22
+    ],
+    "base_7mmPb": [
+     12,
+     8
+    ]
+   },
+   "techo_cm": [
+    20,
+    13
+   ],
+   "piso_cm": [
+    16,
+    11
+   ]
+  },
+  "cuarto_caliente_mn": {
+   "Pb_mm": 6,
+   "techo_cm_2.35": 15,
+   "piso_cm_2.35": 10,
+   "castillo_Pb_cm": 5,
+   "pendiente": "contenedores y muro a consultorios; reubicar descontaminación y contenedores"
+  },
+  "yodo": {
+   "carga": "2 pac/sem × 3 días, 200 mCi I-131",
+   "arriba": "área no controlada",
+   "calc_cm_2.35_3.5": {
+    "norte": [
+     27,
+     18
+    ],
+    "oeste": [
+     33,
+     22
+    ],
+    "este_puerta": [
+     21,
+     14
+    ],
+    "sur": [
+     20,
+     14
+    ],
+    "techo": [
+     25,
+     17
+    ],
+    "piso": [
+     13,
+     9
+    ]
+   },
+   "puerta_Pb_mm": 6
+  },
+  "ciclotron": {
+   "fuente": "GAMMA_CICLO_20260716",
+   "norma": "NCRP 144",
+   "densidad_g_cm3": 3.5,
+   "carga": "18 MeV, 300 µA, 8 h/día",
+   "plano": "IBA verificado",
+   "muros_m": {
+    "oeste": 2.4,
+    "este": 2.2,
+    "sur_tapon": 2.5
+   },
+   "laberinto_muros_m": [
+    0.4,
+    0.6,
+    0.59,
+    0.83
+   ],
+   "techo_m": 2.3,
+   "altura_sala_m": 2.5,
+   "foso_m": 0.4,
+   "tapon_izaje_mm": [
+    2400,
+    2400
+   ],
+   "radiofarmacia_muros_cm_3.5": 30,
+   "monte_carlo": "pendiente (GAMMA)"
+  }
+ },
+ "DWG_medido": {
+  "fuente": "DWG_BIND_20261028",
+  "niveles_npt_m": {
+   "PB": 10.35,
+   "N1": 15.75,
+   "N2": 21.15
+  },
+  "linac": {
+   "interior_m": [
+    7.51,
+    7.21
+   ],
+   "h_int_m": 3.3,
+   "primario_cm": 65,
+   "franja_primaria_m": 4.1,
+   "isocentro_xy": [
+    41.025,
+    49.125
+   ],
+   "secundario_cm": [
+    39,
+    40
+   ],
+   "laberinto_cm": [
+    30,
+    26
+   ],
+   "losa_cm": 100,
+   "arriba": "sala de espera / IDF / tablero eléctrico / C.A.A. (N1, CORTE GENERAL 03)"
+  },
+  "gamma_knife": {
+   "interior_m": [
+    6.46,
+    5.99
+   ],
+   "muros_cm_3.5": {
+    "oeste": 26,
+    "norte": 26,
+    "sur": 13,
+    "este": [
+     13,
+     26
+    ]
+   },
+   "techo_cm_2.35": 70,
+   "h_anotada_m": 5.0
+  },
+  "braquiterapia": {
+   "interior_m": [
+    6.46,
+    5.6
+   ],
+   "muros_cm_3.5": {
+    "oeste": 39,
+    "norte": 52,
+    "sur": 39,
+    "este": 13,
+    "tabique_interior": 26
+   },
+   "piso_cm_2.35": 70,
+   "techo_cm_3.5": 39
+  },
+  "ciclotron": "muros no dibujados (estructura independiente tras junta constructiva; retícula CA–CE × C1–C6; AZOTEA encima)"
+ },
+ "fichas_CONTUPLEX": {
+  "comun": {
+   "pieza_mm": [
+    130,
+    130,
+    254
+   ],
+   "medio_mm": [
+    65,
+    130,
+    254
+   ],
+   "piezas_m2": 32,
+   "sistema": "apilado en seco, encastre sinusoidal, traslape 1/2; mortero solo hiladas 1 y 5 si se especifica",
+   "agregados": "alto-Z (Fe, Ba, Ca) en matriz cementicia — sin porcentajes (composición pendiente_fuente)",
+   "metodo_TVL": "haz amplio con B(x), ANSI/ANS 6.4.3; U(k=2)≈25 %; TVL única (sin TVL1/TVLe)",
+   "trazabilidad": "(a) medición directa TD-350 a 6 y 10 MV (RAD Física Aplicada, dic. 2021); (b) TD-375 medido jul. 2020 y ESCALADO por razón de densidades nominales; (c) 15 MV interpolado; certificado ININ 2024 e IMCYC OT-563 (2025) citados, no entregados"
+  },
+  "TD-350": {
+   "rho_nominal": 3.5,
+   "peso_kg": 15.0,
+   "fc_MPa": 14.7,
+   "TVL_primaria_cm": {
+    "6MV": 24.6,
+    "10MV": 27.8,
+    "15MV": 28.7,
+    "18MV": 29.2
+   },
+   "TVL_fuga_cm": {
+    "6MV": 23.1,
+    "10MV": 25.1,
+    "15MV": 26.8,
+    "18MV": 27.8
+   },
+   "origen_TVL": {
+    "6MV": "medida",
+    "10MV": "medida",
+    "15MV": "interpolada",
+    "18MV": "escalada TD-375"
+   }
+  },
+  "TD-400": {
+   "rho_nominal": 4.0,
+   "peso_kg": 17.2,
+   "fc_MPa": 21,
+   "absorcion_24h_max_pct": 8,
+   "TVL_primaria_cm": {
+    "6MV": 21.8,
+    "10MV": 24.4,
+    "15MV": 25.1,
+    "18MV": 25.5
+   },
+   "TVL_fuga_cm": {
+    "6MV": 20.2,
+    "10MV": 22.0,
+    "15MV": 23.4,
+    "18MV": 24.3
+   },
+   "origen_TVL": "escalada por densidad nominal",
+   "inconsistencias": [
+    "pág. 3 usa TVL 18 MV = 15,6 cm (tabla: 25,5)"
+   ]
+  },
+  "TD-500": {
+   "rho_nominal": 5.0,
+   "peso_kg": 21.5,
+   "fc_MPa": 22,
+   "densidad_NMX_C263_obra_g_cm3": [
+    2.66,
+    2.68
+   ],
+   "vacios_pct": [
+    22.8,
+    24.8
+   ],
+   "TVL_primaria_cm": {
+    "6MV": 16.9,
+    "10MV": 19.2,
+    "15MV": 20.0,
+    "18MV": 20.4
+   },
+   "TVL_fuga_cm": {
+    "6MV": 16.2,
+    "10MV": 17.6,
+    "15MV": 18.7,
+    "18MV": 19.4
+   },
+   "origen_TVL": "escalada por densidad nominal desde TD-375 (no medida)",
+   "inconsistencias": [
+    "tablas rotuladas 'TD-400'",
+    "pág. 3: TVL 18 MV = 13,6 cm frente a 2 TVL = 40,9 cm (20,4 cm/TVL)",
+    "densidad 'aparente' de obra 2,66–2,68 g/cm³ declarada en la misma ficha frente a 5,00 nominal; IMCYC OT-521 midió 3,99 seca"
+   ]
+  },
+  "TD-550": {
+   "rho_nominal": 5.5,
+   "peso_kg": 23.6,
+   "fc_MPa": 22.5,
+   "densidad_NMX_C263_obra_g_cm3": 2.7,
+   "vacios_pct": [
+    22.8,
+    24.8
+   ],
+   "TVL_primaria_cm": {
+    "6MV": 15.3,
+    "10MV": 17.5,
+    "15MV": 18.2,
+    "18MV": 18.6
+   },
+   "TVL_fuga_cm": {
+    "6MV": 14.7,
+    "10MV": 16.0,
+    "15MV": 17.1,
+    "18MV": 17.7
+   },
+   "origen_TVL": "escalada por densidad nominal",
+   "inconsistencias": [
+    "pág. 1: 'Densidad nominal: 5,00' (el producto es 5,50)",
+    "TVL 18 MV citada como 13,6 / 20,4 / 18,6 cm en la misma ficha",
+    "1,5 TVL = 37 cm (24,7 cm/TVL) en la gráfica",
+    "sin informe IMCYC de densidad real para 5,5"
+   ]
+  },
+  "TD-250": {
+   "rho_nominal": 2.5,
+   "pieza_mm": [
+    130,
+    130,
+    254
+   ],
+   "peso_kg": 10.7,
+   "rho_por_peso_de_pieza": 2.49,
+   "fc_MPa": 14.7,
+   "matriz": "cementicia con agregados alto-Z (Fe, Ba, Ca) 'optimizada para fotones' — fracción de H no declarada",
+   "TVL_primaria_cm": {
+    "6MV": 34.8,
+    "10MV": 38.5,
+    "15MV": 41.4,
+    "18MV": 42.3
+   },
+   "TVLe_primaria_cm": {
+    "6MV": 31.0,
+    "10MV": 34.8,
+    "15MV": "8.5 (errata; ≈38.6 por escalado)",
+    "18MV": 40.4
+   },
+   "TVL_fuga_cm": {
+    "6MV": 32.0,
+    "10MV": 32.9,
+    "15MV": 33.8,
+    "18MV": 33.8
+   },
+   "origen_TVL": "todas ESTIMADAS por razón de densidades 2.35/2.50 desde NCRP 151 (no hay medición); U(k=2)≈25 %",
+   "referencia_no_entregada": "IMCYC OT-563 (2025) masa específica/absorción/vacíos/f'c — pendiente_fuente",
+   "lectura": "el peso de pieza (10.7 kg) ⇒ 2.49 g/cm³, coherente con la nominal (a diferencia de TD-350/500, cuyo nominal excede la densidad seca IMCYC). Para fotones = concreto 2.5. Para neutrones del ciclotrón la ficha no da H: se modela como concreto estándar 2.5 (instrucción del usuario) hasta tener OT-563 con agua/H.",
+   "erratas": [
+    "TVLe 15 MV = 8.5 cm (imposible; debe ser ≈38.6)",
+    "comparativa '≈6 % menos espesor' es solo el efecto de densidad 2.50 vs 2.35"
+   ]
+  }
+ },
+ "equipos": {
+  "linac": {
+   "modelo": "Elekta Versa HD",
+   "energias_MV": [
+    6,
+    10,
+    15
+   ],
+   "nota": "15 MV produce fotoneutrones: laberinto y puerta requieren evaluación de neutrones (NCRP 151 §2.4); barreras de bajo hidrógeno"
+  },
+  "braquiterapia": {
+   "modelo": "Elekta Flexitron",
+   "isotopo": "Co-60",
+   "actividad_GBq": "pendiente_fuente (supuesto 74 GBq = 2 Ci)",
+   "Gamma_AKR_mGy_m2_GBq_h": 0.306,
+   "TVL_hormigon_235_cm": 21.8
+  },
+  "gamma_knife": {
+   "modelo": "Leksell Gamma Knife",
+   "isotopo": "Co-60",
+   "actividad_Ci": "6600 +10 % (GAMMA)",
+   "fuga": "pendiente_fuente (datos de planeación de sitio de Elekta)"
+  }
+ },
+ "geotecnia": {
+  "fuente": "GEOTECNIA_OD_202505",
+  "sitio": "Prol. Av. Paseo Usumacinta 2118, Ra. Lázaro Cárdenas 2a secc., Centro, Tabasco",
+  "sismo": "zona B (CFE), terreno tipo II; estructuras grupo A: ordenadas espectrales ×1.5",
+  "viento": "zona 6 (según informe)",
+  "NAF_m": {
+   "SM-1": 4.45,
+   "SM-2": 4.25
+  },
+  "estratigrafia_resumen": "0–3.6 m SM arena limosa mediana-suelta; 3.6–9 m SC arena arcillosa suelta a muy suelta (N=3 a 8.4 m en SM-1); 8.4–21.6 m OH limo/arcilla orgánica de alta plasticidad firme a dura (w 34–46 %); >21.6 m OL/CL muy firme a dura (N 28–35)",
+  "qa_superficial_t_m2": {
+   "SM-1": 5.5,
+   "SM-2": 4.9,
+   "condicion": "B=1.0 m, Df=3.6 m, Terzaghi FS 3–3.5"
+  },
+  "asentamiento_superficial_cm": {
+   "SM-1": {
+    "elastico": 1.74,
+    "consolidacion": 6.8,
+    "total": 8.54
+   },
+   "SM-2": {
+    "elastico": 1.42,
+    "consolidacion": 8.79,
+    "total": 10.21
+   },
+   "carga": "0.50–0.55 kg/cm², losa 3×3 m"
+  },
+  "kv_kg_cm3": {
+   "SM-1": {
+    "1m": 1.582,
+    "2m": 0.791,
+    "3m": 0.527,
+    "5m": 0.316,
+    "10m": 0.158
+   },
+   "SM-2": {
+    "1m": 1.758,
+    "2m": 0.879,
+    "3m": 0.586,
+    "5m": 0.352,
+    "10m": 0.176
+   }
+  },
+  "pilas_Qadm_neta_t": {
+   "SM-1": {
+    "0.80@21": 190.0,
+    "1.00@21": 267.3,
+    "1.20@21": 356.5,
+    "1.20@26": 393.1
+   },
+   "SM-2": {
+    "0.80@21": 179.3,
+    "1.00@21": 247.6,
+    "1.00@22": 267.5,
+    "1.00@23": 273.9,
+    "1.00@24": 279.6,
+    "1.20@21": 325.3,
+    "1.20@26": 387.2,
+    "1.20@27": 399.2
+   },
+   "sismo": "Qadm ×1.20 en condición sísmica",
+   "FS": "2 fricción, 3 punta",
+   "separacion_min": "3 D"
+  },
+  "asentamiento_pila_elastico_cm": {
+   "SM-1": {
+    "0.80": 3.64,
+    "1.00": 4.15,
+    "1.20": 5.98
+   },
+   "SM-2": {
+    "0.80": 3.96,
+    "1.00": 4.45,
+    "1.20": 4.94
+   }
+  },
+  "recomendacion": "cimentación profunda con pilas coladas in situ Ø0.80–1.20 m, L 21–27 m (lodo bentonítico, tremie); construir en seco; bombeo si hay agua",
+  "observaciones_RPOS": [
+   "el informe no da la carga de diseño usada ni el plano de ubicación de sondeos respecto a los búnkeres",
+   "asentamientos de pila 3.6–6 cm a carga admisible: con búnkeres de 600–1 300 t junto a columnas de edificio el asentamiento diferencial manda el diseño"
+  ]
+ },
+ "DWG_PB_20261031": {
+  "fuente": "DWG_PB_20261031",
+  "unidades": "m (modelo)",
+  "ciclotron": {
+   "marco_propio": "ejes CA–CD (1.10/3.20/3.20/1.10 = 8.60) × C1–C6 (0.90/3.70/3.70/3.50/3.70 = 15.50); separado del edificio por JUNTA CONSTRUCTIVA en x≈−5.9",
+   "boveda_interior_m": [
+    4.0,
+    4.0
+   ],
+   "boveda_x": [
+    -12.21,
+    -8.21
+   ],
+   "boveda_y": [
+    36.03,
+    40.03
+   ],
+   "muros_m": {
+    "oeste": 2.4,
+    "este": 2.2,
+    "sur_tapon": 2.5,
+    "laberinto_norte_total": 7.23
+   },
+   "tapon_sur": "escalonado 3.10/2.70/2.30 m de ancho en 0.90/0.90/0.70 m de fondo (tapón removible)",
+   "laberinto": "5 tramos, salida a 1.00 m en esquina NE (x −7.41…−6.41, y 47.26)",
+   "columnas": "columnas 0.70×0.70 de los ejes CB y CD quedan EMBEBIDAS en los muros oeste y este",
+   "pila": "círculo Ø1.00 m (capa PILAS) bajo el centro del ciclotrón (−10.31, 38.12)",
+   "zanja_lineas_transferencia": "x −9.83…−8.21, y 36.48…39.53: llega a la cara interior del muro este",
+   "cambio_vs_BIND_28-10-26": "bóveda 4.00×4.00 (antes 4.00×3.94 de la imagen IBA); espesores iguales a IBA/GAMMA"
+  },
+  "contraventeos": {
+   "NA (x −5.76, junto a la junta)": [
+    "N1–N2 (y 34.5–40.4)",
+    "N2–N3 (y 41.4–48.5)"
+   ],
+   "N1 (y 34.0)": [
+    "NC–ND",
+    "ND–NE",
+    "NE–NF",
+    "NG–NH",
+    "NH–NI"
+   ],
+   "N2 (y 40.9)": [
+    "NE–NF (muro norte del Gamma Knife)"
+   ],
+   "N3 (y 49.0)": [
+    "NC–ND",
+    "ND–NE (con vano 15.75–19.04)"
+   ],
+   "N4 (y 54.3)": [
+    "NE–NF",
+    "NF–NG",
+    "NG–NH",
+    "NH–NI"
+   ],
+   "NF (x 28.8)": [
+    "N1–N2 (pegado al muro este del GK)",
+    "N2.6–N3 (y 44.2–48.5)"
+   ],
+   "NG (x 34.8)": [
+    "N3–N4"
+   ],
+   "NI (x 46.8)": [
+    "N1–N2",
+    "N2–N3",
+    "N3–N4"
+   ]
+  },
+  "linac": {
+   "interior_m": "7.00 (franja primaria) / 7.51 × 9.81",
+   "muros_m": {
+    "primario_oeste_este": 0.65,
+    "resto": 0.39
+   },
+   "franja_primaria_y": [
+    47.08,
+    51.18
+   ],
+   "holgura_a_contraventeos_m": {
+    "este (NI)": "1.70 desde la cara exterior actual",
+    "norte (N4)": "1.31",
+    "oeste (NF)": "7.9"
+   }
+  },
+  "gamma_knife": {
+   "muros_m": {
+    "oeste": 0.26,
+    "norte": 0.26,
+    "este": 0.13,
+    "sur": 0.13
+   },
+   "contraventeos_contiguos": [
+    "N2 al norte",
+    "NF al este (0.02 m)",
+    "N1 al sur"
+   ]
+  }
+ }
+}

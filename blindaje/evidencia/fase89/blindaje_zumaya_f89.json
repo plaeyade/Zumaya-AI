@@ -1,0 +1,692 @@
+{
+ "fase": 89,
+ "version": "3.15.0",
+ "tipo": "simulacion_teorica + predimensionamiento_estructural",
+ "pq": "no_declarada_nunca",
+ "fecha": "2026-10-31T15:16:08",
+ "md5_bd": "25dfd37be2b9f763adeeefceaec63a3b",
+ "mc_ciclotron": {
+  "geometria": "bóveda 4.00×3.94×2.50 m, muros E 2.20 / O 2.40 / S 2.50 / techo 2.30 (IBA); DWG PB 31/10: 4.00×4.00",
+  "fisica": "Geant4 11.4.3 QGSP_BIC_HP, espectro BON21 ¹⁸O(p,n) 4.93e-3 n/p, H*(10) ICRP-74, importancia planar f=3 por 10 cm",
+  "corridas": {
+   "este": {
+    "lotes": 2,
+    "historias": 2000.0
+   },
+   "oeste": {
+    "lotes": 1,
+    "historias": 1000.0
+   },
+   "sur": {
+    "lotes": 3,
+    "historias": 1800.0
+   },
+   "techo": {
+    "lotes": 3,
+    "historias": 1800.0
+   }
+  },
+  "caras": {
+   "este": {
+    "espesor_IBA_cm": 220.0,
+    "ajuste": {
+     "a": 7.057009756731456,
+     "b": -0.0425262828171002,
+     "TVL_cm": 23.514869717178552,
+     "n_puntos": 13,
+     "rango_cm": [
+      40,
+      210.0
+     ]
+    },
+    "exterior_0_30cm_uSv_h": 0.00023728790200216172,
+    "exterior_se": 5.7794396388496844e-05,
+    "exterior_ajuste_uSv_h": 0.003080322037184562,
+    "objetivo_uSv_h": 1.0,
+    "objetivo": "radiofarmacia, personal expuesto, T=1, 2 mSv/año",
+    "factor_parche": 9.937034001106987,
+    "espesor_requerido_cm": 189.0,
+    "modulo_13cm": 195,
+    "ahorro_vs_IBA_cm": 25.0,
+    "espesor_requerido_directo_cm": 178.0,
+    "modulo_13cm_directo": 182
+   },
+   "oeste": {
+    "espesor_IBA_cm": 240.0,
+    "ajuste": null,
+    "exterior_0_30cm_uSv_h": 4.615926820361174e-05,
+    "exterior_se": NaN,
+    "exterior_ajuste_uSv_h": null,
+    "objetivo_uSv_h": 0.75,
+    "objetivo": "exterior/circulación T=1/5, 0.3 mSv/año",
+    "factor_parche": null,
+    "espesor_requerido_cm": null,
+    "modulo_13cm": null,
+    "ahorro_vs_IBA_cm": null,
+    "espesor_requerido_directo_cm": 152.0,
+    "modulo_13cm_directo": 156
+   },
+   "sur": {
+    "espesor_IBA_cm": 250.0,
+    "ajuste": {
+     "a": 7.166009575088918,
+     "b": -0.05536393279011765,
+     "TVL_cm": 18.06230066406153,
+     "n_puntos": 9,
+     "rango_cm": [
+      40,
+      240.0
+     ]
+    },
+    "exterior_0_30cm_uSv_h": 3.0275017838977337e-07,
+    "exterior_se": 1.2872020897551606e-07,
+    "exterior_ajuste_uSv_h": 1.1173949740524938e-07,
+    "objetivo_uSv_h": 6.0,
+    "objetivo": "área verde T=1/40, 0.3 mSv/año",
+    "factor_parche": 15.703923759282624,
+    "espesor_requerido_cm": 137.0,
+    "modulo_13cm": 143,
+    "ahorro_vs_IBA_cm": 107.0,
+    "espesor_requerido_directo_cm": 132.0,
+    "modulo_13cm_directo": 143
+   },
+   "techo": {
+    "espesor_IBA_cm": 230.0,
+    "ajuste": {
+     "a": 6.9600539435188145,
+     "b": -0.043148906470387556,
+     "TVL_cm": 23.17555835826998,
+     "n_puntos": 13,
+     "rango_cm": [
+      40,
+      220.0
+     ]
+    },
+    "exterior_0_30cm_uSv_h": 0.0004232584557286423,
+    "exterior_se": 9.878166833395495e-05,
+    "exterior_ajuste_uSv_h": 0.0006607861368104148,
+    "objetivo_uSv_h": 6.0,
+    "objetivo": "área verde vacía sobre el techo T=1/40, 0.3 mSv/año",
+    "factor_parche": 13.174685208666919,
+    "espesor_requerido_cm": 169.0,
+    "modulo_13cm": 182,
+    "ahorro_vs_IBA_cm": 48.0,
+    "espesor_requerido_directo_cm": 168.0,
+    "modulo_13cm_directo": 169
+   }
+  },
+  "recomendado": {
+   "este": {
+    "F88": 182,
+    "MC_ajuste": 195,
+    "MC_directo": 182,
+    "recomendado_cm": 195,
+    "IBA_cm": 220.0,
+    "ahorro_cm": 25.0
+   },
+   "oeste": {
+    "F88": 182,
+    "MC_ajuste": null,
+    "MC_directo": 156,
+    "recomendado_cm": 182,
+    "IBA_cm": 240.0,
+    "ahorro_cm": 58.0
+   },
+   "sur": {
+    "F88": 156,
+    "MC_ajuste": 143,
+    "MC_directo": 143,
+    "recomendado_cm": 156,
+    "IBA_cm": 250.0,
+    "ahorro_cm": 94.0
+   },
+   "techo": {
+    "F88": 156,
+    "MC_ajuste": 182,
+    "MC_directo": 169,
+    "recomendado_cm": 182,
+    "IBA_cm": 230.0,
+    "ahorro_cm": 48.0
+   }
+  }
+ },
+ "estructural": {
+  "ciclotron_F88": {
+   "espesores_cm": {
+    "este": 182,
+    "oeste": 182,
+    "sur": 156,
+    "techo": 156,
+    "norte_laberinto_suma": 195
+   },
+   "techo": {
+    "q_t_m2": 4.6,
+    "L_m": 4.3,
+    "M_t_m_por_m": 10.6,
+    "V_t_por_m": 9.9,
+    "reaccion_muro_t_m": 9.9,
+    "peralte_sugerido_m": 0.43
+   },
+   "muros": {
+    "este": {
+     "espesor_m": 1.82,
+     "altura_m": 4.0600000000000005,
+     "rho": 2.5,
+     "peso_propio_t_m": 18.5,
+     "reaccion_losa_t_m": 9.9,
+     "total_t_m": 28.4,
+     "presion_base_t_m2_sin_zapata": 15.6,
+     "esbeltez_t_h": 0.448,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.448,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "seguro",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "oeste": {
+     "espesor_m": 1.82,
+     "altura_m": 4.0600000000000005,
+     "rho": 2.5,
+     "peso_propio_t_m": 18.5,
+     "reaccion_losa_t_m": 9.9,
+     "total_t_m": 28.4,
+     "presion_base_t_m2_sin_zapata": 15.6,
+     "esbeltez_t_h": 0.448,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.448,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "seguro",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "sur": {
+     "espesor_m": 1.56,
+     "altura_m": 4.0600000000000005,
+     "rho": 2.5,
+     "peso_propio_t_m": 15.8,
+     "reaccion_losa_t_m": 0.0,
+     "total_t_m": 15.8,
+     "presion_base_t_m2_sin_zapata": 10.2,
+     "esbeltez_t_h": 0.384,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.384,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "seguro",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    }
+   },
+   "peso_total_t": 765.0,
+   "huella_m2": 115.5,
+   "presion_media_losa_cimentacion_t_m2": 6.6,
+   "cimentacion": {
+    "elemento": "búnker ciclotrón (losa 0.60 m incluida)",
+    "W_t": 765,
+    "huella_m2": 115.5,
+    "presion_media_t_m2": 6.6,
+    "qa_superficial_t_m2": [
+     4.9,
+     5.5
+    ],
+    "superficial_viable": false,
+    "pilas_D100_minimo_por_capacidad": 4,
+    "pilas_sugeridas": 6,
+    "asentamiento_pila_cm": 4.45,
+    "junta_constructiva": true,
+    "riesgo": "asentamiento diferencial contra el edificio contiguo: con junta, controlable; sin junta, las pilas del búnker deben dimensionarse para igualar asentamientos con las columnas vecinas (o transferir con contratrabes rígidas)"
+   },
+   "apoyos_ciclotron": "18 t en 4 apoyos de 220×220 mm (≈ 93 t/m² local): losa ≥ 0.60 m y la pila Ø1.00 dibujada bajo el centro; tolerancia de nivel ±1 mm ⇒ la losa del búnker y el ciclotrón deben quedar sobre el mismo grupo de pilas",
+   "nota_cimentacion": "la presión media supera la qa superficial (4.9–5.5 t/m²) ⇒ pilas, como recomienda el estudio geotécnico. El DWG ya separa el búnker con junta constructiva (correcto). Líneas de transferencia: IBA pide ductos a 0.50 m en losa; la zanja cruza el muro este y la junta bajo la crujía contraventeada NA N1–N2 ⇒ coordinar paso bajo la contratrabe."
+  },
+  "ciclotron_MC": {
+   "espesores_cm": {
+    "este": 195,
+    "oeste": 182,
+    "sur": 156,
+    "techo": 182,
+    "norte_laberinto_suma": 195
+   },
+   "techo": {
+    "q_t_m2": 5.25,
+    "L_m": 4.3,
+    "M_t_m_por_m": 12.1,
+    "V_t_por_m": 11.3,
+    "reaccion_muro_t_m": 11.3,
+    "peralte_sugerido_m": 0.43
+   },
+   "muros": {
+    "este": {
+     "espesor_m": 1.95,
+     "altura_m": 4.32,
+     "rho": 2.5,
+     "peso_propio_t_m": 21.1,
+     "reaccion_losa_t_m": 11.3,
+     "total_t_m": 32.4,
+     "presion_base_t_m2_sin_zapata": 16.6,
+     "esbeltez_t_h": 0.451,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.451,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "seguro",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "oeste": {
+     "espesor_m": 1.82,
+     "altura_m": 4.32,
+     "rho": 2.5,
+     "peso_propio_t_m": 19.7,
+     "reaccion_losa_t_m": 11.3,
+     "total_t_m": 31.0,
+     "presion_base_t_m2_sin_zapata": 17.0,
+     "esbeltez_t_h": 0.421,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.421,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "seguro",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "sur": {
+     "espesor_m": 1.56,
+     "altura_m": 4.32,
+     "rho": 2.5,
+     "peso_propio_t_m": 16.8,
+     "reaccion_losa_t_m": 0.0,
+     "total_t_m": 16.8,
+     "presion_base_t_m2_sin_zapata": 10.8,
+     "esbeltez_t_h": 0.361,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.361,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "seguro",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    }
+   },
+   "peso_total_t": 831.0,
+   "huella_m2": 117.5,
+   "presion_media_losa_cimentacion_t_m2": 7.1,
+   "cimentacion": {
+    "elemento": "búnker ciclotrón (losa 0.60 m incluida)",
+    "W_t": 831,
+    "huella_m2": 117.5,
+    "presion_media_t_m2": 7.1,
+    "qa_superficial_t_m2": [
+     4.9,
+     5.5
+    ],
+    "superficial_viable": false,
+    "pilas_D100_minimo_por_capacidad": 4,
+    "pilas_sugeridas": 6,
+    "asentamiento_pila_cm": 4.45,
+    "junta_constructiva": true,
+    "riesgo": "asentamiento diferencial contra el edificio contiguo: con junta, controlable; sin junta, las pilas del búnker deben dimensionarse para igualar asentamientos con las columnas vecinas (o transferir con contratrabes rígidas)"
+   },
+   "apoyos_ciclotron": "18 t en 4 apoyos de 220×220 mm (≈ 93 t/m² local): losa ≥ 0.60 m y la pila Ø1.00 dibujada bajo el centro; tolerancia de nivel ±1 mm ⇒ la losa del búnker y el ciclotrón deben quedar sobre el mismo grupo de pilas",
+   "nota_cimentacion": "la presión media supera la qa superficial (4.9–5.5 t/m²) ⇒ pilas, como recomienda el estudio geotécnico. El DWG ya separa el búnker con junta constructiva (correcto). Líneas de transferencia: IBA pide ductos a 0.50 m en losa; la zanja cruza el muro este y la junta bajo la crujía contraventeada NA N1–N2 ⇒ coordinar paso bajo la contratrabe."
+  },
+  "linac_area_verde_T1_40": {
+   "techo_TD550_cm": 104,
+   "techo": {
+    "q_t_m2": 6.6,
+    "L_m": 7.5,
+    "M_t_m_por_m": 46.4,
+    "V_t_por_m": 24.8,
+    "reaccion_muro_t_m": 24.8,
+    "nota": "el tabique no trabaja como losa: se apila sobre una losa/trabes de concreto reforzado; claro de 7,5 m con 6–8 t/m² exige trabes peraltadas o losa postensada"
+   },
+   "muros": {
+    "primaria_oeste": {
+     "espesor_m": 1.17,
+     "altura_m": 4.9399999999999995,
+     "rho": 4.29,
+     "peso_propio_t_m": 24.8,
+     "reaccion_losa_t_m": 24.8,
+     "total_t_m": 49.6,
+     "presion_base_t_m2_sin_zapata": 42.4,
+     "esbeltez_t_h": 0.237,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.237,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "RIESGO",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "primaria_este": {
+     "espesor_m": 1.04,
+     "altura_m": 4.9399999999999995,
+     "rho": 4.29,
+     "peso_propio_t_m": 22.0,
+     "reaccion_losa_t_m": 24.8,
+     "total_t_m": 46.8,
+     "presion_base_t_m2_sin_zapata": 45.0,
+     "esbeltez_t_h": 0.211,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.211,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "RIESGO",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "secundaria_norte": {
+     "espesor_m": 0.78,
+     "altura_m": 4.9399999999999995,
+     "rho": 4.29,
+     "peso_propio_t_m": 16.5,
+     "reaccion_losa_t_m": 0.0,
+     "total_t_m": 16.5,
+     "presion_base_t_m2_sin_zapata": 21.2,
+     "esbeltez_t_h": 0.158,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.158,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "RIESGO",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    }
+   },
+   "peso_total_t": 1535,
+   "cimentacion": {
+    "elemento": "búnker linac (sin junta en el DWG)",
+    "W_t": 1535,
+    "huella_m2": 116.6,
+    "presion_media_t_m2": 13.2,
+    "qa_superficial_t_m2": [
+     4.9,
+     5.5
+    ],
+    "superficial_viable": false,
+    "pilas_D100_minimo_por_capacidad": 7,
+    "pilas_sugeridas": 9,
+    "asentamiento_pila_cm": 4.45,
+    "junta_constructiva": false,
+    "riesgo": "asentamiento diferencial contra el edificio contiguo: con junta, controlable; sin junta, las pilas del búnker deben dimensionarse para igualar asentamientos con las columnas vecinas (o transferir con contratrabes rígidas)"
+   },
+   "masa_superficial_techo_t_m2": {
+    "TD550_real": 4.46,
+    "espesor_concreto_235_misma_masa_m": 1.9,
+    "lectura": "para fotones el blindaje depende de la masa por área: el techo pesa ≈ lo mismo en TD-550 que en concreto; la densidad solo ahorra espesor (y altura de edificio)"
+   }
+  },
+  "linac_sala_espera_T1": {
+   "techo_TD550_cm": 143,
+   "techo": {
+    "q_t_m2": 8.27,
+    "L_m": 7.5,
+    "M_t_m_por_m": 58.2,
+    "V_t_por_m": 31.0,
+    "reaccion_muro_t_m": 31.0,
+    "nota": "el tabique no trabaja como losa: se apila sobre una losa/trabes de concreto reforzado; claro de 7,5 m con 6–8 t/m² exige trabes peraltadas o losa postensada"
+   },
+   "muros": {
+    "primaria_oeste": {
+     "espesor_m": 1.17,
+     "altura_m": 5.33,
+     "rho": 4.29,
+     "peso_propio_t_m": 26.8,
+     "reaccion_losa_t_m": 31.0,
+     "total_t_m": 57.8,
+     "presion_base_t_m2_sin_zapata": 49.4,
+     "esbeltez_t_h": 0.22,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.22,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "RIESGO",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "primaria_este": {
+     "espesor_m": 1.04,
+     "altura_m": 5.33,
+     "rho": 4.29,
+     "peso_propio_t_m": 23.8,
+     "reaccion_losa_t_m": 31.0,
+     "total_t_m": 54.8,
+     "presion_base_t_m2_sin_zapata": 52.7,
+     "esbeltez_t_h": 0.195,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.195,
+      "vuelco_c015": "seguro",
+      "vuelco_c030": "RIESGO",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    },
+    "secundaria_norte": {
+     "espesor_m": 0.78,
+     "altura_m": 5.33,
+     "rho": 4.29,
+     "peso_propio_t_m": 17.8,
+     "reaccion_losa_t_m": 0.0,
+     "total_t_m": 17.8,
+     "presion_base_t_m2_sin_zapata": 22.9,
+     "esbeltez_t_h": 0.146,
+     "estabilidad_junta_seca": {
+      "t_sobre_h": 0.146,
+      "vuelco_c015": "RIESGO",
+      "vuelco_c030": "RIESGO",
+      "deslizamiento": "seguro",
+      "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+     }
+    }
+   },
+   "peso_total_t": 1717,
+   "cimentacion": {
+    "elemento": "búnker linac (sin junta en el DWG)",
+    "W_t": 1717,
+    "huella_m2": 116.6,
+    "presion_media_t_m2": 14.7,
+    "qa_superficial_t_m2": [
+     4.9,
+     5.5
+    ],
+    "superficial_viable": false,
+    "pilas_D100_minimo_por_capacidad": 7,
+    "pilas_sugeridas": 9,
+    "asentamiento_pila_cm": 4.45,
+    "junta_constructiva": false,
+    "riesgo": "asentamiento diferencial contra el edificio contiguo: con junta, controlable; sin junta, las pilas del búnker deben dimensionarse para igualar asentamientos con las columnas vecinas (o transferir con contratrabes rígidas)"
+   },
+   "masa_superficial_techo_t_m2": {
+    "TD550_real": 6.13,
+    "espesor_concreto_235_misma_masa_m": 2.61,
+    "lectura": "para fotones el blindaje depende de la masa por área: el techo pesa ≈ lo mismo en TD-550 que en concreto; la densidad solo ahorra espesor (y altura de edificio)"
+   }
+  },
+  "muros_en_entrepiso": {
+   "HDR_Co60_oeste_TD500": {
+    "espesor_m": 0.39,
+    "altura_m": 4.0,
+    "rho": 3.99,
+    "peso_propio_t_m": 6.2,
+    "reaccion_losa_t_m": 0.0,
+    "total_t_m": 6.2,
+    "presion_base_t_m2_sin_zapata": 16.0,
+    "esbeltez_t_h": 0.098,
+    "estabilidad_junta_seca": {
+     "t_sobre_h": 0.098,
+     "vuelco_c015": "RIESGO",
+     "vuelco_c030": "RIESGO",
+     "deslizamiento": "seguro",
+     "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+    },
+    "carga_lineal_vs_muro_divisorio_ligero": 6.9
+   },
+   "HDR_Co60_norte_TD350": {
+    "espesor_m": 0.52,
+    "altura_m": 4.0,
+    "rho": 3.32,
+    "peso_propio_t_m": 6.9,
+    "reaccion_losa_t_m": 0.0,
+    "total_t_m": 6.9,
+    "presion_base_t_m2_sin_zapata": 13.3,
+    "esbeltez_t_h": 0.13,
+    "estabilidad_junta_seca": {
+     "t_sobre_h": 0.13,
+     "vuelco_c015": "RIESGO",
+     "vuelco_c030": "RIESGO",
+     "deslizamiento": "seguro",
+     "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+    },
+    "carga_lineal_vs_muro_divisorio_ligero": 7.7
+   },
+   "PET_CT_TD500_52": {
+    "espesor_m": 0.52,
+    "altura_m": 4.0,
+    "rho": 3.99,
+    "peso_propio_t_m": 8.3,
+    "reaccion_losa_t_m": 0.0,
+    "total_t_m": 8.3,
+    "presion_base_t_m2_sin_zapata": 16.0,
+    "esbeltez_t_h": 0.13,
+    "estabilidad_junta_seca": {
+     "t_sobre_h": 0.13,
+     "vuelco_c015": "RIESGO",
+     "vuelco_c030": "RIESGO",
+     "deslizamiento": "seguro",
+     "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+    },
+    "carga_lineal_vs_muro_divisorio_ligero": 9.2
+   },
+   "cuarto_caliente_PET_TD500_26": {
+    "espesor_m": 0.26,
+    "altura_m": 4.0,
+    "rho": 3.99,
+    "peso_propio_t_m": 4.1,
+    "reaccion_losa_t_m": 0.0,
+    "total_t_m": 4.1,
+    "presion_base_t_m2_sin_zapata": 16.0,
+    "esbeltez_t_h": 0.065,
+    "estabilidad_junta_seca": {
+     "t_sobre_h": 0.065,
+     "vuelco_c015": "RIESGO",
+     "vuelco_c030": "RIESGO",
+     "deslizamiento": "seguro",
+     "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+    },
+    "carga_lineal_vs_muro_divisorio_ligero": 4.6
+   },
+   "inyeccion_TD350_26": {
+    "espesor_m": 0.26,
+    "altura_m": 4.0,
+    "rho": 3.32,
+    "peso_propio_t_m": 3.5,
+    "reaccion_losa_t_m": 0.0,
+    "total_t_m": 3.5,
+    "presion_base_t_m2_sin_zapata": 13.3,
+    "esbeltez_t_h": 0.065,
+    "estabilidad_junta_seca": {
+     "t_sobre_h": 0.065,
+     "vuelco_c015": "RIESGO",
+     "vuelco_c030": "RIESGO",
+     "deslizamiento": "seguro",
+     "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+    },
+    "carga_lineal_vs_muro_divisorio_ligero": 3.9
+   },
+   "CT_simulador_TD350_13": {
+    "espesor_m": 0.13,
+    "altura_m": 4.0,
+    "rho": 3.32,
+    "peso_propio_t_m": 1.7,
+    "reaccion_losa_t_m": 0.0,
+    "total_t_m": 1.7,
+    "presion_base_t_m2_sin_zapata": 13.3,
+    "esbeltez_t_h": 0.033,
+    "estabilidad_junta_seca": {
+     "t_sobre_h": 0.033,
+     "vuelco_c015": "RIESGO",
+     "vuelco_c030": "RIESGO",
+     "deslizamiento": "seguro",
+     "nota": "muro libre sin liga a la estructura; con dalas/castillos o anclaje a losa el modo cambia a flexión fuera del plano"
+    },
+    "carga_lineal_vs_muro_divisorio_ligero": 1.9
+   }
+  }
+ },
+ "supuestos": {
+  "rho_tabique_25": {
+   "valor": 2.5,
+   "origen": "usuario: tabique 2,5 = concreto alta densidad estándar; peso volumétrico de muro 2,5 t/m³"
+  },
+  "rho_TD350": {
+   "valor": 3.32,
+   "origen": "IMCYC densidad seca (no nominal)"
+  },
+  "rho_TD500": {
+   "valor": 3.99,
+   "origen": "IMCYC densidad seca"
+  },
+  "rho_TD550": {
+   "valor": 4.29,
+   "origen": "estimada (5,5 × seca/aparente) — pendiente_fuente; pesar piezas en obra"
+  },
+  "techo_verde_kg_m2": {
+   "valor": 600,
+   "origen": "jardín ligero 30 cm sustrato saturado + impermeabilización (supuesto)"
+  },
+  "viva_azotea_kg_m2": {
+   "valor": 100,
+   "origen": "NTC-CyA CDMX 2023 azotea pend. <5 % (referencia, la norma local puede variar)"
+  },
+  "viva_hospital_kg_m2": {
+   "valor": 350,
+   "origen": "salas de espera / circulaciones hospital (referencia NTC-CyA)"
+  },
+  "h_entrepiso_m": {
+   "valor": 4.0,
+   "origen": "altura de entrepiso genérica en niveles N2–N4 — pendiente_fuente (cortes)"
+  },
+  "q_adm_t_m2": {
+   "valor": [
+    4.9,
+    5.5
+   ],
+   "origen": "geotecnia OD 2025: B=1 m, Df=3.6 m (SM-2 / SM-1)"
+  },
+  "Q_pila_t": {
+   "valor": 247.6,
+   "origen": "geotecnia OD 2025: pila Ø1.00 m L=21 m, Qadm neta SM-2 (gobierna); ×1.2 en sismo"
+  },
+  "s_pila_cm": {
+   "valor": 4.45,
+   "origen": "asentamiento elástico pila Ø1.00 a carga admisible (SM-2)"
+  },
+  "c_sismico": {
+   "valor": [
+    0.15,
+    0.3
+   ],
+   "origen": "rango de revisión; geotecnia: zona B, terreno II, grupo A ×1.5 — espectro de diseño del CSE pendiente"
+  },
+  "mu_seco": {
+   "valor": 0.6,
+   "origen": "fricción tabique-tabique en junta seca (valor típico; ensayar)"
+  },
+  "peso_ciclotron": {
+   "valor": 18.0,
+   "origen": "IBA SRG MID_55672 Rev G tabla 4: 18 000 kg sobre 4 apoyos 220×220 mm (10 kg/cm²); nivel bajo patas ±1 mm"
+  },
+  "peso_linac": {
+   "valor": 8.0,
+   "origen": "Versa HD gantry + base, orden de magnitud — pendiente_fuente (site planning Elekta)"
+  },
+  "peso_gamma_knife": {
+   "valor": null,
+   "origen": "peso del Leksell Gamma Knife y huella — pendiente_fuente (site planning Elekta; orden de 20 t)"
+  }
+ },
+ "responsiva": "Predimensionamiento para dimensionar el problema; el diseño estructural y su responsiva corresponden a un Corresponsable en Seguridad Estructural con estudio de mecánica de suelos."
+}

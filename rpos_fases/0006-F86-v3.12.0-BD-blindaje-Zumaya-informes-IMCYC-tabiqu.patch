@@ -1,0 +1,356 @@
+From 4c40c2bb5567e73a9de346cc94f452a5c43e5990 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Thu, 29 Oct 2026 07:29:23 -0600
+Subject: [PATCH] =?UTF-8?q?F86=20v3.12.0:=20BD=20blindaje=20Zumaya=20?=
+ =?UTF-8?q?=E2=80=94=20informes=20IMCYC=20tabiques=20NIPOL=20(densidad=20v?=
+ =?UTF-8?q?olumetrica=20real=203.32/3.68/3.99=20vs=20nominal=203.5/4/5=20?=
+ =?UTF-8?q?=3D=20aparente;=20composicion=20y=20TVL=20pendiente=5Ffuente),?=
+ =?UTF-8?q?=20estimaciones=20GAMMA=20por=20area=20y=20DWG=20BIND=2028-10-2?=
+ =?UTF-8?q?6;=20linac=20NCRP=20151:=20con=20tabique=205=20real=20los=20mur?=
+ =?UTF-8?q?os=20dibujados=20(65/39/26,=20losa=20100)=20quedan=20cortos,=20?=
+ =?UTF-8?q?GAMMA=20x1.25=20(primario=2094-104,=20losa=20132);=20ciclotron?=
+ =?UTF-8?q?=20Geant4=20losa=5Ftvl=20(BON21):=20TVL=2026.8=20cm=20(2.35),?=
+ =?UTF-8?q?=2024.9=20(2.5),=2024.7/27.6=20cm=20tabique=203.5=20magnetita/b?=
+ =?UTF-8?q?arita=20->=20concreto=20ordinario=202.35-2.5=20recomendado;=204?=
+ =?UTF-8?q?=20pruebas?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01UsuNxxGDpmcCyJTGFRkq7k
+---
+ data/blindaje_zumaya/bd_blindaje_zumaya.json |  82 +++++++++
+ pipelines/blindaje_zumaya_f86.py             | 184 +++++++++++++++++++
+ pipelines/test_blindaje_zumaya_f86.py        |  39 ++++
+ 3 files changed, 305 insertions(+)
+ create mode 100644 data/blindaje_zumaya/bd_blindaje_zumaya.json
+ create mode 100644 pipelines/blindaje_zumaya_f86.py
+ create mode 100644 pipelines/test_blindaje_zumaya_f86.py
+
+diff --git a/data/blindaje_zumaya/bd_blindaje_zumaya.json b/data/blindaje_zumaya/bd_blindaje_zumaya.json
+new file mode 100644
+index 0000000..fac051e
+--- /dev/null
++++ b/data/blindaje_zumaya/bd_blindaje_zumaya.json
+@@ -0,0 +1,82 @@
++{
++ "titulo": "BD de blindaje — Centro Internacional de Neuro-Oncología Zumaya (Villahermosa)",
++ "version": "1.0 (F86)",
++ "reglas": ["simulacion_teorica", "pq no_declarada_nunca", "append-only: valores nuevos se agregan, nunca se sobrescriben", "pendiente_fuente = no inventado"],
++ "fuentes": {
++  "IMCYC_OT521_D35": {"archivo": "OT-521_TM_NIPOL_DENSIDAD_3.5.pdf", "md5": "caeb0e4cc363ecd4538640a3104e1830", "tipo": "informe de laboratorio IMCYC (NMX-C-263-ONNCCE-2010), IT 152, muestra 152B, ensaye 2022-05-31, cliente Técnicos y Constructores del Golfo", "acreditacion": "fuera del alcance de acreditación ema (marcado *)", "muestreo": "no responsabilidad del IMCYC"},
++  "IMCYC_OT521_D4": {"archivo": "OT-521_TM_NIPOL_DENSIDAD_4.pdf", "md5": "242552948c63a71dea872c3be6bd05f5", "tipo": "informe IMCYC NMX-C-263, IT 152, muestra 152A, ensaye 2022-05-27, cliente Hospital Christus Muguerza", "acreditacion": "fuera del alcance de acreditación ema (marcado *)", "muestreo": "no responsabilidad del IMCYC"},
++  "IMCYC_OT521_D5": {"archivo": "OT-521_TM_NIPOL_DENSIDAD_5.pdf", "md5": "5779493ed907ceb4efcf2bccdc543b24", "tipo": "informe IMCYC NMX-C-263, IT 152, muestra 152, ensaye 2022-05-26, cliente EYMSA Electrónica y Medicina", "acreditacion": "fuera del alcance de acreditación ema (marcado *)", "muestreo": "no responsabilidad del IMCYC"},
++  "GAMMA_ONCO_20261028": {"archivo": "ESTIMACI_N_DE_BLINDAJES_ONCOLOG_A_ZUMAYA.pdf", "md5": "fccf37067fe7b68c86e1f710d5a80972", "tipo": "estimación preliminar GAMMA Consultoría (±15–20 %), 28/10/2026"},
++  "GAMMA_CICLO_20260716": {"archivo": "ESTIMACI_N_DE_BLINDAJE_CICLOTRON_ONCOLOG_A_ZUMAYA.pdf", "md5": "be2cb1ef4f9cd380170cb7f537af181c", "tipo": "estimación preliminar GAMMA (±15–20 %) sobre plano IBA, 16/07/2026"},
++  "DWG_BIND_20261028": {"archivo": "PLANTAS_ARQ_CENTRO_INTERNACIONAL_DE_NEURO-ONCOLOGIA_BIND_28-10-26.dwg", "md5": "b4dc237fd388a5335e6316efcd5da0e5", "tipo": "plantas arquitectónicas AC1032 (extraído con LibreDWG 0.13 compilado)"},
++  "USUARIO_20261029": {"tipo": "declaración del usuario", "texto": "tabiques del linac de 5 g/cm3 (escalar a 5.5 de ser necesario); para el ciclotrón se consideraron 2.5 y 3.5 g/cm3"}
++ },
++ "materiales": {
++  "tabique_NIPOL_3.5": {
++   "fuente": "IMCYC_OT521_D35",
++   "mediciones": {"masa_especifica_seca": [3.32, 3.32, 3.31], "masa_especifica_inmersion": [3.36, 3.36, 3.35], "masa_especifica_ebullicion": [3.44, 3.45, 3.43], "masa_especifica_aparente": [3.78, 3.82, 3.78], "absorcion_inmersion_pct": [1.25, 1.14, 1.13], "absorcion_ebullicion_pct": [3.72, 3.93, 3.76], "vacios_pct": [12.3, 13.1, 12.4]},
++   "densidad_blindaje_g_cm3": 3.32, "densidad_en_servicio_rango_g_cm3": [3.32, 3.36],
++   "nominal_vs_real": "el nominal 3.5 ≈ entre seca (3.32) y aparente (3.79); para blindaje vale la seca/en servicio",
++   "agua_libre_max_pct_masa": 3.8, "hidrogeno_libre_max_pct_masa": 0.43,
++   "composicion": "pendiente_fuente (no está en el documento)", "TVL_proveedor": "pendiente_fuente (no está en el documento)"
++  },
++  "tabique_NIPOL_4": {
++   "fuente": "IMCYC_OT521_D4",
++   "mediciones": {"masa_especifica_seca": [3.66, 3.69, 3.70], "masa_especifica_inmersion": [3.83, 3.85, 3.81], "masa_especifica_ebullicion": [3.87, 3.90, 3.90], "masa_especifica_aparente": [4.66, 4.70, 4.61], "absorcion_inmersion_pct": [4.75, 4.52, 2.81], "absorcion_ebullicion_pct": [5.86, 5.84, 5.32], "vacios_pct": [21.5, 21.5, 19.7]},
++   "densidad_blindaje_g_cm3": 3.68, "densidad_en_servicio_rango_g_cm3": [3.68, 3.83],
++   "nominal_vs_real": "el nominal 4 ≈ densidad aparente (4.66); la volumétrica seca es 3.68 (−8 % vs nominal)",
++   "agua_libre_max_pct_masa": 5.7, "hidrogeno_libre_max_pct_masa": 0.64,
++   "composicion": "pendiente_fuente", "TVL_proveedor": "pendiente_fuente"
++  },
++  "tabique_NIPOL_5": {
++   "fuente": "IMCYC_OT521_D5",
++   "mediciones": {"masa_especifica_seca": [3.96, 4.02, 3.98], "masa_especifica_inmersion": [4.12, 4.19, 4.15], "masa_especifica_ebullicion": [4.18, 4.24, 4.21], "masa_especifica_aparente": [5.05, 5.16, 5.12], "absorcion_inmersion_pct": [4.16, 4.16, 4.22], "absorcion_ebullicion_pct": [5.47, 5.49, 5.58], "vacios_pct": [21.6, 22.1, 22.2]},
++   "densidad_blindaje_g_cm3": 3.99, "densidad_en_servicio_rango_g_cm3": [3.99, 4.15],
++   "nominal_vs_real": "el nominal 5 = densidad aparente (5.11); la volumétrica seca es 3.99 (−20 % vs 5.0; −27 % vs 5.5)",
++   "agua_libre_max_pct_masa": 5.5, "hidrogeno_libre_max_pct_masa": 0.61,
++   "composicion": "pendiente_fuente", "TVL_proveedor": "pendiente_fuente"
++  },
++  "concreto_ordinario_2.35": {"densidad_blindaje_g_cm3": 2.35, "composicion_wt_pct": {"H": 1.0, "C": 0.1, "O": 52.91, "Na": 1.6, "Mg": 0.2, "Al": 3.39, "Si": 33.70, "K": 1.3, "Ca": 4.4, "Fe": 1.4}, "fuente": "kiube v0.35 mapa_config (concreto BIND; tipo NIST/Portland)"},
++  "concreto_ordinario_2.5": {"densidad_blindaje_g_cm3": 2.50, "composicion_wt_pct": "igual a 2.35 (densidad mayor por agregado); supuesto declarado", "fuente": "USUARIO_20261029"},
++  "hipotesis_magnetita_3.32": {"densidad_blindaje_g_cm3": 3.32, "composicion_wt_pct": {"H": 0.33, "O": 33.74, "Mg": 0.94, "Al": 2.49, "Si": 2.16, "S": 0.07, "Ca": 6.07, "Ti": 5.51, "V": 0.30, "Cr": 0.19, "Mn": 0.17, "Fe": 47.97}, "fuente": "[EST] compendio PNNL-15870 'concrete, magnetite' aproximado, a la densidad medida del tabique 3.5 — hipótesis hasta tener la ficha"},
++  "hipotesis_barita_3.32": {"densidad_blindaje_g_cm3": 3.32, "composicion_wt_pct": {"H": 0.36, "O": 31.16, "Mg": 0.12, "Al": 0.42, "Si": 1.05, "S": 10.79, "Ca": 5.02, "Fe": 4.75, "Ba": 46.34}, "fuente": "[EST] compendio PNNL-15870 'concrete, barite' aproximado, a la densidad medida — hipótesis"}
++ },
++ "estimaciones_GAMMA": {
++  "linac": {"fuente": "GAMMA_ONCO_20261028", "norma": "NCRP 151", "carga": "30 pac/jornada 8 h, 2 turnos, L–V, 300 cGy/pac", "arriba": "sala de espera", "lado": "baños públicos",
++   "orden_caras": ["superior", "izq_primaria", "der_primaria", "laberinto_int", "inf_izq", "inf_der", "inferior", "losa_primaria"],
++   "casos": {
++    "1_2.35_calc_h3.5": [100, 230, 180, 50, 120, 100, 50, 240],
++    "2_5.0_calc_h3.5": [50, 75, 75, 30, 50, 50, 30, 105],
++    "2_5.0_tabiques_h3.5": [52, 78, 78, 39, 52, 52, 39, 108],
++    "3_5.5_calc_h3.5": [37.86, 63.1, 62.48, 20, 37.86, 37.48, 20, 95.72],
++    "3_5.5_tabiques_h3.5": [39, 65, 65, 26, 39, 39, 26, 108],
++    "4_5.5_calc_h3.2": [37.86, 63.1, 62.48, 20, 37.86, 37.48, 20, 96.58],
++    "4_5.5_tabiques_h3.2": [39, 65, 65, 26, 39, 39, 26, 108]},
++   "altura_total_bunker_cm": {"3_5.5_tabiques": 458, "4_5.5_tabiques": 428}, "tabique_cm": 13},
++  "braquiterapia_HDR": {"fuente": "GAMMA_ONCO_20261028", "norma": "IAEA SRS-47", "carga": "40–50 pac/sem, 25 min, 7 Gy", "arriba": "baños públicos", "muros_h_m": 5,
++   "calc_cm_2.35_3.5": {"norte": [71, 47], "este_sup": [12, 13], "este_inf": [12, 13], "oeste": [58, 39], "tabique_interior": [40, 26], "sur": [49, 33], "techo": [50, 34], "piso": [70, 47]},
++   "tabiques_3.5_cm": {"norte": 52, "oeste": 39, "tabique_interior": 26, "este": 13, "sur": 39, "techo": 39, "piso": 52}, "puerta_Pb_mm": 3},
++  "gamma_knife": {"fuente": "GAMMA_ONCO_20261028", "criterio": "ICRP", "carga": "20 pac/sem, 6600 Ci +10 %", "arriba": "braquiterapia", "muros_h_m": 5.4,
++   "calc_cm_2.35_3.5": {"norte": [35, 23], "noreste": [35, 23], "oeste": [28, 19], "techo": [70, 47], "este_control": [14, 10], "sur": [10, 7]}, "puerta_Pb_mm": 3},
++  "pet_ct": {"fuente": "GAMMA_ONCO_20261028", "norma": "AAPM TG-108", "carga": "60 pac/sem, 20 mCi", "arriba": "medicina nuclear", "blindar_hasta_m": 2.5,
++   "calc_cm_2.35_3.5_5.0": {"norte_puerta": [45, 30, 22], "este_control": [3, 2, null], "oeste": [15, 10, 7], "sur": [7, 5, 4], "techo": [25, 17, 12], "piso": [9, 7, 5]}, "puertas_Pb_mm": 3, "ventana_Pb_eq_mm": 2},
++  "inyeccion_pet_1_2": {"calc_cm_2.35_3.5_5.0": {"norte": [30, 21, 14], "oeste": [25, 17, 12], "intermedio": [45, 30, 22], "este": [25, 17, 12], "sur": [45, 31, 22], "techo": [25, 17, 12], "piso": [12, 8, 6]}, "puertas_Pb_mm": 5},
++  "inyeccion_pet_3_4": {"calc_cm_2.35_3.5_5.0": {"norte": [20, 14, 10], "oeste": [20, 14, 10], "intermedio": [40, 26, 18], "este": [45, 31, 22], "interior": [20, 14, 10], "sur": [30, 20, 14], "techo": [25, 17, 12], "piso": [12, 8, 6]}, "puertas_Pb_mm": 6},
++  "cuarto_caliente_pet": {"calc_cm_2.35_3.5": {"norte": [12, 8], "este": [52, 35], "techo": [24, 16], "piso": [27, 18]}, "castillo_Pb_cm": 5, "oeste_sur": "no requiere"},
++  "spect_ct": {"norma": "IAEA-TECDOC-1608", "carga": "40 Tc99m + 2 I131 + 1 Lu177 /sem", "arriba": "área no controlada", "muros_Pb_mm": [2, 6, 2], "techo_cm_2.35_3.5": [12, 8], "piso_cm_2.35_3.5": [10, 6], "puerta_ventana_Pb_mm": 2},
++  "inyeccion_mn_esfuerzo": {"Pb_mm": [5, 5, 2, 2, 3, 2, 7, 7], "concreto_cm_2.35_3.5": {"pasillo": [27, 18], "recuperacion": [20, 14], "banda_esfuerzo": [33, 22], "base_7mmPb": [12, 8]}, "techo_cm": [20, 13], "piso_cm": [16, 11]},
++  "cuarto_caliente_mn": {"Pb_mm": 6, "techo_cm_2.35": 15, "piso_cm_2.35": 10, "castillo_Pb_cm": 5, "pendiente": "contenedores y muro a consultorios; reubicar descontaminación y contenedores"},
++  "yodo": {"carga": "2 pac/sem × 3 días, 200 mCi I-131", "arriba": "área no controlada", "calc_cm_2.35_3.5": {"norte": [27, 18], "oeste": [33, 22], "este_puerta": [21, 14], "sur": [20, 14], "techo": [25, 17], "piso": [13, 9]}, "puerta_Pb_mm": 6},
++  "ciclotron": {"fuente": "GAMMA_CICLO_20260716", "norma": "NCRP 144", "densidad_g_cm3": 3.5, "carga": "18 MeV, 300 µA, 8 h/día", "plano": "IBA verificado",
++   "muros_m": {"oeste": 2.40, "este": 2.20, "sur_tapon": 2.50}, "laberinto_muros_m": [0.40, 0.60, 0.59, 0.83], "techo_m": 2.30, "altura_sala_m": 2.50, "foso_m": 0.40, "tapon_izaje_mm": [2400, 2400],
++   "radiofarmacia_muros_cm_3.5": 30, "monte_carlo": "pendiente (GAMMA)"}
++ },
++ "DWG_medido": {
++  "fuente": "DWG_BIND_20261028",
++  "niveles_npt_m": {"PB": 10.35, "N1": 15.75, "N2": 21.15},
++  "linac": {"interior_m": [7.51, 7.21], "h_int_m": 3.30, "primario_cm": 65, "franja_primaria_m": 4.10, "isocentro_xy": [41.025, 49.125], "secundario_cm": [39, 40], "laberinto_cm": [30, 26], "losa_cm": 100, "arriba": "sala de espera / IDF / tablero eléctrico / C.A.A. (N1, CORTE GENERAL 03)"},
++  "gamma_knife": {"interior_m": [6.46, 5.99], "muros_cm_3.5": {"oeste": 26, "norte": 26, "sur": 13, "este": [13, 26]}, "techo_cm_2.35": 70, "h_anotada_m": 5.0},
++  "braquiterapia": {"interior_m": [6.46, 5.60], "muros_cm_3.5": {"oeste": 39, "norte": 52, "sur": 39, "este": 13, "tabique_interior": 26}, "piso_cm_2.35": 70, "techo_cm_3.5": 39},
++  "ciclotron": "muros no dibujados (estructura independiente tras junta constructiva; retícula CA–CE × C1–C6; AZOTEA encima)"
++ }
++}
+diff --git a/pipelines/blindaje_zumaya_f86.py b/pipelines/blindaje_zumaya_f86.py
+new file mode 100644
+index 0000000..ea8ac11
+--- /dev/null
++++ b/pipelines/blindaje_zumaya_f86.py
+@@ -0,0 +1,184 @@
++#!/usr/bin/env python3
++"""F86 — BD de blindaje Zumaya: ingesta de los informes IMCYC de tabiques NIPOL (OT-521), estimaciones GAMMA y DWG
++BIND 28-10-26; reevaluación del linac con la densidad REAL del tabique "5" y elección del material del búnker del
++ciclotrón (concreto 2.35/2.5 vs tabique "3.5") con transmisión Geant4 (losa_tvl, espectro 18O(p,n) BON21 de kiube).
++
++Hallazgo de entrada: los informes IMCYC no traen composición química ni TVL; miden masa específica (NMX-C-263).
++El valor nominal del tabique coincide con la masa específica APARENTE (fase sólida, sin poros); la que atenúa es la
++volumétrica (seca/en servicio): "5" → 3.99, "4" → 3.68, "3.5" → 3.32 g/cm³.
++Reglas: simulacion_teorica, pq no_declarada_nunca, append-only, 18.10, pendiente_fuente nunca inventado.
++Rutas: RPOS_EVIDENCIA, KIUBE_RAIZ (out/losa_tvl con res_<MAT>_s*.txt).
++"""
++import datetime, glob, hashlib, json, math, os, pathlib
++import numpy as np
++
++RAIZ = pathlib.Path(__file__).resolve().parents[1]
++BD = RAIZ / "data/blindaje_zumaya/bd_blindaje_zumaya.json"
++KIUBE = pathlib.Path(os.environ.get("KIUBE_RAIZ", "/mnt/agents/work/kiube_v035/kiube"))
++LOSA = KIUBE / "out/losa_tvl"
++EV = pathlib.Path(os.environ.get("RPOS_EVIDENCIA", "/mnt/agents/work/evidencia_v072"))
++OUT = EV / "fase86"
++TAB = 13.0                                         # módulo de tabique [cm]
++
++
++def md5(p):
++    h = hashlib.md5()
++    with open(p, "rb") as f:
++        for c in iter(lambda: f.read(1 << 20), b""):
++            h.update(c)
++    return h.hexdigest()
++
++
++def modulo(t):
++    return TAB * math.ceil(t / TAB - 1e-9)
++
++
++# ------------------------------------------------------------------ materiales
++def densidades(bd):
++    out = {}
++    for k, m in bd["materiales"].items():
++        if "mediciones" not in m:
++            continue
++        M = m["mediciones"]
++        seca, ap = np.mean(M["masa_especifica_seca"]), np.mean(M["masa_especifica_aparente"])
++        inm = np.mean(M["masa_especifica_inmersion"])
++        nominal = float(k.split("_")[-1])
++        out[k] = dict(nominal=nominal, seca=round(seca, 3), inmersion=round(inm, 3), aparente=round(ap, 3),
++                      vacios_pct=round(float(np.mean(M["vacios_pct"])), 1),
++                      seca_sobre_nominal=round(seca / nominal, 3), aparente_sobre_nominal=round(ap / nominal, 3),
++                      seca_sobre_aparente=round(seca / ap, 3))
++    return out
++
++
++# ------------------------------------------------------------------ linac (NCRP 151)
++TVL_PRI = {"6MV": (37, 33), "10MV": (41, 37), "15MV": (44, 41)}       # NCRP 151 B.2, hormigón 2.35
++TVL_FUGA = {"6MV": (34, 29), "10MV": (35, 31), "15MV": (36, 33)}      # NCRP 151 B.7 (fuga)
++
++
++def espesor(B, tv):
++    n = -math.log10(B)
++    return tv[0] + max(0.0, n - 1) * tv[1], n
++
++
++def linac(bd, dens):
++    W, P = 30 * 2 * 5 * 3.0, 0.02e-3                                   # Gy/sem; Sv/sem (público)
++    D = bd["DWG_medido"]["linac"]
++    geo = {"primario_lateral": dict(d=5.46, U=0.25, T=1.0, tipo="pri", dwg=D["primario_cm"]),
++           "techo_sala_espera": dict(d=3.46, U=0.25, T=1.0, tipo="pri", dwg=D["losa_cm"]),
++           "secundario_norte_fuga": dict(d=3.99, U=1.0, T=1.0, tipo="fuga", dwg=39)}
++    rho = {"nominal_5.5": 5.5, "nominal_5.0": 5.0, "NIPOL_5_real": dens["tabique_NIPOL_5"]["seca"],
++           "NIPOL_5.5_real_est": round(5.5 * dens["tabique_NIPOL_5"]["seca_sobre_aparente"], 2)}
++    res = {}
++    for k, g in geo.items():
++        fila = {}
++        for e in TVL_PRI:
++            if g["tipo"] == "pri":
++                t, n = espesor(P * g["d"] ** 2 / (W * g["U"] * g["T"]), TVL_PRI[e])
++            else:
++                t, n = espesor(P * g["d"] ** 2 / (1e-3 * W * g["T"]), TVL_FUGA[e])
++            fila[e] = dict(n_TVL=round(n, 2), hormigon_cm=round(t, 1),
++                           tabique_cm={r: round(t * 2.35 / v, 1) for r, v in rho.items()},
++                           tabique_cm_credito10={r: round(0.9 * t * 2.35 / v, 1) for r, v in rho.items()})
++        # lo dibujado (supuesto 5.5) construido con tabique "5" real: equivalente en hormigón
++        eq = g["dwg"] * dens["tabique_NIPOL_5"]["seca"] / 2.35
++        eq55 = g["dwg"] * 5.5 / 2.35
++        res[k] = dict(geometria=g, requerido=fila, DWG_cm=g["dwg"], DWG_eq_hormigon_cm_si_NIPOL5=round(eq, 1),
++                      DWG_eq_hormigon_cm_si_5_5=round(eq55, 1))
++    # reescalado de los casos GAMMA a la densidad real del tabique 5
++    c = bd["estimaciones_GAMMA"]["linac"]["casos"]; s = dens["tabique_NIPOL_5"]["seca"]
++    esc = {"GAMMA_5.0_calc_x(5.0/real)": [round(v * 5.0 / s, 1) for v in c["2_5.0_calc_h3.5"]],
++           "GAMMA_5.5_calc_x(5.5/real)": [round(v * 5.5 / s, 1) for v in c["3_5.5_calc_h3.5"]]}
++    esc["modulos_13cm_desde_5.0"] = [modulo(v) for v in esc["GAMMA_5.0_calc_x(5.0/real)"]]
++    esc["orden_caras"] = bd["estimaciones_GAMMA"]["linac"]["orden_caras"]
++    alturas = {"h_int_3.30+losa": {k: round(3.30 + v / 100 + 0.10 + 1.00, 2) for k, v in
++                                    zip(("losa_5.0x", "losa_5.5x"), (esc["GAMMA_5.0_calc_x(5.0/real)"][-1], esc["GAMMA_5.5_calc_x(5.5/real)"][-1]))},
++               "entrepiso_m": 5.40}
++    return dict(W_Gy_sem=W, P_Sv_sem=P, densidades=rho, barreras=res, GAMMA_reescalado=esc, alturas=alturas)
++
++
++# ------------------------------------------------------------------ ciclotrón (Geant4 losa_tvl)
++MATS = {"ORD_235": ("concreto ordinario 2.35", 2.35), "ORD_250": ("concreto ordinario 2.50", 2.50),
++        "MAG_332": ("tabique 3.5 (3.32 real) hipótesis magnetita", 3.32), "BAR_332": ("tabique 3.5 (3.32 real) hipótesis barita", 3.32)}
++
++
++def leer_losa(m):
++    fs = sorted(glob.glob(str(LOSA / f"res_{m}_s*.txt")))
++    if not fs:
++        return None
++    A = []; N = []
++    for f in fs:
++        hdr = open(f).readline().split(); N.append(float(hdr[hdr.index("N") + 1]))
++        A.append(np.loadtxt(f))
++    N = np.array(N); w = N / N.sum()
++    z = A[0][:, 0]
++    Hn = sum(wi * a[:, 1] for wi, a in zip(w, A)); Hg = sum(wi * a[:, 3] for wi, a in zip(w, A))
++    sn = np.sqrt(sum((wi * a[:, 2]) ** 2 for wi, a in zip(w, A))); sg = np.sqrt(sum((wi * a[:, 4]) ** 2 for wi, a in zip(w, A)))
++    th = sum(wi * a[:, 5] for wi, a in zip(w, A))
++    return dict(z=z, Hn=Hn, Hg=Hg, sn=sn, sg=sg, H=Hn + Hg, sH=np.hypot(sn, sg), th=th, N=float(N.sum()), md5=[md5(f) for f in fs])
++
++
++def ciclotron(bd):
++    R = {}
++    for m, (nombre, rho) in MATS.items():
++        L = leer_losa(m)
++        if L is None:
++            R[m] = {"estado": "sin_corridas"}; continue
++        z, H, sH = L["z"], L["H"], L["sH"]
++        ok = (z >= 45) & (z <= 175) & (H > 0) & (sH < 0.5 * H)
++        p = np.polyfit(z[ok], np.log10(H[ok]), 1, w=1 / np.maximum(sH[ok] / H[ok] / math.log(10), 1e-3))
++        tvl = -1 / p[0]
++        R[m] = dict(nombre=nombre, rho=rho, historias=L["N"], TVL_cm=round(tvl, 1), TVL_g_cm2=round(tvl * rho, 1),
++                    frac_gamma_150cm=round(float(L["Hg"][z == 145][0] / L["H"][z == 145][0]), 3) if (z == 145).any() else None,
++                    term_150cm=float(L["th"][z == 145][0]) if (z == 145).any() else None,
++                    perfil=[dict(z=float(a), H=float(b), sH=float(c), Hn=float(d), Hg=float(e), phi_term=float(f))
++                            for a, b, c, d, e, f in zip(z, H, sH, L["Hn"], L["Hg"], L["th"])],
++                    md5=L["md5"], ajuste=dict(a=float(p[1]), b=float(p[0])))
++    # espesor equivalente a los muros IBA/GAMMA y al requerido (TVL kiube): ref. hormigón 2.35 de F85
++    ref = R.get("ORD_235", {})
++    if "TVL_cm" in ref:
++        def t_equiv(t_ref_cm, m):
++            # mismo log10(H) que la referencia con espesor t_ref en ORD_235
++            a0, b0 = ref["ajuste"]["a"], ref["ajuste"]["b"]; a1, b1 = R[m]["ajuste"]["a"], R[m]["ajuste"]["b"]
++            return (a0 + b0 * t_ref_cm - a1) / b1
++        G = bd["estimaciones_GAMMA"]["ciclotron"]
++        req = {"muro_publico_T1_0.5uSv_h": 183, "muro_restriccion_0.3mSv": 196, "techo_azotea_T1_40_1mSv": 146,
++               "techo_azotea_T1_40_0.3mSv": 160, "IBA_oeste": 240, "IBA_este": 220, "IBA_sur": 250, "IBA_techo": 230}
++        R["equivalencias_cm"] = {k: {m: round(t_equiv(v, m), 0) for m in MATS if "ajuste" in R.get(m, {})} for k, v in req.items()}
++        R["nota_equivalencias"] = ("espesor de cada material con la MISMA H*(10) transmitida que el hormigón 2.35 de referencia "
++                                   "(requeridos de F85/zumaya escalados a 300 µA, 2000 h/año); fuera de 45–175 cm es extrapolación")
++    return R
++
++
++def ejecutar():
++    OUT.mkdir(parents=True, exist_ok=True)
++    bd = json.load(open(BD))
++    dens = densidades(bd)
++    out = {"fase": 86, "version": "3.12.0", "tipo": "simulacion_teorica", "pq": "no_declarada_nunca",
++           "fecha": datetime.datetime.now().isoformat(timespec="seconds"), "bd": str(BD.relative_to(RAIZ)), "md5_bd": md5(BD),
++           "densidades": dens, "linac": linac(bd, dens), "ciclotron": ciclotron(bd),
++           "advertencias": [
++               "Los informes IMCYC no contienen composición química ni TVL del proveedor: ambos quedan pendiente_fuente.",
++               "Ensayo NMX-C-263 fuera del alcance de acreditación ema; muestreo no responsabilidad del IMCYC; mismo OT/IT para 3 clientes distintos (2022).",
++               "Linac: equivalencia por espesor másico (conservadora para fotones de MV; el agregado de alto Z da a lo más ~10 % de crédito, mostrado aparte).",
++               "Ciclotrón: haz delgado normal sobre losa semi-infinita (H*(10) en haz ancho por reciprocidad); composición del tabique 3.5 en dos hipótesis (magnetita/barita) hasta tener la ficha.",
++               "Mampostería: juntas de mortero y 12–22 % de vacíos no se modelan (material homogéneo a la densidad volumétrica).",
++           ]}
++    json.dump(out, open(OUT / "blindaje_zumaya_f86.json", "w"), indent=1, ensure_ascii=False, default=float)
++    with open(OUT / "registro_materiales.jsonl", "a") as f:
++        for k, d in dens.items():
++            f.write(json.dumps({"fecha": out["fecha"], "material": k, "supuesto_previo": f"densidad {d['nominal']} g/cm3 (nominal)",
++                                "valor_medido_blindaje": d["seca"], "estado": "discrepancia_cuantificada",
++                                "nota": "nominal = masa específica aparente; blindaje = volumétrica seca"}, ensure_ascii=False) + "\n")
++    return out
++
++
++if __name__ == "__main__":
++    o = ejecutar()
++    print(json.dumps(o["densidades"], indent=1))
++    for k, v in o["linac"]["barreras"].items():
++        print(k, "DWG", v["DWG_cm"], "eq_horm(NIPOL5)", v["DWG_eq_hormigon_cm_si_NIPOL5"], {e: (r["hormigon_cm"], r["tabique_cm"]["NIPOL_5_real"]) for e, r in v["requerido"].items()})
++    print(o["linac"]["GAMMA_reescalado"]); print(o["linac"]["alturas"])
++    for m, r in o["ciclotron"].items():
++        if isinstance(r, dict) and "TVL_cm" in r:
++            print(m, r["TVL_cm"], r["TVL_g_cm2"], r["frac_gamma_150cm"], r["term_150cm"], r["historias"])
++    print(json.dumps(o["ciclotron"].get("equivalencias_cm"), indent=0))
+diff --git a/pipelines/test_blindaje_zumaya_f86.py b/pipelines/test_blindaje_zumaya_f86.py
+new file mode 100644
+index 0000000..dc6758d
+--- /dev/null
++++ b/pipelines/test_blindaje_zumaya_f86.py
+@@ -0,0 +1,39 @@
++"""Pruebas F86 — BD de blindaje Zumaya (densidades IMCYC, linac NCRP 151, ciclotrón losa_tvl)."""
++import json, os, pathlib, sys
++import pytest
++
++sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
++import blindaje_zumaya_f86 as F
++
++BD = json.load(open(F.BD))
++
++
++def test_bd_no_inventa_composicion_ni_tvl():
++    for k, m in BD["materiales"].items():
++        if k.startswith("tabique_NIPOL"):
++            assert m["composicion"].startswith("pendiente_fuente")
++            assert m["TVL_proveedor"].startswith("pendiente_fuente")
++
++
++def test_densidad_real_menor_que_nominal_y_nominal_es_aparente():
++    d = F.densidades(BD)
++    assert abs(d["tabique_NIPOL_5"]["seca"] - 3.99) < 0.02
++    assert abs(d["tabique_NIPOL_5"]["aparente"] - 5.11) < 0.02
++    for k, v in d.items():
++        assert v["seca"] < v["nominal"] < v["aparente"] * 1.001
++
++
++def test_linac_reescalado_coherente():
++    d = F.densidades(BD)
++    L = F.linac(BD, d)
++    esc = L["GAMMA_reescalado"]["GAMMA_5.0_calc_x(5.0/real)"]
++    assert abs(esc[1] / 75 - 5.0 / d["tabique_NIPOL_5"]["seca"]) < 1e-3
++    # lo dibujado (65 cm) construido con tabique 5 real no alcanza el primario NCRP 151 a 6 MV con T=1
++    b = L["barreras"]["primario_lateral"]
++    assert b["DWG_eq_hormigon_cm_si_NIPOL5"] < b["requerido"]["6MV"]["hormigon_cm"]
++
++
++@pytest.mark.skipif(not any(F.LOSA.glob("res_ORD_235_s*.txt")), reason="sin corridas losa_tvl en KIUBE_RAIZ")
++def test_tvl_hormigon_coherente_con_F85():
++    C = F.ciclotron(BD)
++    assert 22 < C["ORD_235"]["TVL_cm"] < 32          # F85: 26 cm
+-- 
+2.43.0
+

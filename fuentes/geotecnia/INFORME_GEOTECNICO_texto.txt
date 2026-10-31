@@ -1,0 +1,1992 @@
+                     OD, INGENIERIA GEOTECNICA.
+         CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                          VILLAHERMOSA, TABASCO.
+       R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+               TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+INFORME FINAL DE GEOTECNIA
+
+“ESTUDIO DE MECANICA DE
+SUELOS       PARA      LA
+CONSTRUCCIÓN DEL HOSPITAL
+ZUMAYA VILLAHERMOSA”
+
+UBICADO: PROLONGACIÓN DE
+AVENIDA PASEO USUMACINTA
+No. 2118, RANCHERÍA. LÁZARO
+CÁRDENAS     2DA.   SECCIÓN,
+CENTRO, TABASCO.
+
+
+
+
+                                                   Página. 1
+                                                                  OD, INGENIERIA GEOTECNICA.
+                                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                            VILLAHERMOSA, TABASCO.
+                                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+                                          INFORME FINAL DE GEOTECNIA
+                                                                                      VILLAHERMOSA, TABASCO, ABRIL 2025
+
+                                                             Contenido
+1. GENERALIDADES .............................................................................................................. 3
+  1.1. Introducción. ............................................................................................................................... 3
+2. OBJETIVO Y ALCANCES .................................................................................................. 3
+  2.1. Objetivo. ..................................................................................................................................... 3
+  2.2. Alcances...................................................................................................................................... 4
+3. TIPO DE PROYECTO ......................................................................................................... 4
+4. CONDICIONES LOCALES ................................................................................................. 4
+  4.1. Topografía .................................................................................................................................. 4
+  4.2. Geografía Física .......................................................................................................................... 5
+  4.3. Sismo y Viento ......................................................................................................................... 10
+  4.4. Reconocimiento del Sitio.......................................................................................................... 12
+5. TRABAJOS DE CAMPO ................................................................................................... 13
+  5.1. Exploración y Muestreo de Suelos ........................................................................................... 13
+  5.2. Posición del Nivel de Agua Freática ........................................................................................ 14
+6. PRUEBAS DE LABORATORIO ....................................................................................... 14
+  6.1. Muestras Alteradas ................................................................................................................... 14
+  6.2. Muestras Inalteradas ................................................................................................................. 14
+  6.3. Clasificación de Suelos ............................................................................................................. 15
+7. ESTRATIGRAFIA Y PROPIEDADES ............................................................................... 16
+  7.1. Propiedades del suelo en estudio .............................................................................................. 16
+8. ANALISIS Y DISEÑO GEOTECNICO............................................................................... 18
+  8.1. Descripción del proyecto .......................................................................................................... 18
+  8.2. Capacidad de Carga de cimentaciones superficial. .................................................................. 19
+  8.3. Análisis de asentamientos en cimentaciones superficiales ....................................................... 20
+  8.4. Módulo de reacción vertical ..................................................................................................... 23
+  8.5. Capacidad de Carga de cimentaciones profunda pilas. ............................................................ 24
+  8.6. Análisis de asentamientos en cimentaciones profundas pilas. ................................................. 27
+  8.7. Determinación del coeficiente de reacción horizontal del suelo. ............................................. 29
+9. CONCLUSIONES Y RECOMENDACIONES .................................................................... 36
+  9.1. Conclusiones ............................................................................................................................. 36
+  9.2. Recomendaciones ..................................................................................................................... 42
+  9.3. Observación final. ..................................................................................................................... 46
+10. REFERENCIAS ................................................................................................................. 47
+  10.1.  REFERENCIAS .................................................................................................................... 47
+  10.2.  Bibliografía ........................................................................................................................... 47
+
+
+
+
+                                                                                                                       Página. 2
+                                        OD, INGENIERIA GEOTECNICA.
+                          CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                           VILLAHERMOSA, TABASCO.
+                        R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+1.     GENERALIDADES
+
+
+1.1.   Introducción.
+
+Actualmente la empresa HOSPITALES ZUMAYA S.A DE C.V., está llevando a cabo el
+“ESTUDIO DE MECANICA DE SUELOS PARA LA CONSTRUCCIÓN DEL HOSPITAL
+ZUMAYA VILLAHERMOSA”, el sitio destinado para tal efecto se encuentra en la
+prolongación de avenida paseo Usumacinta No. 2118, ranchería. Lázaro Cárdenas 2da.
+sección, Centro, Tabasco.
+
+
+ante esta circunstancia se solicitó la colaboración de empresa ”OD INGENIERIA
+GEOTECNICA” para elaborar el estudio de mecánica de suelos que servirá para conocer
+las propiedades físicas y mecánicas del subsuelo del sitio donde se desarrollara el proyecto
+antes mencionado, considerando dos sondeos mixtos (SM-1 y SM-2) a 30.00 metros de
+profundidad.
+
+2.     OBJETIVO Y ALCANCES
+
+2.1.   Objetivo.
+
+El presente estudio tiene la finalidad de explorar el subsuelo por métodos físicos (sondeo
+mixto) y recabar la información necesaria de las características físicas y mecánicas del
+subsuelo, que servirán para analizar geotécnicamente el tipo de cimentación más adecuado
+para el “ESTUDIO DE MECANICA DE SUELOS PARA LA CONSTRUCCIÓN DEL
+HOSPITAL ZUMAYA VILLAHERMOSA”, el sitio destinado para tal efecto se encuentra en la
+prolongación de avenida paseo Usumacinta No. 2118, ranchería. Lázaro Cárdenas 2da.
+sección, Centro, Tabasco.
+
+
+
+
+                                                                       Página. 3
+                                         OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+2.2.    Alcances.
+
+     • Investigar los problemas geotécnicos del lugar y sus alrededores (con base a un
+        recorrido realizado por un ingeniero especialista en mecánica de suelos).
+     • Investigar las características del subsuelo de la zona en estudio que se encuentra en
+        la prolongación de avenida paseo Usumacinta No. 2118, ranchería. Lázaro Cárdenas
+        2da. sección, Centro, Tabasco.
+     • Calcular la capacidad de carga neta admisible del suelo superficial y profundas
+     • Calcular los asentamientos generado por la estructura propuesta
+     • Dar recomendaciones del proceso constructivo.
+
+
+3.       TIPO DE PROYECTO
+
+Con la información obtenida del personal autorizado, se está realizando el “ESTUDIO DE
+MECANICA DE SUELOS PARA LA CONSTRUCCIÓN DEL HOSPITAL ZUMAYA
+VILLAHERMOSA”, el sitio destinado para tal efecto se encuentra en la prolongación de
+avenida paseo Usumacinta No. 2118, ranchería. Lázaro Cárdenas 2da. sección, Centro,
+Tabasco.
+
+
+
+4.      CONDICIONES LOCALES
+
+4.1.    Topografía
+
+
+La topografía del predio estudiado es en su totalidad plana con inclinación (desniveles) no
+drásticos hasta un 2% de pendiente.
+
+
+
+
+                                                                          Página. 4
+                                         OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+4.2.   Geografía Física
+
+La entidad está constituida desde los
+llanos costeros hasta las serranías de
+Chiapas; lo atraviesan numerosos ríos,
+algunos   de    gran   caudal    como   el
+Usumacinta, Grijalva, Carrizal y otros
+más pequeños como el Puyacatengo,
+también posee numerosos cuerpos de
+agua estancada. Al oeste el Istmo de Tehuantepec, al norte el litoral del golfo de México y al
+Sur el Litoral del Pacifico. La región incluye las provincias fisiográficas de las Sierras de
+Chiapas, la Cordillera Centroamericana, la península de Yucatán y el extremo Oriental de la
+llanura costera del golfo sur.
+
+
+Fisiografía
+
+
+Provincias y sub-provincias fisiográficas de Tabasco. La mayor parte del territorio tabasqueño
+se extiende sobre la provincia fisiográfica mexicana llamada Llanura Costera del Golfo,
+específicamente, sobre la planicie formada por los sedimentos aluviales depositados por la
+gran cantidad de ríos que atraviesan el estado para desembocar en el Golfo de México. El
+95.57% de la superficie estatal se incluye dentro de esta región, formando la sub-provincia de
+las Llanuras y Pantanos Tabasqueños.
+
+
+Una pequeña porción, en la parte meridional del estado, se encuentra en la provincia de las
+Sierras de Chiapas y Guatemala, a la que corresponde un relieve más accidentado, de
+montañas bajas, no mayores a los 1000 msnm. El 2.91% de la superficie estatal corresponde
+a la sub provincia de las Sierras del Norte de Chiapas, que se extiende en la parte meridional
+de los municipios de Huimanguillo, Macuspana, Tacotalpa y Teapa y el 1.52% corresponde a
+la sub provincia de las Sierras Bajas del Petén, en el municipio de Tenosique.
+
+
+
+                                                                         Página. 5
+                                            OD, INGENIERIA GEOTECNICA.
+                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                            VILLAHERMOSA, TABASCO.
+                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Las mayores elevaciones en el estado
+son los cerros Sierra Madrigal en
+Tacotalpa y Sierra Tapijulapa, ambos
+con   aproximadamente        900 m     de
+altitud; otras elevaciones importantes
+son los cerros la Pava, la Ventana,
+Poaná,   Coconá,    Mono      pelado    y
+Tortuguero, cuenta con 5800 m de
+petróleo en las zonas sur.
+Tabasco se localiza en la zona del trópico, lo que significa que los rayos del sol caen con
+muy poca inclinación y las estaciones del año tienen poca diferencia. La temperatura media
+anual en el estado es de 26,0°C, con una máxima media de 42ºC.
+
+
+Se distinguen tres tipos de clima; el primero es el cálido húmedo con abundantes lluvias en
+verano (Am), que es el clima dominante en Tabasco; la temperatura media, en la mayor parte
+del territorio que presenta este clima, es de 26.9ºC, medida en un período de 30 años (1969-
+1999); el año más frío en dicho período fue 1996 con una media de 26.3ºC y el más caluroso,
+1986 con 28.2ºC. El segundo es el cálido húmedo con lluvias todo el año (Af), que es el clima
+que presentan las selvas altas de Chiapas, Veracruz y la sierra tabasqueña; su temperatura
+media es de 25.9ºC, siendo el año más frío 1997 con 25.6ºC, y el más cálido, 1982 con 26.5º
+C. El tercer tipo de clima es el cálido sub-húmedo con lluvias en verano (Cs), que se
+concentra en la parte oriente de la entidad, en la zona limítrofe con el estado de Campeche;
+la temperatura promedio es de 27.9ºC y las temperaturas en los años más frío y más cálido,
+23.0ºC y 29.0ºC, en 1989 y 1998 respectivamente.
+
+
+En Tabasco llueve durante la mayor parte del año; la estación de lluvias abarca desde el mes
+de junio al de marzo, extendiéndose la estación seca tan sólo durante abril y mayo. La
+precipitación media anual alcanza los 2 750,0 mm.
+
+
+
+
+                                                                        Página. 6
+                                         OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Los mayores vendavales ocurren en los meses de noviembre y diciembre provenientes del
+norte y del este, principalmente.
+
+
+Geología
+
+
+El desarrollo geológico del territorio tabasqueño está marcado por eventos estratigráficos y
+estructurales de las eras Mesozoica y Cenozoica, los factores determinantes en el modelado
+del relieve de la entidad son el tectonismo por plegamiento y dislocación de las rocas,
+manifestado en las Sierras de Chiapas y Guatemala; y el relleno de cuencas marinas y
+lacustres, por sedimentación de material terrestre, transportado por las corrientes
+superficiales, que se manifiesta en la Llanura Costera.
+
+
+El 76.21% de la superficie estatal está compuesta por depósitos palustres, aluviales, litorales
+y lacustres del período Cuaternario; correspondiendo con el desarrollo de los ambientes
+actuales, desde el Plioceno hasta hoy. Un 20.38% está compuesto por roca sedimentaria del
+período Terciario, en su mayor parte, en la subregión de los ríos y en el centro del estado.
+Una ínfima parte, en la subregión de la Sierra, la componen rocas ígneas extrusivas del
+Terciario. Finalmente, la parte meridional del estado presenta rocas sedimentarias del
+período Cretácico; que se encuentran íntegramente en la zona de las Sierras de Chiapas y
+Guatemala.
+
+
+Municipio del Centro, Tabasco.
+
+
+El proyecto se sitúa en la prolongación de avenida paseo Usumacinta No. 2118, ranchería.
+Lázaro Cárdenas 2da. sección, Centro, Tabasco, ver figura 1. Ubicada a 863 km al sureste
+de la Ciudad de México, la ciudad colinda al norte con los municipios de Nacajuca y Centla,
+al sur con los municipios de Jalapa y Teapa y con el
+
+
+Estado de Chiapas, al este con los municipios de Centla, Jalapa y Macuspana y al oeste con
+el Estado de Chiapas y con los municipios de Cunduacán y Nacajuca.
+                                                                          Página. 7
+                                          OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+El área urbana de la ciudad de Villahermosa ocupa una superficie de 61.177 km², mientras
+que la extensión territorial del municipio del Centro es de 1,612 km², los cuales corresponden
+al 6.9% respecto del total del estado, ocupando el 7º lugar en la escala de extensión
+municipal.
+
+
+Su división territorial está conformada por una ciudad, 7 villas, 1 poblado, 132 rancherías,
+117 colonias y fraccionamientos. En el municipio se ubican 13 centros de desarrollo regional
+(CDR) en los que se lleva a cabo la mayoría de las actividades económicas y sociales, estos
+son: Villa Macultepec, Villa Ocuiltzapotlán, Villa Parrilla 1ª. Sección, Villa Subteniente García,
+(Playas del Rosario), Villa Pueblo Nuevo de las Raíces, Poblado Dos Montes, Villa Luis Gil
+Pérez, Villa José G. Asmitia (Tamulté de las Sabanas), Ra. Acachapan y Colmena 3ª.
+Sección, Ra. Buena Vista 1ª. Sección, Ra. Boca de Aztlán, Ra. Plátano y Cacao 1ª. Sección,
+Ra. La Vuelta (Ejido La Jagua).
+
+
+Clima
+
+Se aprecian dos tipos de clima: el cálido húmedo con abundantes lluvias en verano con
+cambios térmicos en los meses de diciembre y enero; su temperatura media anual es de
+26.2°C, siendo la máxima media mensual en mayo con 30.6°C; a la vez, la máxima y mínima
+absoluta alcanzan los 45°C y 14°C, respectivamente; el clima cálido húmedo con lluvias todo
+el año (Af) se da en la parte sur y suroeste, colindando con los estados de Veracruz y
+Chiapas, éstas lluvias decrecen ligeramente en invierno, período en la cual se registra el
+14.4% del total anual. La temperatura media oscila entre los 25.4 °C y 26.9°C.
+
+El régimen de precipitación pluvial se caracteriza por un total de caída de agua de 2,290.3
+mm anuales en el mes de septiembre y nula en el mes de abril.
+
+Las mayores velocidades medias de los vientos, se concentran en los meses de noviembre y
+diciembre con 30 km/h., localizándose en el mes de mayo los mínimos, siendo del orden de
+los 18 km/h.
+
+
+                                                                            Página. 8
+                        OD, INGENIERIA GEOTECNICA.
+           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                            VILLAHERMOSA, TABASCO.
+         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+Figura 1.- Croquis de localización de la zona en Estudio
+
+
+
+
+      Figura 1A.- Ubicación de sondeos SM-1 y SM-2
+
+
+
+
+                                                      Página. 9
+                                        OD, INGENIERIA GEOTECNICA.
+                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                            VILLAHERMOSA, TABASCO.
+                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+4.3.    Sismo y Viento
+
+El sitio en estudio se ubica en la zona penisismica de la República Mexicana (zona B),
+propuesta por Comisión Federal de Electricidad (CFE) en donde se generan sismos de
+magnitud moderada inferiores a 5.5º en la escala de Richter, Por otra parte, de acuerdo a la
+zonificación por viento de la República Mexicana, todo el estado queda comprendido dentro
+de la zona 6, por lo que se pueden presentar vientos con velocidades altas de hasta 32 km/hr
+(referencia 1). Deben considerarse estos aspectos en el análisis de las estructuras ver figura
+2, 3 y 4.
+
+
+
+
+                                                          ESTADO DE TABASCO
+
+
+
+
+              Figura 2. Regionalización Sísmica de la república mexicana (CFE)
+
+
+
+
+                                                                              Página. 10
+                                   OD, INGENIERIA GEOTECNICA.
+                       CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                        VILLAHERMOSA, TABASCO.
+                     R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                             TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+Figura No 3: Los valores de las ordenadas espectrales deberán multiplicarse por 1.5
+                           para estructuras del grupo A.
+
+
+
+
+ Figura No 4: Los valores de las ordenadas espectrales para estructura edificios o
+                                     similares.
+
+                                                                  Página. 11
+                                           OD, INGENIERIA GEOTECNICA.
+                             CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                              VILLAHERMOSA, TABASCO.
+                           R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                   TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+4.4.    Reconocimiento del Sitio
+
+     Se considera la zona B indicada en el mapa de regionalización a su rigidez:
+
+
+     En cada zona se considera los siguientes tipos de terrenos, atendiendo a su rigidez.
+
+
+     a) Tipo I. Terreno formadas por suelos generalmente firmes las cuales son arenas
+        compactas areniscas medianamente cementadas y cementadas y suelo de formación
+        rocosa.
+     b) Tipo II. Suelos medianamente firmes, las cuales son: limos medianamente firmes,
+        arenas semi compactadas y arcillas mediamente firmes.
+
+
+     c) Tipo III. Suelos blandos los cuales son: arena muy suelta y sueltas, arcilla muy blanda
+        y blanda, limos muy blandos, blandos y semi compactados.
+
+Nuestro estudio se encuentra localizado en terreno de tipo II ya que en la exploración
+se     encontraron   materiales    como:    limos   medianamente      firmes,      arenas   semi
+compactadas y arcillas mediamente firmes.
+
+
+Origen del suelo.
+
+
+La mayoría de los suelos que cubre nuestra corteza terrestre está formada por el
+interperismo de las diferentes rocas que la componen, los cuales pueden ser de dos géneros.
+
+
+1.- el intemperismo mecánico
+2.- intemperismo químico.
+
+
+En general los suelos analizados en nuestro proyecto son de la combinación de los dos tipos
+intemperismo tanto el mecánico, el cual es el proceso por el cual las rocas se fracturan en
+
+
+                                                                          Página. 12
+                                        OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+piezas de menor tamaño. Como el Químico. - la cual es el proceso de la descomposición
+química de la roca original.
+
+5.     TRABAJOS DE CAMPO
+
+
+5.1.   Exploración y Muestreo de Suelos
+
+
+Una vez recorrido el lugar de la zona en estudio y haber realizado el reconocimiento
+preliminar se observó que la topografía del lugar es relativamente plana hasta un 2% de
+pendiente, y que en toda su periferia no presenta cambios bruscos o pendientes
+prolongadas, de igual forma se apreció que el suelo de esta zona en estudio es básicamente
+el mismo. Para conocer la naturaleza de los suelos de este lugar, se programaron y
+efectuaron dos sondeos Mixtos (SM-1 y SM-2) a 30.00 metros de profundidad.
+
+
+La exploración de los sondeos se realizó de tipo mixto (alternando con la prueba de
+penetración estándar) obteniéndose muestras alteradas, clasificándola conforme al sistema
+de clasificación S. U. C. S., también se obtuvieron de esta exploración muestras inalteradas
+con muestreador tipo Shelby.
+
+
+Las muestras alteradas e inalterada se recuperaron mediante penetración con tubo
+muestreador de media caña hincado con martinete de 64 kg de peso y una altura de caída
+libre de 76 cm, registrándose el número de golpes para penetrar los 30 cm, intermedios por
+cada 60 cm, de avance de penetración.
+
+
+El sondeo fue realizado con equipo de perforación rotatorio JOY, bomba de lodos Moyno
+3L6, herramienta menor y personal especializado.
+
+
+Las muestras alteradas e inalteradas se protegieron adecuadamente contra la perdida de
+humedad natural y se enviaron al Laboratorio Central previa identificación con etiquetas, para
+sus ensayes correspondientes.
+
+                                                                         Página. 13
+                                             OD, INGENIERIA GEOTECNICA.
+                             CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                              VILLAHERMOSA, TABASCO.
+                           R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                   TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+5.2.     Posición del Nivel de Agua Freática
+
+El nivel de agua freática es medido con referencia al nivel de brocal de los sondeos. Este
+nivel es variable de acuerdo a las estaciones del año ver tabla No 1.
+
+
+                         Tabla No 1 nivel de aguas freáticas (NAF)
+                                SONDEO                  PROFUNDIDAD METROS
+                                    SM -1                           4.45
+                                    SM -2                           4.25
+
+
+
+
+6.       PRUEBAS DE LABORATORIO
+
+
+6.1.     Muestras Alteradas
+
+A las muestras de suelo alteradas se les determinaron las siguientes propiedades índices:
+
+
+     •   Contenido natural de agua (%W)
+     •   Límites de Atterberg (%L.L., %L.P., %C.L.)
+     •   Granulometrías (%G, %A, %F).
+     •   Densidad de sólidos (Ss)
+     •   Humedad Natural
+
+
+6.2.     Muestras Inalteradas
+
+A las muestras inalteradas de suelos de les determinaron todas las pruebas realizadas a las
+muestras alteradas además de las siguientes:
+
+     •   Peso volumétrico natural
+     •   Compresión Triaxial Rápida (u.u.)
+     •   Consolidación Unidimensional.
+
+                                                                           Página. 14
+                                          OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+6.3.   Clasificación de Suelos
+
+Los materiales fueron clasificados de acuerdo a los lineamientos del Sistema Unificado de
+Clasificación de Suelos (S.U.C.S.).
+
+
+Para la clasificación S.U.C.S de los materiales que constituye la estratigrafía se recurrió a los
+porcentajes de finos, arenas y gravas obtenidos en el análisis granulométrico y en
+combinación con los límites de consistencia.
+
+
+
+
+Figura No 5. Carta de plasticidad y sistema de clasificación SUCS
+
+
+
+
+                                                                            Página. 15
+                                                                      OD, INGENIERIA GEOTECNICA.
+                                              CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                               VILLAHERMOSA, TABASCO.
+                                            R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                                    TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+     Tabla No 2. Normas utilizadas para la realización de los ensayes de laboratorio.
+                                                                                               Norma aplicada
+                           Ensaye
+                                                                                      NMX                                ASTM
+                                                                                                                        D 2487-06
+Identificación de suelos visual y al tacto                       NMX-C-416-ONNCCE-2003
+                                                                                                                        D 2488-06
+Contenido de agua en materiales térreos                          NMX-C-416-ONNCCE-2003                                  D 2216-05
+Límite líquido, plástico e índice de
+                                                                 NMX-C-416-ONNCCE-2003                                  D 4318-05
+plasticidad
+Análisis granulométrico por mallas                               NMX-C-416-ONNCCE-2003                                D 422-63(2007)
+Porcentaje de finos                                                                                                   D1140-00(2006)
+Determinación de la masa específica                              NMX-C-416-ONNCCE-2003                                   D 854-06
+                                                                                                                        D 4767-04
+Ensaye Triaxial de deformación controlada
+                                                                                                                      D 2850-03a(07)
+Prueba de consolidación unidimensional                                                                                  D 2435-04
+
+
+
+     7.          ESTRATIGRAFIA Y PROPIEDADES
+
+     7.1.        Propiedades del suelo en estudio
+
+     Tablas No 3: Propiedades del sondeo mixto SM-1
+                 Clasificac                                                                                                            C       ɸ
+ Profundidad                         Consistencia/     m,     w       L.L.    L.P.    I.P.    C.L.     G      A       F
+                    ión      SPT                                                                                             Ss     ton/m³   (°)
+     (m)                             Compacidad      ton/m3    %        %       %       %       %       %      %       %
+                 S.U.C.S.
+  0.00 – 1.80      SM        25      MEDIANA          1.81    14.43    N. P    N. P    N. P    N. P    0.00   80.00   20.00   2.69    ----    ----
+  1.80 – 3.00      SM        9        SUELTA          1.81    15.43    23.00   14.00   9.00     6.35   0.00   58.00   42.00   2.65    ----    ----
+  3.00 – 3.60      SM        16      MEDIANA          1.80    17.95    23.00   14.00   9.00     6.35   0.00   58.00   42.00   2.65    ----    ----
+  3.60 – 4.20       SC      -----   TUBO SHELBY       1.82    20.41    43.00   21.00   22.00   12.23   0.00   55.00   45.00   2.63   2.24     15
+  4.20 – 6.00       SC       10       SUELTA          1.82    21.95    43.00   21.00   22.00   12.23   0.00   55.00   45.00   2.63    ----    ----
+  6.00 – 8.40       SC       3      MUY SUELTA        1.82    28.12    36.00   19.00   17.00    9.53   0.00   61.00   39.00   2.59    ----    ----
+ 8.40 – 10.20      OH        11        FIRME          1.78    40.52    52.00   30.00   22.00   13.55   0.00   28.00   72.00   2.62    ----    ----
+ 10.20 – 12.00     OH        18     MUY FIRME         1.74    44.88    52.00   30.00   22.00   13.55   0.00   28.00   72.00   2.62    ----    ----
+ 12.00 – 15.00     OH        14        FIRME          1.70    45.82    66.00   30.00   36.00   17.65   0.00    7.00   93.00   2.51    ----    ----
+ 15.00 – 18.00     OH        27     MUY FIRME         1.79    36.01    66.00   30.00   36.00   17.65   0.00    7.00   93.00   2.51    ----    ----
+ 18.00 – 21.60     OH        45         DURA          1.84    33.46    68.00   30.00   38.00   17.16   0.00   10.00   90.00   2.55    ----    ----
+ 21.60 – 30.00     OL        28     MUY FIRME         1.87    30.19    46.00   29.00   17.00    9.10   0.00   46.00   54.00   2.52    ----    ----
+                                                     FIN DE SONDEO 1
+
+
+
+
+                                                                                                                      Página. 16
+                                                                 OD, INGENIERIA GEOTECNICA.
+                                         CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                          VILLAHERMOSA, TABASCO.
+                                       R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                               TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+                Tablas No 4: Propiedades del sondeo mixto SM-2
+            Clasificac                                                                                                            C       ɸ
+Profundidad                     Consistencia/     m,     w       L.L.    L.P.    I.P.    C.L.     G      A       F
+               ión      SPT                                                                                             Ss     ton/m³   (°)
+    (m)                         Compacidad      ton/m3    %        %       %       %       %       %      %       %
+            S.U.C.S.
+ 0.00 – 1.80    SM      24      MEDIANA          1.81    17.04    N. P    N. P    N. P    N. P    0.00   89.00   11.00   2.68    ----    ----
+ 1.80 – 3.00    SC      26      MEDIANA          1.82    23.41    44.00   23.00   21.00   11.70   0.00   56.00   44.00   2.65    ----    ----
+ 3.00 – 3.60    SC     -----   TUBO SHELBY       1.85    34.18    44.00   23.00   21.00   11.70   0.00   56.00   44.00   2.65   1.63     16
+ 3.60 – 4.20    SC      9        SUELTA          1.83    29.68    44.00   23.00   21.00   11.70   0.00   56.00   44.00   2.65    ----    ----
+ 4.20 – 5.40    SC      20      MEDIANA          1.84    32.61    44.00   23.00   21.00   11.70   0.00   56.00   44.00   2.65    ----    ----
+ 5.40 – 9.00    SC      12      MEDIANA          1.85    35.00    49.00   23.00   26.00   12.58   0.00   55.00   45.00   2.64    ----    ----
+9.00 – 13.20    OH      24     MUY FIRME         1.79    42.33    58.00   25.00   33.00   12.86   0.00   21.00   79.00   2.69    ----    ----
+13.20 – 18.00   OH      31         DURA          1.82    40.43    60.00   32.00   28.00   10.43   0.00    6.00   94.00   2.70    ----    ----
+18.00 – 22.80   CL      35         DURA          1.87    34.32    42.00   24.00   18.00   10.53   0.00   22.00   78.00   2.72    ----    ----
+22.80 – 30.00   OL      32         DURA          1.77    43.98    38.00   17.00   11.00   7.30    0.00   33.00   67.00   2.67    ----    ----
+                                                FIN DE SONDEO 2
+
+                       TABLA No. 5. Simbologías utilizadas
+
+                                                        SIMBOLOGIA
+                                 γm = Peso Volumétrico del Espécimen
+                                   γ’m = Peso Volumétrico Sumergido
+                                   W = Humedad Natural
+                                   L.L. = Límite Líquido
+                                   L.P. = Límite Plástico
+                                   I.P. = Índice Plástico
+                                   C.L. = Contracción Lineal
+                                   G = Grava
+                                   A = Arena
+                                   F = Finos
+                                   Ss = Densidad de Sólidos
+                                   Ø = Angulo de fricción interna
+                                   C = Cohesión
+
+
+
+
+                                                                                                                 Página. 17
+                                      OD, INGENIERIA GEOTECNICA.
+                         CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                          VILLAHERMOSA, TABASCO.
+                       R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                               TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+TABLA No.6. Resistencia con base a los Números de Golpes registrado en el sondeo
+de penetración estándar, densidad relativa y consistencia (fuente mecánica de suelos
+y cementación Crespo Villalas 2008)
+       RESISTENCIA A LA               DENSIDAD
+                                                           CONSISTENCIA
+       PENETRACIÓN SPT No DE          RELATIVA Suelos
+                                                           Suelos arcillosos
+       GOLPE N                        arenosos
+                   <4                      Muy suelta
+                  4 a 10                     Suelta
+                 11 a 30                    Mediana
+                 31 a 50                   Compacta
+                   >50                    Muy compacta
+
+                     <2                                       Muy blanda
+                   2a4                                         Blanda
+                   5a8                                          Media
+                   9 a 15                                       Firme
+                  16 a 30                                     Muy firme
+                    > 30                                        Dura
+
+
+8.     ANALISIS Y DISEÑO GEOTECNICO
+
+
+8.1.   Descripción del proyecto
+
+
+El proyecto consiste en un “ESTUDIO DE MECANICA DE SUELOS PARA LA
+CONSTRUCCIÓN DEL HOSPITAL ZUMAYA VILLAHERMOSA”, el sitio destinado para tal
+efecto se encuentra en la prolongación de avenida paseo Usumacinta No. 2118, ranchería.
+Lázaro Cárdenas 2da. sección, Centro, Tabasco.
+
+
+En el presente análisis, se revisará la capacidad de carga superficial, profundas y los
+asentamientos que se presenten debido al esfuerzo producido por las estructuras del
+proyecto.
+
+
+
+
+                                                                     Página. 18
+                                          OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+8.2.     Capacidad de Carga de cimentaciones superficial.
+
+
+Tomando en cuenta la información de las propiedades físicas y mecánicas la Capacidad de
+Carga Admisible del terreno natural, se calculó empleando el Criterio de Terzaghi para suelos
+Cohesivos-Friccionantes      y/o   Friccionantes,    obteniéndose   los   siguientes   valores,
+considerando un Factor de Seguridad de 3.5 friccionantes y de 3 para suelos cohesivos,
+tomando en cuenta las consideraciones de la figura 6, ver tablas No 7 y 8, utilizando la
+siguiente expresión
+              qa = (C*N´c+ * Df * N´q + ½ *  * B * N´) / 3
+Dónde:
+             Qa = Capacidad de carga admisible del suelo.
+              C = Cohesión del terreno determinado de la prueba Tuu.
+               = Peso volumétrico del suelo ton/m2
+              Df = Profundidad de desplante de la cimentación.
+              B = Ancho del cimiento.
+N´c, N´q, N´ = Factores de carga determinados según el ángulo de fricción interna del suelo,
+ver la figura 6.
+
+
+
+
+Figura No 6: Factores de capacidad de carga para suelos cohesivos – friccionantes
+(Fuente mecánica de suelos y cimentaciones Crespo Villalaz 2008)
+
+
+                                                                          Página. 19
+                                          OD, INGENIERIA GEOTECNICA.
+                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                            VILLAHERMOSA, TABASCO.
+                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+       Tabla No 7. Capacidad de Carga Admisible (ton/m2) del Sondeos Mixto SM-1.
+           Sondeo    Ancho           de      Df en metros          Capacidad de
+                        Cimentación                                 carga (ton/m2)
+                        (m)
+                              1.00              3.60 m              5.50 ton/m2
+            SM-1
+                                           SUELO NATURAL
+
+
+       Tabla No 8. Capacidad de Carga Admisible (ton/m2) del Sondeos Mixto SM-2.
+           Sondeo    Ancho           de      Df en metros          Capacidad de
+                        Cimentación                                 carga (ton/m2)
+                        (m)
+                              1.00              3.60 m              4.90 ton/m2
+            SM-2
+                                           SUELO NATURAL
+
+
+
+
+8.3.     Análisis de asentamientos en cimentaciones superficiales
+
+Para el análisis de asentamientos se tomaron en cuenta dos consideraciones: los
+asentamientos instantáneos o elásticos y los asentamientos a largo plazo.
+
+
+Los Asentamientos elásticos presentados en forma instantánea debido al rebote elástico por
+la descompresión de los suelos blandos se estimaron con el siguiente criterio de acuerdo a la
+siguiente expresión por Schleircher (1926); Steinbrenner (1936).
+
+
+
+
+                                                                        Página. 20
+                                                                         OD, INGENIERIA GEOTECNICA.
+                                        CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                         VILLAHERMOSA, TABASCO.
+                                      R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                              TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+                                  Cálculo de asentamientos elásticos del SM-1
+Cálculo de asientos según Steinbrenner (1936)
+                                                                                                                                                           C arg a a dmi sib le (q):    0 .5 5 kg /cm2
+                                                                                                                         0.87                                   1.74                    0.87
+                                                                                2                           2
+Carga admisible (q):                                         0.55 kg/cm                        0.55 kg/cm                1.47                                   1.47                    1.47
+Módulo de Young (E):                                          144 kg/cm 2                       144 kg/cm 2              0                 0.00                 150                     300
+                                                                                                                                           0.20
+
+
+
+
+                                                                                                                           Asientos (cm)
+Coeficiente de Poisson (v):                                  0.30                              0.30                                        0.40
+                                                                                                          2                                0.60    0.87                                       0.87
+Módulo deformación edométrico (Eed ):                                                           194 kg/cm                                  0.80
+Ancho cimentación (b):                                       3.00 m                             300 cm                                     1.00
+                                                                                                                                           1.20                           1.47
+Largo cimentación (l):                                       3.00 m                             300 cm                                     1.40
+                                                                                                                                           1.60                            1.74
+m:                                                                                             1.00                                        1.80
+Ip:                                                                                            0.56                                        2.00
+Factor de seguridad:                                         2.00                              2.00
+
+                              Asientos carga flexible     Coeficiente
+                                                                                                                                                     CIMENTACION
+                         Esquina    Centro    Valor medio de balasto                                                 Ancho:                                            Losa
+                           (cm)      (cm)         (cm)    K (kg/cm 3)                                                  3m
+
+                           0.87         1.74             1.47                0.373
+
+                                                                                                                                                  Largo:                               3m
+
+
+
+
+                                  Cálculo de asentamientos elásticos del SM-2
+Cálculo de asientos según Steinbrenner (1936)
+                                                                                                                                                          C arg a a dmi sib le (q):    0 .5 0 kg /cm2
+                                                                                                                        0.71                                   1.42                     0.71
+                                                                                2                           2
+Carga admisible (q):                                            0.50 kg/cm                     0.50 kg/cm               1.21                                   1.21                     1.21
+Módulo de Young (E):                                             160 kg/cm 2                    160 kg/cm 2             0                  0.00                150                      300
+                                                                                                                         Asientos (cm)     0.20
+Coeficiente de Poisson (v):                                     0.30                           0.30                                        0.40
+                                                                                                          2                                        0.71                                      0.71
+Módulo deformación edométrico (Eed ):                                                           215 kg/cm                                  0.60
+Ancho cimentación (b):                                          3.00 m                          300 cm                                     0.80
+                                                                                                                                           1.00                          1.21
+Largo cimentación (l):                                          3.00 m                          300 cm                                     1.20
+m:                                                                                             1.00                                        1.40                          1.42
+Ip:                                                                                            0.56                                        1.60
+Factor de seguridad:                                            2.00                           2.00
+
+                              Asientos carga flexible     Coeficiente
+                         Esquina    Centro    Valor medio de balasto                                                 Ancho:                          CIMENTACION
+                                                                                                                                                         Losa
+                           (cm)      (cm)         (cm)    K (kg/cm 3)                                                 3m
+
+                           0.71         1.42             1.21                0.415
+
+                                                                                                                                                  Largo:                               3m
+
+
+
+
+                            Módulo de Poisson aproximado:
+
+
+                               Material         Poisson         Esquina :                 Coeficiente de balasto :
+                            Arcilla húmeda     0.10 - 0.30
+                                                                             1− υ   2
+                            Arcilla arenosa    0.20 - 0.35      s = q b         Ip          q
+                            Arcilla saturada   0.45 - 0.50
+                                                                               E          K=
+                                                                Centro :                       S
+                            Limo               0.30 - 0.35                  1 − υ2
+                            Limo saturado      0.45 - 0.50      s = 2 q b        Ip   q = presión uniforme media
+                                                                               E
+                            Arena suelta       0.20 - 0.35                                s = asiento medio para la citada presión
+                            Arena densa        0.30 - 0.40      Valor medio :
+                            Arena fina            0.25          s = s (centro)  0.848
+                            Arena gruesa          0.15
+                            Rocas              0.15 - 0.25
+                            Loess              0.10 - 0.30
+                            Concreto           0.15 - 0.25                    2  2 
+                                                                E = Eed  
+                                                                          1 − 1 −  
+                            Acero              0.28 - 0.31                           
+
+
+
+
+                                                                                                                                                     Página. 21
+                                              OD, INGENIERIA GEOTECNICA.
+                             CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                              VILLAHERMOSA, TABASCO.
+                           R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                   TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+El análisis de asentamientos a largo plazo se realizó por medio de la Teoría de la
+Consolidación Unidimensional de suelos blandos compresibles (Terzaghi), se tomaron en
+cuenta, el esfuerzo que se trasmite al suelo y el módulo de compresibilidad volumétrica es
+obtenida de la prueba de consolidación que se realizó en el laboratorio, con este resultado se
+
+
+
+utilizó siguiente expresión:
+                                = m v p H
+
+Dónde:         = Asentamiento, cm.
+              mv =
+                     Módulo de compresibilidad volumétrica, cm2/kg.
+              H = Espesor del estrato compresible, en cm.
+              p = Esfuerzo en la masa del suelo, en kg/cm2.
+
+
+Tabla No 9. Asentamientos elásticos y a largo plazo al centro de la cimentación
+superficial SM-1
+            Lugar de asentamiento                         Asentamiento (cm)
+                                               Elástico        Tiempo         Total
+                 SM-1                          1.74            6.80           8.54
+
+
+Tabla No 10. Asentamientos elásticos y a largo plazo al centro de la cimentación
+superficial SM-2
+            Lugar de asentamiento                         Asentamiento (cm)
+                                               Elástico        Tiempo         Total
+                 SM-2                          1.42            8.79           10.21
+
+
+
+
+                                                                          Página. 22
+                                           OD, INGENIERIA GEOTECNICA.
+                               CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                VILLAHERMOSA, TABASCO.
+                             R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                     TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+8.4.      Módulo de reacción vertical
+
+El valor del Módulo de reacción vertical (kv) se determinó tomando en cuenta los parámetros
+elásticos del estrato de apoyo, en consideración de la siguiente expresión.
+
+                   Es       
+       KV =             2 
+                             
+              B * (1 −   ) 
+Dónde:
+         Kv = módulo de reacción, (kg/cm3).
+         Es = módulo de elasticidad, (kg/cm2).
+         B = Ancho en cm.
+         μ = módulo de Poisson, adimensional.
+
+
+                       Tabla 11. Módulo de reacción vertical, Kv SM-1.
+
+       SONDEO                                        Kv, en kg/cm³
+                     Df en
+                                                  Ancho de cimentación
+                     metros
+                                  1.00 m      2.00 m     3.00 m      5.00 m      10.00 m
+         SM-1         T. N         1.582      0.791       0.527       0.316       0.158
+
+
+
+                       Tabla 12. Módulo de reacción vertical, Kv SM-1.
+
+       SONDEO                                        Kv, en kg/cm³
+                     Df en
+                                                  Ancho de cimentación
+                     metros
+                                  1.00 m      2.00 m     3.00 m      5.00 m      10.00 m
+         SM-2         T. N         1.758      0.879       0.586       0.352       0.176
+
+
+
+
+                                                                         Página. 23
+                                          OD, INGENIERIA GEOTECNICA.
+                              CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                               VILLAHERMOSA, TABASCO.
+                            R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                    TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+8.5.    Capacidad de Carga de cimentaciones profunda pilas.
+
+
+PILAS DE CIMENTACION
+
+
+Propuesta de cimentaciones profunda, se propone desplantar la estructura del HOSPITAL
+ZUMAYA VILLAHERMOSA sobre pilas de cimentación de concreto armado sección circular
+de 0.80, 1.00 y 1.20 metros, en estratos de mayor resistencia al esfuerzo cortante y poca
+deformabilidad, el presente análisis se revisará la profundidad de desplante de las pilas
+verificando su capacidad de carga.
+
+
+El mecanismo de transferencia de carga al suelo se ha considerado utilizando el criterio de la
+adherencia del suelo con el fuste de la pila y la resistencia a la penetración por punta en el
+estrato de apoyo; para esta revisión se consideró el número de golpes para hincar 30 cm del
+penetrómetro utilizado durante la prueba de penetración.
+
+
+De acuerdo a la siguiente expresión:
+
+
+Qa = Qp + Qf
+Donde
+Qa = capacidad de carga admisible en ton
+Qp = Capacidad de carga admisible por punta
+Qf = capacidad de carga admisible por fricción.
+
+
+Para determinar la capacidad de carga por punta y fricción, se revisó con el criterio de
+correlación SPT.
+
+
+Se consideró un factor de seguridad de 3 para la capacidad de carga admisible por punta y
+para la capacidad de carga admisible por fricción se utilizó el mismo criterio utilizando un
+factor de seguridad de 2.
+
+
+                                                                         Página. 24
+                                            OD, INGENIERIA GEOTECNICA.
+                              CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                               VILLAHERMOSA, TABASCO.
+                            R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                    TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Qp = (qa * Ap)/3      y      Qf = (P * L * Fs)/2
+
+
+Dónde:
+qa = resistencia por punta
+Ap = área transversal de la pila.
+P = perímetro de la pila.
+L = longitud efectiva
+Fs = fuerza de adherencia suelo.
+
+
+Como se mencionó anteriormente, para determinar los parámetros de resistencia por punta y
+fuerza de adherencia suelo-pila.
+
+
+Para el Método de SPT se hicieron las siguientes consideraciones:
+Capacidad de carga por fricción. A continuación, se muestra el criterio de cálculo:
+quf = Al Ff
+quf = capacidad de carga ultima por fricción.
+Al = área de contacto de la pila.
+p m= perímetro.
+Al = p * L
+L= longitud efectiva de las pilas.
+Ff = fricción entre el suelo pila.
+Ff = 0.2 N
+N= Número de golpes en la prueba de penetración.
+p= perímetro de la sección transversal de la pila.
+
+
+Capacidad de carga por punta. Se considera que la pila quedará apoyada en un estrato
+resistente, con por lo menos 30 golpes para penetrar 30 cm un 1.00 cm x golpe del
+penetrómetro de la prueba de penetración estándar y un espesor de dicho estrato de 5.00 m
+como mínimo.
+
+
+                                                                          Página. 25
+                                            OD, INGENIERIA GEOTECNICA.
+                             CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                              VILLAHERMOSA, TABASCO.
+                           R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                   TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Capacidad de carga por punta.
+
+
+qup = 15 N Ap
+qup = capacidad de carga ultima por punta.
+N = número de golpes para penetrar 30 cm SPT.
+Ap = Área transversal de la sección de la pila.
+
+
+  CALCULO CAPACIDAD DE CARGA DE CIMENTACIONES PROFUNDA (PILAS)
+
+Considerando que las pilas tengan una longitud efectiva para SM-1 y SM-2 de 21.00 y/o
+26.00 metros, Estas longitudes es a partir de donde se posiciono el equipo de exploración,
+para pilas sección circular de 0.80, 1.00 y 1.20 metros, la capacidad de carga de la pila de
+cimentación es conforme se muestra en la siguiente tabla, utilizando un factor de seguridad
+de 2 por fricción y 3 por punta.
+
+
+Tabla No 13. Capacidad de carga ultima por punta y fricción de la pila de cimentación
+del SM-1.
+Sondeo      Diámetro   Peso de la Df (m)    Qadm        Qadm      Qamd           Q total menos
+            (m)        pila (ton)           Fricción    PUNTA     total. (ton)   (-) peso de la
+                                            (ton)       (ton)                    pila.
+              0.80       25.33      21.00      94.70     120.64     215.34               190.01
+              1.00       39.58      21.00      118.38    188.50     306.88               267.30
+  SM-1
+              1.20       57.00      21.00      142.05    271.43     413.48               356.48
+              1.20       70.57      26.00      224.93    238.76     463.69               393.12
+
+
+
+
+                                                                         Página. 26
+                                             OD, INGENIERIA GEOTECNICA.
+                              CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                               VILLAHERMOSA, TABASCO.
+                            R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                    TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Tabla No 14. Capacidad de carga ultima por punta y fricción de la pila de cimentación
+del SM-2.
+Sondeo      Diámetro    Peso de la Df (m)    Qadm         Qadm      Qamd           Q total menos
+            (m)         pila (ton)           Fricción     PUNTA     total. (ton)   (-) peso de la
+                                             (ton)        (ton)                    pila.
+              0.80        25.33      21.00       104.05    100.53     204.58               179.25
+              1.00        39.58      21.00       130.06    157.08     287.14               247.56
+              1.00        41.47      22.00       144.01    164.93     308.94               267.47
+              1.00        43.35      23.00       156.20    161.00     317.20               273.85
+  SM-2
+              1.00        45.24      24.00       167.76    157.08     324.84               279.60
+              1.20        57.00      21.00       156.07    226.20     382.27               325.27
+              1.20        70.57      26.00       229.59    228.15     457.74               387.17
+              1.20        73.29      27.00       244.29    228.15     472.44               399.15
+
+
+8.6.     Análisis de asentamientos en cimentaciones profundas pilas.
+
+Pilotes de cimentación. Los Asentamientos elásticos presentados en forma instantánea
+debido a la compresibilidad del estrato de apoyo se estimaron de acuerdo a la siguiente
+expresión propuesta en el Manual de cimentaciones profundas (Ref. 2):
+
+
+ = Pd * B * ((1- 2 ) / Es) * IF * F1
+Dónde:
+                  = asentamiento elástico, cm
+              Pd = presión de desplante en la punta, kg/cm2
+              B = ancho de la pila, cm
+              Es = módulo de elasticidad del suelo, en kg/cm2
+               = relación de Poisson. El corresponda
+              IF = Factor de reducción por empotramiento = 0.50
+              F1 = Factor de reducción por resistencia a fricción = 0.25
+
+
+
+
+                                                                           Página. 27
+                                        OD, INGENIERIA GEOTECNICA.
+                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                            VILLAHERMOSA, TABASCO.
+                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+                                          Módulo de Poisson aproximado:
+
+
+                                             Material          Poisson
+                                          Arcilla húmeda      0.10 - 0.30
+                                          Arcilla arenosa     0.20 - 0.35
+                                          Arcilla saturada    0.45 - 0.50
+                                          Limo                0.30 - 0.35
+                                          Limo saturado       0.45 - 0.50
+                                          Arena suelta        0.20 - 0.35
+                                          Arena densa         0.30 - 0.40
+                                          Arena fina             0.25
+                                          Arena gruesa           0.15
+                                          Rocas               0.15 - 0.25
+                                          Loess               0.10 - 0.30
+                                          Concreto            0.15 - 0.25
+                                          Acero               0.28 - 0.31
+
+
+Con estos datos se tiene la siguiente tabla de asentamientos considerando la presión
+ejercida por la capacidad de carga del elemento ver tabla No 15 y 16.
+
+
+          Tabla No 15. “Asentamientos elásticos de cimentación profunda pilas”
+                  Sondeo        Sección circular (m)         Asentamientos cm
+                                        0.80                        3.64
+                      SM-1              1.00                        4.15
+                                        1.20                        5.98
+
+
+          Tabla No 16. “Asentamientos elásticos de cimentación profunda pilas”
+                  Sondeo        Sección circular (m)         Asentamientos cm
+                                        0.80                        3.96
+                      SM-2              1.00                        4.45
+                                        1.20                        4.94
+
+
+
+
+                                                                            Página. 28
+                                          OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+8.7.    Determinación del coeficiente de reacción horizontal del suelo.
+
+
+Asimismo, el valor del coeficiente de reacción horizontal Kh (ks) según Teng, método
+expuesto por (Terzagui 1955) queda determinado para el sondeo SM1, en consideración de
+la siguiente expresión:
+
+
+En suelos predominantemente friccionantes
+Ks = (nh) z/D
+   Donde
+   Ks coeficiente de reacción horizontal a la profundidad z t/m3
+  Z = profundidad en metros
+  D = diámetro del pilote en metros
+
+
+nh = constante relacionada con la compacidad del suelo, cuyos valores aparecen en la
+siguiente tabla
+                  Compacidad       Arriba del nivel      Abajo del nivel
+                   del suelo      freático (nh t/m3)    freático (nh t/m3)
+                     Suelta               230                  130
+                     Media                680                  450
+                   compacta               1800                1100
+
+
+En suelos predominantemente cohesivos
+
+
+  Ks = (67 Cu) /1.5D
+   Ks = coeficiente de reacción horizontal a la profundidad z t/m3
+  Cu = resistencia al corte no drenado del suelo t/cm2 (ton/m2)
+  D = diámetro de la pila en metros (m)
+
+
+
+
+                                                                             Página. 29
+                                           OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+  Determinación del Módulo de reacción vertical.
+            Ksv = (E / (B * (1 – μ2))
+            Dónde:
+                  Ksv = módulo de reacción, (Kg/cm3)
+                  Es = módulo de elasticidad, (Kg/cm2)
+                  B = Ancho de la cimentación, = 0.60 y 0.80 m
+                   μ = módulo de poisson, (0.30)
+
+
+      Tabla 17. Módulo de reacción horizontal del suelo del SM 1.
+ Ksh (ton/m3)       Ksh (ton/m3)         Ksh (ton/m3)     Profundidad de Estratos   CLASIFICACIO
+Ø = 0.80 metros    Ø = 1.00 metros      Ø = 1.20 metros         en metros            N DE SUELO
+   517.50              414.00              345.00           1.80 (0.00 – 1.80)            SM
+   1012.50             810.00              675.00           1.80 (1.80 – 3.60)            SM
+   1687.50            1350.00              1125.00          3.00 (3.60 – 6.60)            SC
+   1012.50             810.00              675.00           1.80 (6.60 – 8.40)            SC
+   153.54              122.83              102.36          1.80 (8.40 – 10.20)            OH
+   178.67              142.93              119.11         4.80 (10.20 – 15.00)            OH
+   279.67              233.33              186.11         3.00 (15.00 – 18.00)            OH
+   382.46              305.97              254.97         3.00 (18.00 – 21.00)            OL
+   343.38              274.70              228.92         3.00 (21.00 – 26.00)            OL
+
+
+
+
+                                                                             Página. 30
+                                          OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Tabla 18. Módulo de reacción horizontal del suelo del SM 2.
+ Ksh (ton/m3)      Ksh (ton/m3)       Ksh (ton/m3)         Profundidad de Estratos   CLASIFICACIO
+Ø = 0.80 metros   Ø = 1.00 metros    Ø = 1.20 metros             en metros            N DE SUELO
+    517.50           414.00               345.00             1.80 (0.00 – 1.80)              SM
+    345.00           276.00               230.00             1.20 (1.80 – 3.00)              SC
+   3375.00           2700.00              2250.00            6.00 (3.00 – 9.00)              SC
+    173.08           138.47               115.39            1.20 (9.00 – 10.20)              OH
+    181.46           145.17               120.97           3.00 (10.20 – 13.20)              OH
+    231.71           185.37               154.47           4.80 (13.20 – 18.00)              OH
+    309.88           247.90               206.58           3.00 (18.00 – 26.00)              CL
+
+
+                  Tabla No 19. Módulo de reacción vertical SM-1.
+                  Sondeo            Ksv      Profundidad         Sección circular
+                                 (Ton/m3)      (metros)              (metros)
+                                 4410.73           21.00            0.80 m pila
+                                 3528.58           21.00            1.00 m pila
+                   SM-1
+                                 2940.50           21.00            1.20 m pila
+                                 2567.10           26.00            1.20 m pila
+
+
+
+             Tabla No 19. Módulo de reacción vertical SM-2.
+                  Sondeo            Ksv      Profundidad         Sección circular
+                                 (Ton/m3)      (metros)              (metros)
+                                 3850.63           21.00            0.80 m pila
+                                 3080.51           21.00            1.00 m pila
+                   SM-2
+                                 2567.09           21.00            1.20 m pila
+                                 2567.09           26.00            1.20 m pila
+
+
+
+
+                                                                                Página. 31
+                                          OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Procedimiento constructivo para cimentaciones superficiales
+
+
+   ➢ Se realizar un saneamiento del terreno natural, retirando principalmente vegetación, troncos,
+      raíces y/o pisos de concreto existentes hasta una profundidad de 30 centímetros.
+
+
+   ➢ Para las excavaciones necesarias para alojar los elementos de cimentación se podrán
+      realizarse con paredes verticales y ligeramente inclinadas con talud de 30º,
+      permaneciendo abiertas el menor tiempo posible para no alterar la estructura natural
+      del suelo.
+
+
+   ➢ Cuando se haya alcanzado la profundidad de apoyo de la cimentación, se recomienda
+      previamente a la construcción de la misma, colocar una plantilla de concreto simple de
+      f´c=100 kg/cm2, de 5.00 cm de espesor, para nivelar la superficie, no contaminar el
+      concreto estructural y disminuir la expansión al nivel de desplante.
+   ➢ Después de terminada la construcción de la cimentación, se procederá al relleno de
+      las excavaciones, utilizando material extraído de banco, conformando en capas de
+      espesor no mayor a 20.00 cm y realizar el proceso de compactación hasta alcanzar el
+      90% de su Peso Volumétrico Seco Máximo según la prueba Proctor estándar.
+
+   ➢ Se deberá llevar un control de nivelaciones desde inicio de la obra hasta el término de
+      esta, para lo cual se podrán seleccionar algunos puntos de referencia con el terreno
+      circundante.
+
+
+
+
+                                                                             Página. 32
+                                      OD, INGENIERIA GEOTECNICA.
+                         CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                          VILLAHERMOSA, TABASCO.
+                       R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                               TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+Procedimiento constructivo de Cimentaciones profundas.
+
+
+     Cimentaciones profundas pilas.
+
+
+  ➢ El tiempo necesario que debe transcurrir entre el término de una perforación previa
+     para la pila y el inicio del colado del mismo debe ser menor e igual a 2 horas, de lo
+     contrario el supervisor de obra de campo deberá verificar su profundidad por medio de
+     plomada.
+
+
+
+
+  ➢ Para cada perforación se deberá verificar la verticalidad de las paredes. Se pueden
+     hacer comprobaciones rápidas, colocando un nivel sobre la barra perforadora.
+
+
+  ➢ Durante la perforación previa de las pilas de cimentación será necesaria la utilización
+     de lodos bentoníticos para la estabilización de las paredes y ademado de la
+     perforación los cuales deberán estar dosificados de la siguiente manera:
+
+
+     Viscosidad = 45 seg
+     Densidad = 1.04
+
+
+                                                                       Página. 33
+                                      OD, INGENIERIA GEOTECNICA.
+                        CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                         VILLAHERMOSA, TABASCO.
+                      R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                              TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+➢ Para la fabricación de los lodos bentoníticos se recomienda la utilización de
+   mezcladores tipo chiflón; asimismo, es posible reutilizar los lodos bentoníticos siempre
+   y cuando cumplan con sus propiedades de viscosidad y densidad, las cuales deben
+   ser verificadas mediante la utilización de un laboratorio de control de calidad.
+
+
+➢ Para el colado de las pilas se utilizará una tubería tipo tremie para evitar la
+   segregación de los materiales utilizando desde el fondo de la excavación y verificando
+   que en todo momento el tubo se encuentre sumergido al menos 1 m en concreto
+   fresco, el concreto debe tener un revenimiento de 17.5 cm, según lo recomendado en
+   el Manual de Cimentaciones Profundas (Ref. 1).
+
+
+➢ Una vez instalada la tubería dentro de la perforación y antes de empezar el colado, se
+   colocará en su extremo superior un tapón deslizante (diablo), para evitar la
+   segregación del concreto al inicio del colado.
+
+
+
+
+                                          TUBO TREMIE
+
+
+
+
+                                       TAPON
+
+
+
+
+➢ Se alcanzará la profundidad de proyecto para el desplante de la pila, cuidando de
+   alterar lo menos posible el suelo al nivel de desplante.
+
+
+➢ Al término de la excavación deberá verificarse que no existan azolves en su fondo que
+   puedan afectar el comportamiento de la pila.
+                                                                        Página. 34
+                                        OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+
+
+➢ Antes de proceder al colado del concreto es fundamental efectuar una limpia
+   cuidadosa del fondo del pozo, eliminando los azolves o recortes sedimentados por la
+   perforación, utilizando las herramientas apropiadas. El Ingeniero Residente deberá
+   verificar que esta operación se lleve a cabo satisfactoriamente, antes de autorizar el
+   colado de la pila.
+
+
+➢ El colado de las pilas deberá ser continuo, evitando interrupciones que pudieran
+   ocasionar juntas frías.
+
+
+➢ La tubería se retirará de la perforación hasta que el concreto salga completamente
+   limpio; es decir, cuando el concreto contaminado haya sido totalmente desplazado
+   hacia la superficie.
+
+
+➢ Deberá llevarse un registro cuidadoso de la construcción de las pilas, anotando
+   principalmente: la ubicación de la pila, fecha de colado, verificación de verticalidad en
+   intervalos regulares y profundidad de desplante.
+
+
+➢ Es importante tener en cuenta que la construcción de las pilas de 0.60 y 0.80 m de
+   diámetro con la ampliación de la campana de 1.20 y 1.60 m, su procedimiento de
+   perforación es muy complicado, por lo que el proyectista deberá de consultarlo con el
+   constructor antes de proponer resolver la cimentación.
+
+
+
+
+                                                                       Página. 35
+                                           OD, INGENIERIA GEOTECNICA.
+                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                            VILLAHERMOSA, TABASCO.
+                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+9.     CONCLUSIONES Y RECOMENDACIONES
+9.1.   Conclusiones
+
+       A partir de los trabajos de campo, laboratorio, datos del proyecto y gabinete, se
+       concluye lo siguiente:
+
+
+       1.1.   El proyecto consiste en un “ESTUDIO DE MECANICA DE SUELOS PARA
+              LA CONSTRUCCIÓN DEL HOSPITAL ZUMAYA VILLAHERMOSA”, el sitio
+              destinado para tal efecto se encuentra en la prolongación de avenida paseo
+              Usumacinta No. 2118, ranchería. Lázaro Cárdenas 2da. sección, Centro,
+              Tabasco.
+
+
+       1.2.   Se realizó dos Sondeos Mixtos SM-1 y SM-2 a 30.00 m, profundidad, la
+              finalidad de este estudio es determinar las propiedades físicas, mecánicas del
+              suelo en estudio.
+
+
+       1.3.   El Nivel de Aguas Freáticas es medido con referencia al nivel del brocal donde
+              se realizó del sondeo, este nivel puede variar con las estaciones del año ver
+              tabla No 1.
+
+                                Nivel de aguas freáticas (NAF)
+                                SONDEO                 PROFUNDIDAD METROS
+                                   SM -1                           4.45
+                                   SM -2                           4.25
+
+
+       1.4.   La capacidad de carga fue evaluada por el Criterio de Terzagui (SM-1 y SM-2)
+              para suelos cohesivos - friccionantes y/o friccionantes con la que se determinó
+              una capacidad de carga admisible que se muestran en la siguiente tabla se
+              empleó para el cálculo un Factor de Seguridad de 3.5 para suelos
+              friccionantes y de 3.00 para suelos cohesivos.
+
+                                                                          Página. 36
+                                         OD, INGENIERIA GEOTECNICA.
+                          CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                           VILLAHERMOSA, TABASCO.
+                        R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+         Capacidad de Carga Admisible (ton/m2) del Sondeos Mixto SM-1.
+        Sondeo      Ancho           de      Df en metros          Capacidad de
+                       Cimentación                                  carga (ton/m2)
+                       (m)
+                             1.00                3.60 m             5.50 ton/m2
+          SM-1
+                                          SUELO NATURAL
+
+
+          Capacidad de Carga Admisible (ton/m2) del Sondeos Mixto SM-2.
+        Sondeo      Ancho           de      Df en metros          Capacidad de
+                       Cimentación                                  carga (ton/m2)
+                       (m)
+                             1.00                3.60 m             4.90 ton/m2
+          SM-2
+                                          SUELO NATURAL
+
+
+       1.5.   De acuerdo a los cálculos realizados los asentamientos inmediatos se
+              muestran en la siguiente tabla.
+
+Asentamientos elásticos y a largo plazo al centro de la cimentación superficial SM-1
+          Lugar de asentamiento                      Asentamiento (cm)
+                                          Elástico         Tiempo         Total
+               SM-1                       1.74             6.80           8.54
+
+
+Asentamientos elásticos y a largo plazo al centro de la cimentación superficial SM-2
+          Lugar de asentamiento                      Asentamiento (cm)
+                                          Elástico         Tiempo         Total
+               SM-2                       1.42             8.79           10.21
+
+
+
+
+                                                                       Página. 37
+                                                OD, INGENIERIA GEOTECNICA.
+                                 CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                  VILLAHERMOSA, TABASCO.
+                               R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                       TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+         1.6.    De acuerdo a los cálculos realizados el valor del Módulo de reacción vertical
+                 (kv) se muestran en la siguiente tabla.
+
+
+                                Módulo de reacción vertical, Kv SM-1.
+
+    SONDEO                                               Kv, en kg/cm³
+                       Df en
+                                                      Ancho de cimentación
+                       metros
+                                      1.00 m      2.00 m     3.00 m      5.00 m         10.00 m
+         SM-1           T. N           1.582      0.791       0.527       0.316          0.158
+
+                                Módulo de reacción vertical, Kv SM-1.
+
+    SONDEO                                               Kv, en kg/cm³
+                       Df en
+                                                      Ancho de cimentación
+                       metros
+                                      1.00 m      2.00 m     3.00 m      5.00 m         10.00 m
+         SM-2           T. N           1.758      0.879       0.586       0.352          0.176
+
+
+         1.7.    Capacidad de carga admisible por fricción y por punta de la pila, de sección
+                 circular de 0.80, 1.00 y 1.00 m de concreto reforzado desplantado en un
+                 estrato resistente con poca deformabilidad, tomando en cuenta el reporte de
+                 campo con número de golpe promedio mayor a 30 SPT ver tabla en
+                 condiciones estáticas, para el caso de condiciones sísmicas la
+                 capacidad de carga admisible por punta y fricción de la cimentación
+                 profunda (pilas) será afectado por 1.20.
+
+
+ Capacidad de carga ultima por punta y fricción de la pila de cimentación del SM-1.
+Sondeo     Diámetro      Peso de la Df (m)      Qadm        Qadm       Qamd           Q total menos
+           (m)           pila (ton)             Fricción    PUNTA      total. (ton)   (-) peso de la
+                                                (ton)       (ton)                     pila.
+                0.80       25.33        21.00      94.70      120.64     215.34               190.01
+                1.00       39.58        21.00      118.38     188.50     306.88               267.30
+ SM-1
+                1.20       57.00        21.00      142.05     271.43     413.48               356.48
+                1.20       70.57        26.00      224.93     238.76     463.69               393.12
+
+
+
+                                                                              Página. 38
+                                               OD, INGENIERIA GEOTECNICA.
+                               CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                                VILLAHERMOSA, TABASCO.
+                             R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                     TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+ Capacidad de carga ultima por punta y fricción de la pila de cimentación del SM-2.
+Sondeo     Diámetro      Peso de la Df (m)     Qadm          Qadm       Qamd           Q total menos
+           (m)           pila (ton)            Fricción      PUNTA      total. (ton)   (-) peso de la
+                                               (ton)         (ton)                     pila.
+                0.80       25.33       21.00      104.05      100.53        204.58             179.25
+                1.00       39.58       21.00      130.06      157.08        287.14             247.56
+                1.00       41.47       22.00      144.01      164.93        308.94             267.47
+                1.00       43.35       23.00      156.20      161.00        317.20             273.85
+ SM-2
+                1.00       45.24       24.00      167.76      157.08        324.84             279.60
+                1.20       57.00       21.00      156.07      226.20        382.27             325.27
+                1.20       70.57       26.00      229.59      228.15        457.74             387.17
+                1.20       73.29       27.00      244.29      228.15        472.44             399.15
+
+
+         1.8.    De acuerdo a los cálculos realizados los asentamientos elásticos instantáneos
+                 para cimentaciones profundas para pila se muestran en la siguiente tabla.
+
+
+                       Asentamientos elásticos de cimentación profunda pilas
+                       Sondeo         Sección circular (m)   Asentamientos cm
+                                               0.80                  3.64
+                          SM-1                 1.00                  4.15
+                                               1.20                  5.98
+
+
+                Asentamientos elásticos de cimentación profunda pilas
+                       Sondeo         Sección circular (m)   Asentamientos cm
+                                               0.80                  3.96
+                          SM-2                 1.00                  4.45
+                                               1.20                  4.94
+
+
+
+
+                                                                                Página. 39
+                                         OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+       1.9.    De acuerdo a los cálculos realizados el coeficiente de reacción horizontal y
+               vertical del suelo se muestra en las siguientes tablas.
+
+
+              Módulo de reacción horizontal del suelo del SM 1.
+ Ksh (ton/m3)       Ksh (ton/m3)       Ksh (ton/m3)     Profundidad de Estratos   CLASIFICACIO
+Ø = 0.80 metros    Ø = 1.00 metros    Ø = 1.20 metros         en metros            N DE SUELO
+   517.50              414.00             345.00          1.80 (0.00 – 1.80)            SM
+   1012.50             810.00             675.00          1.80 (1.80 – 3.60)            SM
+   1687.50            1350.00            1125.00          3.00 (3.60 – 6.60)            SC
+   1012.50             810.00             675.00          1.80 (6.60 – 8.40)            SC
+   153.54              122.83             102.36         1.80 (8.40 – 10.20)            OH
+   178.67              142.93             119.11        4.80 (10.20 – 15.00)            OH
+   279.67              233.33             186.11        3.00 (15.00 – 18.00)            OH
+   382.46              305.97             254.97        3.00 (18.00 – 21.00)            OL
+   343.38              274.70             228.92        3.00 (21.00 – 26.00)            OL
+
+
+
+
+                  Módulo de reacción horizontal del suelo del SM 2.
+ Ksh (ton/m3)       Ksh (ton/m3)       Ksh (ton/m3)     Profundidad de Estratos   CLASIFICACIO
+Ø = 0.80 metros    Ø = 1.00 metros    Ø = 1.20 metros         en metros            N DE SUELO
+   517.50              414.00             345.00          1.80 (0.00 – 1.80)            SM
+   345.00              276.00             230.00          1.20 (1.80 – 3.00)            SC
+   3375.00            2700.00            2250.00          6.00 (3.00 – 9.00)            SC
+   173.08              138.47             115.39         1.20 (9.00 – 10.20)            OH
+   181.46              145.17             120.97        3.00 (10.20 – 13.20)            OH
+   231.71              185.37             154.47        4.80 (13.20 – 18.00)            OH
+   309.88              247.90             206.58        3.00 (18.00 – 26.00)            CL
+
+
+
+
+                                                                           Página. 40
+                      OD, INGENIERIA GEOTECNICA.
+         CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                          VILLAHERMOSA, TABASCO.
+       R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+               TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+           Módulo de reacción vertical SM-1.
+Sondeo          Ksv      Profundidad   Sección circular
+              (Ton/m3)     (metros)        (metros)
+              4410.73       21.00         0.80 m pila
+              3528.58       21.00         1.00 m pila
+SM-1
+              2940.50       21.00         1.20 m pila
+              2567.10       26.00         1.20 m pila
+
+
+
+           Módulo de reacción vertical SM-2.
+Sondeo          Ksv      Profundidad   Sección circular
+              (Ton/m3)     (metros)        (metros)
+              3850.63       21.00         0.80 m pila
+              3080.51       21.00         1.00 m pila
+SM-2
+              2567.09       21.00         1.20 m pila
+              2567.09       26.00         1.20 m pila
+
+
+
+
+                                                      Página. 41
+                                            OD, INGENIERIA GEOTECNICA.
+                            CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                             VILLAHERMOSA, TABASCO.
+                          R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                  TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+9.2.    Recomendaciones
+
+   ➢ Se recomienda utilizar cimentaciones profundas a base de pilas de cimentación,
+       de sección circular de concreto armado, ver la longitud efectiva, así como
+       capacidad de carga admisible (tabla 13 y 14), esta recomendación es debido la
+       baja capacidad de carga admisible superficial suelo de densidad relativa de
+       media a suelta
+
+
+   ➢ Se recomienda realizar un saneamiento del terreno natural, retirando principalmente
+       vegetación, troncos, raíces y concreto hidráulico si llegara a existir, hasta una
+       profundad de 0.20 metros del nivel actual.
+
+
+   ➢ En el caso de que el nivel de piso terminado se a mayor que el nivel de terreno natural
+       se recomienda utilizar, material de banco arena de baja compacidad para construir el
+       terraplén y conformando en capas de espesor no mayor a 20.00 cm y realizar el
+       proceso de compactación hasta alcanzar el 90% de su Peso Volumétrico Seco
+       Máximo de la prueba Proctor estándar.
+
+
+   ➢ En caso de realizar excavaciones necesarias para alojar los elementos de cimentación
+       superficiales se podrá realizarse con paredes ligeramente inclinadas con un talud de
+       45° con respecto a la horizontal, permaneciendo abierta el menor tiempo posible para
+       no alterar la estructura del suelo
+
+
+   ➢ El material producto de la excavación se alejará del sitio por los menos a dos
+       distancias del orden de su profundidad.
+
+
+   ➢ En caso de las excavaciones que se efectúen en época de lluvias y/o con nivel de
+       aguas freáticas altas se requerirá desalojar las aguas mediante el empleo de equipo
+       de bombeo convencional.
+
+
+
+                                                                       Página. 42
+                                       OD, INGENIERIA GEOTECNICA.
+                        CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                         VILLAHERMOSA, TABASCO.
+                      R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                              TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+➢ Se recomienda principalmente la construcción de la obra sea en seco.
+
+
+➢ Se recomienda cuando se haya alcanzado la profundidad de apoyo de la cimentación
+   la construcción de una plantilla de concreto simple de f`c = 100 kg/cm2, de 5.00 cm de
+   espesor para nivelar la superficie para no contaminar el concreto y disminuir la
+   expansión al nivel de desplante.
+
+➢ Se recomienda que la longitud de la pila a utilizar sea la que se indica en las tablas No
+   13 y 14, del nivel donde se posiciono el equipo de perforación.
+
+
+➢ Para la perforación previa se debe utilizar una perforadora rotaria con barretón o kelly
+   de perforación, ya sea montada sobre orugas o sobre grúa; asimismo el empuje de
+   avance puede ser por peso propio como las perforadoras tipo Watson, ó hidráulicas
+   como las perforadoras tipo Bauer.
+
+
+➢ La perforación de los pozos para las pilas, deberá hacerse en los sitios precisos
+   marcados en los planos. Este trabajo lo hará un topógrafo autorizado y quedarán
+   localizados dentro de la tolerancia especificada en los planos de construcción.
+
+
+➢ Se atravesarán los suelos hasta llegar a la profundidad de proyecto. Esta profundidad
+   de desplante se comprobará a satisfacción del Ingeniero Residente. La perforación se
+   hará del diámetro que indiquen los planos. Una vez que se termine de perforar,
+   limpiar, la perforación deberá taparse adecuadamente para evitar caídos y/o
+   accidentes.
+
+
+➢ Durante la excavación de cada pozo deberá verificarse la verticalidad de las paredes.
+   Se pueden hacer comprobaciones rápidas, colocando un nivel sobre la barra de la
+   perforadora. Se recomienda una tolerancia permisible de 1 % de la longitud final de la
+   pila, pero sin exceder el 10 % del diámetro de la pila.
+
+
+
+                                                                      Página. 43
+                                      OD, INGENIERIA GEOTECNICA.
+                        CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                         VILLAHERMOSA, TABASCO.
+                      R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                              TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+➢ De acuerdo con el proceso constructivo finalmente seleccionado, y en caso de ser
+   necesario se podrá colocar ademe metálico hasta la profundidad de desplante de la
+   pila, capaz de soportar el empuje del material exterior y los esfuerzos producidos
+   durante su manejo. El diámetro e inclinación de la perforación se ajustarán a las
+   tolerancias especificadas en los planos de construcción. El ademe debe manejarse y
+   protegerse de tal modo que no se ovale más de ± 2% del diámetro nominal.
+
+
+➢ Los ademes podrán ser recuperables o no e introducirse antes o simultáneamente con
+   la excavación de la inclusión. Una vez terminada la perforación deberá limpiarse su
+   fondo, procurando retirar todo el material que se encuentre en él. Se usará la
+   herramienta apropiada para ese fin en función del tipo de suelo. El fondo deberá
+   quedar perfectamente limpio a satisfacción del Ingeniero Residente. No se procederá
+   al colado de ninguna pila que no cumpla con ese requisito.
+
+
+➢ Para la fabricación de los lodos bentoníticos se recomienda la utilización de
+   mezcladores tipo chiflón; asimismo, es posible reutilizar los lodos bentoníticos siempre
+   y cuando cumplan con sus propiedades de viscosidad y densidad, las cuales deben
+   ser verificadas mediante la utilización de un laboratorio de control de calidad.
+
+
+➢ Es importante mencionar que el comportamiento de las pilas depende en gran medida
+   de su construcción. Por lo que, la correcta selección del procedimiento y del equipo de
+   construcción, la calidad de la mano de obra y el control estricto de todo el proceso,
+   son aspectos esenciales en el éxito y calidad del producto final.
+
+
+➢ La supervisión del proceso constructivo de las pilas incluye, entre otros aspectos:
+
+
+➢ Se recomienda que la separación de pila entre pila de ser por lo menos de 3 veces el
+   diámetro de mismo.
+
+
+
+
+                                                                        Página. 44
+                                      OD, INGENIERIA GEOTECNICA.
+                        CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                         VILLAHERMOSA, TABASCO.
+                      R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                              TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+➢ Es recomendable que durante el proceso de construcción se disponga de una
+   supervisión geotécnica continua que garantice un control estricto del producto
+   terminado y cuidar que se lleven a cabo y de conformidad los siguientes procesos:
+   reconocer procedimientos de construcción eficientes, interpretar correctamente los
+   registros de perforación y construcción de las pilas y evaluar correctamente las
+   condiciones reales del subsuelo.
+
+➢ Se recomienda respectar las condiciones del proyecto y tomar en cuenta las
+   recomendaciones y procedimientos constructivos establecidos en los planos de
+   construcción.
+
+
+➢ Confirmación de la profundidad de desplante y características del material en que se
+   apoyará el elemento.
+
+
+➢ Verificación de la calidad de los materiales de construcción.
+
+
+➢ Verificación de que los procedimientos de colocación del concreto.
+
+
+➢ Las recomendaciones de construcción indicadas en este informe son indicativas y no
+   limitativas.
+
+
+➢ Se recomienda respectar las condiciones del proyecto y tomar en cuenta las
+   recomendaciones y procedimientos constructivos establecidos en los planos de
+   construcción.
+
+
+
+
+                                                                       Página. 45
+                                        OD, INGENIERIA GEOTECNICA.
+                           CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                            VILLAHERMOSA, TABASCO.
+                         R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                 TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+9.3.   Observación final.
+
+
+Las conclusiones vertidas, son resultado de las observaciones de los sondeos realizado,
+pruebas de campo y laboratorio del sitio en estudio. En caso de encontrar cambios en el
+subsuelo durante el procedimiento constructivo, se nos deberá notificar para emitir las
+recomendaciones pertinentes.
+
+
+
+Las conclusiones y recomendaciones aquí vertidas, se ha desarrollado solo desde un análisis
+geotécnico, la información resultante de este estudio no predice el comportamiento futuro, ni
+puede asegurarlos si se da la ocurrencia de algún evento no contemplado de tipo
+extraordinario, (filtraciones, fugas de agua, estructuración y procesos constructivos
+inadecuados, sismos, huracanes, etc.) que superen inclusive los alcances de los
+Reglamentos de Construcción del Estado y Nacional vigentes, y de la modelación
+geotecnista, por lo que se excluye de toda responsabilidad a los autores de este estudio
+geotécnico.
+
+
+
+                                     Atentamente
+
+
+
+
+                               Ing. Narciso Ovando García
+                            Especialista en Mecánica de Suelos
+
+
+
+
+                                                                        Página. 46
+                                         OD, INGENIERIA GEOTECNICA.
+                             CALLE 27 DE FEBRERO No 117 ALTOS COLONIA CONSTITUCION,
+                                              VILLAHERMOSA, TABASCO.
+                           R.F.C. OAGN751129BF2 C.P. 86276 EMAIL. ing.naogi@hotmail.com
+                                   TEL OFICINA 9933360886   TEL MOVIL 9931653208
+
+
+10.     REFERENCIAS
+
+
+10.1.    REFERENCIAS
+
+      ➢ Norma mexicana NMX-C-416-ONNCCE-2003
+      ➢ Norma mexicana NMX-C-431-ONNCCE-2002
+      ➢ Norma mexicana NMX-C-432-ONNCCE-2002
+
+
+10.2.    Bibliografía
+               ➢ Manual de cimentaciones profundas. Segunda edición. 2001. Sociedad
+                  Mexicana de Mecánica de Suelos.
+               ➢ Juárez Badillo Eulalio y Alfonso Rico Rodríguez, Mecánica de Suelos,
+                  Tomo II 2002 editorial Limusa. S.A de C.V.
+               ➢ Carlos Crespo Villalaz. Problema resuelto de mecánica de suelos editorial
+                  Limusa
+               ➢ Tamez, Enrique, 2001. Ingeniería de Cimentaciones, 1a edición. Tgc
+                  geotecnia, México, D. F.
+               ➢ Braja M. Das, Principios de Ingeniería de Cimentación cuarta edición
+                  editorial Thomson
+
+               ➢ Manual de Mecánica de Suelos. - Secretaría de Recursos Hidráulicos,
+                  edición 1970.
+
+               ➢ Mecánica de Suelos, Instructivo para ensaye de Suelos. - Instituto
+                  Mexicano de Tecnología del Agua, edición 1990.
+
+               ➢ Manual de calidad de los materiales en secciones estructurales de
+                  pavimentos. - Instituto Mexicano del Transporte, SCT. 1991.
+
+
+
+
+                                                                        Página. 47
+

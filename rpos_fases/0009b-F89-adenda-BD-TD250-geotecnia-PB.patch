@@ -1,0 +1,383 @@
+From fc9131fb986c79efec076cfd194ea3180b019b12 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sat, 31 Oct 2026 14:00:01 -0600
+Subject: [PATCH 2/3] =?UTF-8?q?F89=20(parcial):=20adenda=20BD=20(TD-250,?=
+ =?UTF-8?q?=20geotecnia=20OD=202025,=20planta=20baja=20con=20contraventeos?=
+ =?UTF-8?q?)=20y=20cimentaci=C3=B3n=20con=20pilas?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01UsuNxxGDpmcCyJTGFRkq7k
+---
+ data/blindaje_zumaya/bd_blindaje_zumaya.json | 242 ++++++++++++++++++-
+ pipelines/blindaje_zumaya_f89.py             |  49 +++-
+ 2 files changed, 278 insertions(+), 13 deletions(-)
+
+diff --git a/data/blindaje_zumaya/bd_blindaje_zumaya.json b/data/blindaje_zumaya/bd_blindaje_zumaya.json
+index 492f4cd..15e5072 100644
+--- a/data/blindaje_zumaya/bd_blindaje_zumaya.json
++++ b/data/blindaje_zumaya/bd_blindaje_zumaya.json
+@@ -1,6 +1,6 @@
+ {
+  "titulo": "BD de blindaje — Centro Internacional de Neuro-Oncología Zumaya (Villahermosa)",
+- "version": "1.1 (F87, adenda append-only)",
++ "version": "1.1 (F87, adenda append-only) +F89(adenda 2026-10-31)",
+  "reglas": [
+   "simulacion_teorica",
+   "pq no_declarada_nunca",
+@@ -71,7 +71,27 @@
+   "USUARIO_20261029b": {
+    "tipo": "declaración del usuario",
+    "texto": "linac Elekta Versa HD multienergético 6, 10, 15 MV; braquiterapia Flexitron con fuente de Co-60; Leksell Gamma Knife Co-60"
+-  }
++  },
++  "CONTUPLEX_TD250": {
++   "archivo": "Tabique_TD-250_CONTUPLEX_1.pdf",
++   "md5": "472492986d4e290ce0f854538a94551c",
++   "tipo": "ficha técnica del proveedor (3 pp.)"
++  },
++  "GEOTECNIA_OD_202505": {
++   "archivo": "2_INFORME_GEOTECNICO_HZUMAYA_25_MAYO_2025_FINAL.pdf",
++   "md5": "ea4509ebf9eb2d99034705fdae12443d",
++   "tipo": "estudio de mecánica de suelos, OD Ingeniería Geotécnica (Ing. Narciso Ovando García), 2 sondeos mixtos SM-1/SM-2 a 30 m, abril–mayo 2025"
++  },
++  "DWG_PB_20261031": {
++   "archivo": "PLANTA_BAJA_ARQ_NEURO-ONCOLOGIA.dwg",
++   "md5": "bcf19f08d13a0a8dc71cc202ede5e7f7",
++   "tipo": "planta baja arquitectónica AR-IN-PB-1-01 (fase DD) con capas CONTRAVENTEOS y PILAS nuevas"
++  },
++  "reenvios_identicos_20261031": [
++   "OT-521_TM_NIPOL_DENSIDAD_3.5.pdf",
++   "OT-521_TM_NIPOL_DENSIDAD_4.pdf",
++   "OT-521_TM_NIPOL_DENSIDAD_5.pdf (md5 iguales a los ya registrados)"
++  ]
+  },
+  "materiales": {
+   "tabique_NIPOL_3.5": {
+@@ -916,6 +936,43 @@
+     "1,5 TVL = 37 cm (24,7 cm/TVL) en la gráfica",
+     "sin informe IMCYC de densidad real para 5,5"
+    ]
++  },
++  "TD-250": {
++   "rho_nominal": 2.5,
++   "pieza_mm": [
++    130,
++    130,
++    254
++   ],
++   "peso_kg": 10.7,
++   "rho_por_peso_de_pieza": 2.49,
++   "fc_MPa": 14.7,
++   "matriz": "cementicia con agregados alto-Z (Fe, Ba, Ca) 'optimizada para fotones' — fracción de H no declarada",
++   "TVL_primaria_cm": {
++    "6MV": 34.8,
++    "10MV": 38.5,
++    "15MV": 41.4,
++    "18MV": 42.3
++   },
++   "TVLe_primaria_cm": {
++    "6MV": 31.0,
++    "10MV": 34.8,
++    "15MV": "8.5 (errata; ≈38.6 por escalado)",
++    "18MV": 40.4
++   },
++   "TVL_fuga_cm": {
++    "6MV": 32.0,
++    "10MV": 32.9,
++    "15MV": 33.8,
++    "18MV": 33.8
++   },
++   "origen_TVL": "todas ESTIMADAS por razón de densidades 2.35/2.50 desde NCRP 151 (no hay medición); U(k=2)≈25 %",
++   "referencia_no_entregada": "IMCYC OT-563 (2025) masa específica/absorción/vacíos/f'c — pendiente_fuente",
++   "lectura": "el peso de pieza (10.7 kg) ⇒ 2.49 g/cm³, coherente con la nominal (a diferencia de TD-350/500, cuyo nominal excede la densidad seca IMCYC). Para fotones = concreto 2.5. Para neutrones del ciclotrón la ficha no da H: se modela como concreto estándar 2.5 (instrucción del usuario) hasta tener OT-563 con agua/H.",
++   "erratas": [
++    "TVLe 15 MV = 8.5 cm (imposible; debe ser ≈38.6)",
++    "comparativa '≈6 % menos espesor' es solo el efecto de densidad 2.50 vs 2.35"
++   ]
+   }
+  },
+  "equipos": {
+@@ -941,5 +998,186 @@
+    "actividad_Ci": "6600 +10 % (GAMMA)",
+    "fuga": "pendiente_fuente (datos de planeación de sitio de Elekta)"
+   }
++ },
++ "geotecnia": {
++  "fuente": "GEOTECNIA_OD_202505",
++  "sitio": "Prol. Av. Paseo Usumacinta 2118, Ra. Lázaro Cárdenas 2a secc., Centro, Tabasco",
++  "sismo": "zona B (CFE), terreno tipo II; estructuras grupo A: ordenadas espectrales ×1.5",
++  "viento": "zona 6 (según informe)",
++  "NAF_m": {
++   "SM-1": 4.45,
++   "SM-2": 4.25
++  },
++  "estratigrafia_resumen": "0–3.6 m SM arena limosa mediana-suelta; 3.6–9 m SC arena arcillosa suelta a muy suelta (N=3 a 8.4 m en SM-1); 8.4–21.6 m OH limo/arcilla orgánica de alta plasticidad firme a dura (w 34–46 %); >21.6 m OL/CL muy firme a dura (N 28–35)",
++  "qa_superficial_t_m2": {
++   "SM-1": 5.5,
++   "SM-2": 4.9,
++   "condicion": "B=1.0 m, Df=3.6 m, Terzaghi FS 3–3.5"
++  },
++  "asentamiento_superficial_cm": {
++   "SM-1": {
++    "elastico": 1.74,
++    "consolidacion": 6.8,
++    "total": 8.54
++   },
++   "SM-2": {
++    "elastico": 1.42,
++    "consolidacion": 8.79,
++    "total": 10.21
++   },
++   "carga": "0.50–0.55 kg/cm², losa 3×3 m"
++  },
++  "kv_kg_cm3": {
++   "SM-1": {
++    "1m": 1.582,
++    "2m": 0.791,
++    "3m": 0.527,
++    "5m": 0.316,
++    "10m": 0.158
++   },
++   "SM-2": {
++    "1m": 1.758,
++    "2m": 0.879,
++    "3m": 0.586,
++    "5m": 0.352,
++    "10m": 0.176
++   }
++  },
++  "pilas_Qadm_neta_t": {
++   "SM-1": {
++    "0.80@21": 190.0,
++    "1.00@21": 267.3,
++    "1.20@21": 356.5,
++    "1.20@26": 393.1
++   },
++   "SM-2": {
++    "0.80@21": 179.3,
++    "1.00@21": 247.6,
++    "1.00@22": 267.5,
++    "1.00@23": 273.9,
++    "1.00@24": 279.6,
++    "1.20@21": 325.3,
++    "1.20@26": 387.2,
++    "1.20@27": 399.2
++   },
++   "sismo": "Qadm ×1.20 en condición sísmica",
++   "FS": "2 fricción, 3 punta",
++   "separacion_min": "3 D"
++  },
++  "asentamiento_pila_elastico_cm": {
++   "SM-1": {
++    "0.80": 3.64,
++    "1.00": 4.15,
++    "1.20": 5.98
++   },
++   "SM-2": {
++    "0.80": 3.96,
++    "1.00": 4.45,
++    "1.20": 4.94
++   }
++  },
++  "recomendacion": "cimentación profunda con pilas coladas in situ Ø0.80–1.20 m, L 21–27 m (lodo bentonítico, tremie); construir en seco; bombeo si hay agua",
++  "observaciones_RPOS": [
++   "el informe no da la carga de diseño usada ni el plano de ubicación de sondeos respecto a los búnkeres",
++   "asentamientos de pila 3.6–6 cm a carga admisible: con búnkeres de 600–1 300 t junto a columnas de edificio el asentamiento diferencial manda el diseño"
++  ]
++ },
++ "DWG_PB_20261031": {
++  "fuente": "DWG_PB_20261031",
++  "unidades": "m (modelo)",
++  "ciclotron": {
++   "marco_propio": "ejes CA–CD (1.10/3.20/3.20/1.10 = 8.60) × C1–C6 (0.90/3.70/3.70/3.50/3.70 = 15.50); separado del edificio por JUNTA CONSTRUCTIVA en x≈−5.9",
++   "boveda_interior_m": [
++    4.0,
++    4.0
++   ],
++   "boveda_x": [
++    -12.21,
++    -8.21
++   ],
++   "boveda_y": [
++    36.03,
++    40.03
++   ],
++   "muros_m": {
++    "oeste": 2.4,
++    "este": 2.2,
++    "sur_tapon": 2.5,
++    "laberinto_norte_total": 7.23
++   },
++   "tapon_sur": "escalonado 3.10/2.70/2.30 m de ancho en 0.90/0.90/0.70 m de fondo (tapón removible)",
++   "laberinto": "5 tramos, salida a 1.00 m en esquina NE (x −7.41…−6.41, y 47.26)",
++   "columnas": "columnas 0.70×0.70 de los ejes CB y CD quedan EMBEBIDAS en los muros oeste y este",
++   "pila": "círculo Ø1.00 m (capa PILAS) bajo el centro del ciclotrón (−10.31, 38.12)",
++   "zanja_lineas_transferencia": "x −9.83…−8.21, y 36.48…39.53: llega a la cara interior del muro este",
++   "cambio_vs_BIND_28-10-26": "bóveda 4.00×4.00 (antes 4.00×3.94 de la imagen IBA); espesores iguales a IBA/GAMMA"
++  },
++  "contraventeos": {
++   "NA (x −5.76, junto a la junta)": [
++    "N1–N2 (y 34.5–40.4)",
++    "N2–N3 (y 41.4–48.5)"
++   ],
++   "N1 (y 34.0)": [
++    "NC–ND",
++    "ND–NE",
++    "NE–NF",
++    "NG–NH",
++    "NH–NI"
++   ],
++   "N2 (y 40.9)": [
++    "NE–NF (muro norte del Gamma Knife)"
++   ],
++   "N3 (y 49.0)": [
++    "NC–ND",
++    "ND–NE (con vano 15.75–19.04)"
++   ],
++   "N4 (y 54.3)": [
++    "NE–NF",
++    "NF–NG",
++    "NG–NH",
++    "NH–NI"
++   ],
++   "NF (x 28.8)": [
++    "N1–N2 (pegado al muro este del GK)",
++    "N2.6–N3 (y 44.2–48.5)"
++   ],
++   "NG (x 34.8)": [
++    "N3–N4"
++   ],
++   "NI (x 46.8)": [
++    "N1–N2",
++    "N2–N3",
++    "N3–N4"
++   ]
++  },
++  "linac": {
++   "interior_m": "7.00 (franja primaria) / 7.51 × 9.81",
++   "muros_m": {
++    "primario_oeste_este": 0.65,
++    "resto": 0.39
++   },
++   "franja_primaria_y": [
++    47.08,
++    51.18
++   ],
++   "holgura_a_contraventeos_m": {
++    "este (NI)": "1.70 desde la cara exterior actual",
++    "norte (N4)": "1.31",
++    "oeste (NF)": "7.9"
++   }
++  },
++  "gamma_knife": {
++   "muros_m": {
++    "oeste": 0.26,
++    "norte": 0.26,
++    "este": 0.13,
++    "sur": 0.13
++   },
++   "contraventeos_contiguos": [
++    "N2 al norte",
++    "NF al este (0.02 m)",
++    "N1 al sur"
++   ]
++  }
+  }
+ }
+\ No newline at end of file
+diff --git a/pipelines/blindaje_zumaya_f89.py b/pipelines/blindaje_zumaya_f89.py
+index 412c630..3b46e4a 100644
+--- a/pipelines/blindaje_zumaya_f89.py
++++ b/pipelines/blindaje_zumaya_f89.py
+@@ -25,14 +25,30 @@ SUP = {
+     "viva_azotea_kg_m2": (100, "NTC-CyA CDMX 2023 azotea pend. <5 % (referencia, la norma local puede variar)"),
+     "viva_hospital_kg_m2": (350, "salas de espera / circulaciones hospital (referencia NTC-CyA)"),
+     "h_entrepiso_m": (4.00, "altura de entrepiso genérica en niveles N2–N4 — pendiente_fuente (cortes)"),
+-    "q_adm_t_m2": (None, "capacidad de carga admisible del suelo — pendiente_fuente (estudio de mecánica de suelos)"),
+-    "c_sismico": ((0.15, 0.30), "rango de coeficiente sísmico de revisión; Villahermosa: sismicidad baja-moderada, espectro de sitio MDOC-CFE 2015 pendiente (depende del suelo)"),
++    "q_adm_t_m2": ((4.9, 5.5), "geotecnia OD 2025: B=1 m, Df=3.6 m (SM-2 / SM-1)"),
++    "Q_pila_t": (247.6, "geotecnia OD 2025: pila Ø1.00 m L=21 m, Qadm neta SM-2 (gobierna); ×1.2 en sismo"),
++    "s_pila_cm": (4.45, "asentamiento elástico pila Ø1.00 a carga admisible (SM-2)"),
++    "c_sismico": ((0.15, 0.30), "rango de revisión; geotecnia: zona B, terreno II, grupo A ×1.5 — espectro de diseño del CSE pendiente"),
+     "mu_seco": (0.6, "fricción tabique-tabique en junta seca (valor típico; ensayar)"),
+-    "peso_ciclotron": (None, "peso y huella del ciclotrón IBA — pendiente_fuente (ficha de instalación IBA)"),
++    "peso_ciclotron": (18.0, "IBA SRG MID_55672 Rev G tabla 4: 18 000 kg sobre 4 apoyos 220×220 mm (10 kg/cm²); nivel bajo patas ±1 mm"),
++    "peso_linac": (8.0, "Versa HD gantry + base, orden de magnitud — pendiente_fuente (site planning Elekta)"),
+     "peso_gamma_knife": (None, "peso del Leksell Gamma Knife y huella — pendiente_fuente (site planning Elekta; orden de 20 t)"),
+ }
+ 
+ 
++def cimentacion(nombre, W_t, huella_m2, junta):
++    """compara presión media con qa superficial y estima pilas Ø1.00 (L 21 m) por capacidad; sin sismo ni efecto de grupo."""
++    qa = SUP["q_adm_t_m2"][0]; Q = SUP["Q_pila_t"][0]
++    p = W_t / huella_m2
++    n = math.ceil(W_t / Q)
++    return {"elemento": nombre, "W_t": round(W_t), "huella_m2": round(huella_m2, 1), "presion_media_t_m2": round(p, 1),
++            "qa_superficial_t_m2": list(qa), "superficial_viable": p <= min(qa),
++            "pilas_D100_minimo_por_capacidad": n, "pilas_sugeridas": max(n + 2, 4),
++            "asentamiento_pila_cm": SUP["s_pila_cm"][0], "junta_constructiva": junta,
++            "riesgo": ("asentamiento diferencial contra el edificio contiguo: con junta, controlable; sin junta, las pilas del búnker deben "
++                       "dimensionarse para igualar asentamientos con las columnas vecinas (o transferir con contratrabes rígidas)")}
++
++
+ def mod(t):
+     return TAB * math.ceil(t / TAB - 1e-9)
+ 
+@@ -80,13 +96,15 @@ def ciclotron(espesores_cm=None):
+     P_techo = q * Lx * Ly
+     P_muros = sum(caras[k]["peso_propio_t_m"] * (3.94 + 0.4 if k != "sur" else 4.00) for k in caras)
+     lab = 9.22 * 3.2 * 0.5 * h_muro * rho                                        # laberinto: masa ≈ 50 % de su huella (pasillos huecos)
+-    total = P_techo + P_muros + lab
++    total = P_techo + P_muros + lab + SUP["peso_ciclotron"][0] + 0.6 * G_RC * Lx * (Ly + 9.22)
+     huella = Lx * (Ly + 9.22)
+     return {"espesores_cm": e, "techo": T, "muros": caras, "peso_total_t": round(total, 0), "huella_m2": round(huella, 1),
+-            "presion_media_losa_cimentacion_t_m2": round(total / huella + 0.6 * G_RC, 1),
+-            "nota_cimentacion": "presión media ≈ 7–9 t/m² + peso del ciclotrón (pendiente). Con suelos blandos y nivel freático somero "
+-                                "(frecuentes en Villahermosa) lo usual es losa de cimentación independiente con junta constructiva respecto al edificio, "
+-                                "por asentamiento diferencial; la decisión depende del estudio de mecánica de suelos."}
++            "presion_media_losa_cimentacion_t_m2": round(total / huella, 1),
++            "cimentacion": cimentacion("búnker ciclotrón (losa 0.60 m incluida)", total, huella, True),
++            "apoyos_ciclotron": "18 t en 4 apoyos de 220×220 mm (≈ 93 t/m² local): losa ≥ 0.60 m y la pila Ø1.00 dibujada bajo el centro; tolerancia de nivel ±1 mm ⇒ la losa del búnker y el ciclotrón deben quedar sobre el mismo grupo de pilas",
++            "nota_cimentacion": "la presión media supera la qa superficial (4.9–5.5 t/m²) ⇒ pilas, como recomienda el estudio geotécnico. "
++                                "El DWG ya separa el búnker con junta constructiva (correcto). Líneas de transferencia: IBA pide ductos a 0.50 m en losa; "
++                                "la zanja cruza el muro este y la junta bajo la crujía contraventeada NA N1–N2 ⇒ coordinar paso bajo la contratrabe."}
+ 
+ 
+ def linac(techo_TD550_cm, muros_cm, h_int=3.30, L=7.50):
+@@ -98,7 +116,16 @@ def linac(techo_TD550_cm, muros_cm, h_int=3.30, L=7.50):
+     caras = {k: muro(v / 100, h_int + 0.6 + tt, rho, T["reaccion_muro_t_m"] if k.startswith("primaria") else 0.0) for k, v in muros_cm.items()}
+     for k in caras:
+         caras[k]["estabilidad_junta_seca"] = estabilidad_seca(muros_cm[k] / 100, h_int + 0.6 + tt)
+-    return {"techo_TD550_cm": techo_TD550_cm, "techo": T, "muros": caras,
++    # peso total con la geometría DWG PB: interior 7.51 × 9.81 m; perímetro medio por cara
++    Li = {"primaria_oeste": 9.81, "primaria_este": 9.81, "secundaria_norte": 7.51 + 2 * 1.0, "sur_laberinto": 7.51 + 2 * 1.0}
++    tw = dict(muros_cm); tw.setdefault("sur_laberinto", 65)
++    W_muros = sum(tw[k] / 100 * (h_int + 0.6 + tt) * rho * Li[k] for k in Li) + 7.5 * 0.65 * h_int * rho
++    W_techo = q * 7.51 * 9.81 + 0.6 * G_RC * (7.51 + 2) * (9.81 + 2)   # tabique sólo sobre el claro (sobre muros ya está en su altura)
++    W_losa_cim = 0.6 * G_RC * (7.51 + 2.2) * (9.81 + 2.2)
++    W = W_muros + W_techo + W_losa_cim + SUP.get("peso_linac", (8.0,))[0]
++    huella = (7.51 + 2.2) * (9.81 + 2.2)
++    return {"techo_TD550_cm": techo_TD550_cm, "techo": T, "muros": caras, "peso_total_t": round(W),
++            "cimentacion": cimentacion("búnker linac (sin junta en el DWG)", W, huella, False),
+             "masa_superficial_techo_t_m2": {"TD550_real": round(tt * rho, 2), "espesor_concreto_235_misma_masa_m": round(tt * rho / 2.35, 2),
+                                             "lectura": "para fotones el blindaje depende de la masa por área: el techo pesa ≈ lo mismo en TD-550 que en concreto; la densidad solo ahorra espesor (y altura de edificio)"}}
+ 
+@@ -153,10 +180,10 @@ if __name__ == "__main__":
+     for k in ("ciclotron_F88", "ciclotron_MC"):
+         c = E[k]
+         if c:
+-            print(k, c["espesores_cm"], "techo", c["techo"], "peso", c["peso_total_t"], "huella", c["huella_m2"], "p", c["presion_media_losa_cimentacion_t_m2"])
++            print(k, c["espesores_cm"], "peso", c["peso_total_t"], c["cimentacion"])
+             for kk, v in c["muros"].items():
+                 print("  ", kk, v["total_t_m"], v["estabilidad_junta_seca"]["vuelco_c030"])
+     for k in ("linac_area_verde_T1_40", "linac_sala_espera_T1"):
+-        print(k, E[k]["techo"], {kk: v["total_t_m"] for kk, v in E[k]["muros"].items()})
++        print(k, E[k]["techo"]["M_t_m_por_m"], E[k]["peso_total_t"], E[k]["cimentacion"])
+     for k, v in E["muros_en_entrepiso"].items():
+         print(k, v["peso_propio_t_m"], v["estabilidad_junta_seca"]["vuelco_c015"], v["estabilidad_junta_seca"]["vuelco_c030"], v["carga_lineal_vs_muro_divisorio_ligero"])
+-- 
+2.43.0
+
