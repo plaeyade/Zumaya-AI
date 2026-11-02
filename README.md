@@ -1,4 +1,19 @@
-# Zumaya-AI — Centro Internacional de Neuro-Oncología Zumaya (Villahermosa, Tabasco)
+<!-- encabezado-gamma -->
+<div align="center">
+
+# Zumaya-AI
+
+**Proyecto de la instalación: Centro Internacional de Neuro-Oncología Zumaya (Villahermosa, Tabasco)**
+
+![etapa](https://img.shields.io/badge/etapa-dise%C3%B1o-orange) ![autoridad](https://img.shields.io/badge/autoridad-CNSNS-informational) ![licencia](https://img.shields.io/badge/licencia-propietaria-lightgrey)
+
+[Objetivos](#objetivos) · [Estructura](#estructura) · [Contratos](#contratos) · [Estado (01-11-2026)](#estado-01-11-2026) · [Ejecutar](#ejecutar) · [Ecosistema GAMMA](#ecosistema-gamma)
+
+</div>
+
+> [!IMPORTANT]
+> Repositorio privado, de uso interno. Los documentos son propiedad del usuario, que tiene los derechos de uso. Los espesores y presupuestos son de diseño; la autorización la otorga la CNSNS.
+<!-- /encabezado-gamma -->
 
 Repositorio del proyecto de la instalación:
 - blindajes del ciclotrón, el linac, el Gamma Knife, la braquiterapia HDR, el PET-CT, medicina
@@ -9,9 +24,6 @@ Repositorio del proyecto de la instalación:
 
 Es el «edificio» del ecosistema GAMMA: aporta los datos de la instalación a Cyclotron-SIM,
 Radiopharma OS y RadShieldMx, y sus documentos se indexan en GAMMA-AI.
-
-> Repositorio privado, de uso interno. Los documentos son propiedad del usuario, que tiene los
-> derechos de uso. Los espesores y presupuestos son de diseño; la autorización la otorga la CNSNS.
 
 ## Objetivos
 
@@ -93,3 +105,33 @@ Las rutas por defecto están dentro del repo y se pueden cambiar con `ZUMAYA_BD`
 - **Radiopharma OS:** planea la producción contra `presupuesto_operativo@1`.
 - **RadShieldMx:** cálculo analítico, memoria CNSNS y ventilación.
 - **GAMMA-AI:** indexa `fuentes/` e `informes/`; las demás plataformas citan desde ahí.
+
+## Ecosistema GAMMA
+
+Cinco repositorios privados unidos por contratos JSON versionados, no por imports. Este repositorio
+está resaltado.
+
+```mermaid
+flowchart LR
+  G["GAMMA-AI<br/><sub>motor científico · núcleo clínico</sub>"]
+  R["RadShieldMx<br/><sub>blindajes y memoria CNSNS</sub>"]
+  P["Radiopharma OS<br/><sub>producción · QC · liberación</sub>"]
+  C["Cyclotron-SIM<br/><sub>gemelo físico · Monte Carlo</sub>"]
+  Z["Zumaya-AI<br/><sub>instalación · búnker · estructura</sub>"]
+  G -- "gamma/evidencia@1" --> R
+  G -- "gamma/evidencia@1" --> P
+  C -- "termino_fuente@1" --> P
+  C -- "flujo_aire@1" --> R
+  Z -- "presupuesto_operativo@1" --> P
+  Z -- "planos · materiales" --> C
+  R & P & C & Z -. "gamma/ingesta@1" .-> G
+  classDef actual fill:#1f6feb,stroke:#0b3d91,color:#fff,stroke-width:2px
+  class Z actual
+```
+
+## Confidencialidad y licencia
+
+Software propietario de uso individual del titular; no es de código abierto ni se distribuye.
+Los documentos fuente son propiedad del titular, que tiene los derechos de uso. Ningún dato de
+pacientes reales entra a este repositorio: los datos clínicos permanecen anonimizados y fuera de
+GitHub. Las salidas técnicas no sustituyen la revisión ni la firma del profesional responsable.
