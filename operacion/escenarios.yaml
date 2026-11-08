@@ -1,0 +1,228 @@
+# Modelo operacional — Centro Internacional de Neuro-Oncología Zumaya (Villahermosa, Tabasco)
+# Parámetros de producción, distribución, flujo de pacientes y cargas de trabajo.
+# Etiquetas: [IBA] dato de la propuesta/SRG de IBA en fuentes/ciclotron_IBA; [BD] base de blindajes
+# (blindaje/datos/bd_blindaje_zumaya.json); [LIT] valor típico de literatura; [SUP] supuesto declarado
+# a confirmar en la operación real. Horas en formato HH:MM, hora del centro (todas las ciudades
+# destino están en el huso horario del centro de México, sin horario de verano).
+
+fisica:
+  t12_min: {F18: 109.77, Ga68: 67.71, Cu64: 762.06}   # [LIT] DDEP/NNDC; Cu-64 = 12.701 h
+  t12_Ge68_d: 270.95
+
+ciclotron:
+  modelo: IBA Cyclone KIUBE 300 (doble haz, 2 x 150 uA)        # [BD] licencia/presupuesto_operativo.json
+  corriente_max_total_uA: 300
+  corriente_max_blanco_uA: 150
+  blancos_F18: 2                                              # [IBA] 2 x Nirta HCFT F18-700
+  # Rendimiento de saturación calibrado con la propuesta IBA: "24 Ci de F-18 en 2 h con 180 uA"
+  # => Ysat = 888 GBq / (180 uA x (1 - e^{-lambda 120 min})) = 9.29 GBq/uA
+  # (equivale a 3.5 GBq/uAh de rendimiento inicial). La cifra teórica de blanco grueso a 18 MeV
+  # (5-6 GBq/uAh => Ysat 13-16 GBq/uA) se deja como sensibilidad: la de IBA es la conservadora.
+  ysat_F18_GBq_uA: 9.29
+  ysat_F18_teorico_GBq_uA: 14.5                               # [LIT] 5.5 GBq/uAh / lambda
+  capacidad_blanco_GBq: 700                                   # [IBA] HCFT-700, EOB tras 2 h
+  corrientes_blanco_uA: [40, 60, 75, 100, 125, 150]           # escalones de corriente por blanco
+  t_irr_min: 20
+  t_irr_max: 120                                              # [IBA] SRG: corridas FDG de 2 h
+  arranque_min: 45        # [SUP] calentamiento, vacío, RF, llenado de blancos antes del primer haz
+  recarga_blanco_min: 15  # [SUP] descarga/rellenado entre irradiaciones
+  transferencia_min: 5    # [SUP] EOB -> celda caliente
+  presupuesto_uAh_semana: 12000                               # [BD] presupuesto_operativo@1
+  horas_haz_dia_diseno_GAMMA: 8                               # [BD] estimacion GAMMA ciclotrón
+
+radiofarmacia:
+  modulos_sintesis: 1                     # [IBA] 1 Synthera+ en la propuesta
+  limpieza_entre_sintesis_min: 60         # [SUP] decaimiento en celda + cambio de casete
+  sintesis_FDG_min: 30                    # [LIT] 25-35 min
+  rcy_FDG_corregido: 0.65                 # [LIT] 60-70 %, corregido por decaimiento
+  qc_FDG_min: 50                          # [LIT] 45-60 min (liberación paramétrica, esterilidad retrospectiva)
+  dispensacion_min: 10                    # dosis local extraída 10 min antes de inyectar
+  embalaje_min: 20                        # liberación -> salida del vehículo
+  margen_dispensacion: 1.10               # residuos en vial/línea y tolerancia del activímetro [SUP]
+  caducidad_FDG_h: 10                     # [SUP] vida útil típica tras EOS (fijar en el registro sanitario)
+  limite_bulto_tipo_A_GBq: 600            # A2 del F-18 = 0.6 TBq (OIEA SSR-6) por bulto tipo A
+  sensibilidad:                           # caso optimista / nominal / pesimista para la hora de arranque
+    optimista: {sintesis_FDG_min: 25, qc_FDG_min: 45, rcy_FDG_corregido: 0.70}
+    nominal:   {sintesis_FDG_min: 30, qc_FDG_min: 50, rcy_FDG_corregido: 0.65}
+    pesimista: {sintesis_FDG_min: 35, qc_FDG_min: 60, rcy_FDG_corregido: 0.60}
+
+galio68:
+  # Opción base: generador Ge-68/Ga-68 (la propuesta IBA trae marcaje de péptidos Ga-68 en Synthera)
+  generador_GBq_calibracion: 1.85        # 50 mCi
+  edad_generador_d: 90
+  eficiencia_elucion: 0.70               # [LIT] cae con la edad (0.8 -> 0.6)
+  marcaje_min: 20
+  rcy_marcaje: 0.85
+  qc_min: 15
+  dosis_MBq: 150                         # PSMA/DOTATATE ~2 MBq/kg
+  # las eluciones se programan según las citas de Ga-68 (liberación 10 min antes de la cita)
+  # Alternativa: blanco líquido 68Zn(NO3)2 en el KIUBE (SRG: bombas de jeringa para 68Ga)
+  blanco_liquido: {rendimiento_inicial_GBq_uAh: 0.30, corriente_uA: 40, t_irr_min: 60,
+                   purificacion_min: 35, rcy: 0.75}  # [SUP] orden de magnitud de literatura; validar con IBA
+
+cobre64:
+  # Blanco sólido 64Ni(p,n)64Cu: OPCIÓN del KIUBE (SRG), no incluida en la 4.a propuesta IBA
+  rendimiento_inicial_GBq_uAh: 0.20      # [SUP] ~ 12 MeV en Ni-64 enriquecido tras degradador
+  corriente_uA: 30
+  t_irr_min: 240
+  procesamiento_min: 180                 # disolución, intercambio iónico, evaporación
+  qc_min: 60
+  rcy: 0.80
+  dosis_MBq: 200
+  dia_produccion: 1                      # 0 = lunes
+  inicio_haz: "13:00"                    # tras las corridas de FDG
+
+distribucion:
+  origen: {nombre: Villahermosa, lat: 17.99, lon: -92.93}
+  velocidad_kmh: 80                      # [SUP] promedio carretero
+  parada_min_cada_4h: 15                 # descanso de chofer
+  recepcion_min: 30                      # recepción, ensayo y preparación en destino
+  dosis_destino_MBq: 370
+  intervalo_dosis_min: 20                # un tomógrafo por destino
+  # Distancias carreteras aproximadas desde Villahermosa [SUP]: verificar con la ruta real (SCT / mapas)
+  ciudades:
+    - {nombre: Coatzacoalcos,     km: 170, lat: 18.13, lon: -94.46, dosis_base: 6, ventana: ["08:00", "15:00"]}
+    - {nombre: Ciudad del Carmen, km: 175, lat: 18.65, lon: -91.82, dosis_base: 4, ventana: ["08:00", "15:00"]}
+    - {nombre: Tuxtla Gutiérrez,  km: 290, lat: 16.75, lon: -93.12, dosis_base: 8, ventana: ["08:00", "15:00"]}
+    - {nombre: Campeche,          km: 375, lat: 19.85, lon: -90.53, dosis_base: 4, ventana: ["08:00", "15:00"]}
+    - {nombre: Veracruz,          km: 470, lat: 19.17, lon: -96.13, dosis_base: 8, ventana: ["08:00", "15:00"]}
+    - {nombre: Mérida,            km: 555, lat: 20.97, lon: -89.62, dosis_base: 8, ventana: ["08:00", "15:00"]}
+    - {nombre: Oaxaca,            km: 700, lat: 17.07, lon: -96.72, dosis_base: 6, ventana: ["08:00", "15:00"]}
+
+# --------------------------------------------------------------------------- escenarios
+escenarios:
+  E1_inicial:
+    descripcion: "Inicial"
+    pet:      {pacientes_dia: 12, escaneres: 1, salas_captacion: 4, vestidores: 2, enfermeria: 1,
+               fraccion_Ga68: 0.15, A0_MBq: 370, jornada: ["07:00", "15:00"]}
+    linac:    {fracciones_dia: 30, unidades: 1, turnos: 1, jornada: ["07:00", "15:00"]}
+    gk:       {pacientes_dia: 3, flujo: marco, jornada: ["07:00", "17:00"]}
+    hdr:      {pacientes_dia: 3, jornada: ["07:00", "15:00"]}
+    gammacamara: {pacientes_dia: 15, camaras: 1, jornada: ["07:00", "15:00"]}
+    i131:     {pacientes_semana: 1, dias_ingreso: [0], cuartos: 2}
+    produccion: {liberaciones: ["07:00", "10:30"], factor_regional: 0.5}
+    cu64:     {pacientes_semana: 0}
+  E2_medio:
+    descripcion: "Medio"
+    pet:      {pacientes_dia: 20, escaneres: 1, salas_captacion: 4, vestidores: 2, enfermeria: 1,
+               fraccion_Ga68: 0.15, A0_MBq: 370, jornada: ["07:00", "15:00"]}
+    linac:    {fracciones_dia: 45, unidades: 1, turnos: 1, jornada: ["07:00", "15:00"]}
+    gk:       {pacientes_dia: 5, flujo: marco, jornada: ["07:00", "17:00"]}
+    hdr:      {pacientes_dia: 5, jornada: ["07:00", "15:00"]}
+    gammacamara: {pacientes_dia: 25, camaras: 1, jornada: ["07:00", "15:00"]}
+    i131:     {pacientes_semana: 2, dias_ingreso: [0, 2], cuartos: 2}
+    produccion: {liberaciones: ["07:00", "10:30"], factor_regional: 1.0}
+    cu64:     {pacientes_semana: 2}
+  E3_maximo:
+    descripcion: "Máximo"
+    pet:      {pacientes_dia: 30, escaneres: 2, salas_captacion: 4, vestidores: 2, enfermeria: 2,
+               fraccion_Ga68: 0.15, A0_MBq: 370, jornada: ["07:00", "15:00"]}
+    linac:    {fracciones_dia: 60, unidades: 1, turnos: 2, jornada: ["07:00", "23:00"]}
+    gk:       {pacientes_dia: 8, flujo: marco, jornada: ["07:00", "17:00"]}
+    hdr:      {pacientes_dia: 8, jornada: ["07:00", "15:00"]}
+    gammacamara: {pacientes_dia: 35, camaras: 1, jornada: ["07:00", "15:00"]}
+    i131:     {pacientes_semana: 3, dias_ingreso: [0, 1, 3], cuartos: 2}
+    produccion: {liberaciones: ["07:00", "10:00", "12:30"], factor_regional: 1.5}
+    cu64:     {pacientes_semana: 4}
+
+# --------------------------------------------------------------------------- flujo de pacientes
+des:
+  replicas: 60
+  semilla: 20261108
+  pet:
+    llegada_antelacion_min: 30
+    llegada_sd_min: 10
+    entrevista_glucemia_min: 10
+    vestidor_min: 4
+    inyeccion_min: 5
+    captacion_min: 60
+    miccion_min: 3
+    escaneo_min: [20, 25]
+    cadencia_slot_min: 25
+    recuperacion_min: 15
+    acompanantes: 1
+    inicio_inyecciones: "07:30"
+  linac:
+    slot_min: 15                   # IMRT/VMAT
+    slot_primera_fx_min: 30        # CBCT + verificación médica
+    fracciones_por_curso: 20       # [SUP] mezcla convencional/hipofraccionada
+    qa_diaria_min: 30              # TG-142 diario + calentamiento
+    qa_semanal_min: 120            # prorrateado entre 5 días
+    qa_mensual_min: 360            # prorrateado entre 20 días
+    qa_paciente_min: 45            # QA de plan IMRT/VMAT por paciente nuevo (fuera de horario clínico)
+    llegada_antelacion_min: 10
+    llegada_sd_min: 7
+    duracion_relativa: 0.85        # tiempo real / slot
+    duracion_cv: 0.20
+    inasistencia: 0.03
+    p_falla_dia: 0.04
+    falla_min: [30, 90]
+    acompanantes_p: 0.5
+    simulacion_TC_min: 30          # TC simulador por paciente nuevo
+  gk:
+    marco_min: [15, 25]
+    rm_min: [30, 45]
+    planeacion_min: [45, 90]
+    tratamiento_min: [60, 120]
+    retiro_min: 10
+    recuperacion_min: 30
+    estaciones_planeacion: 2
+    llegada: "06:45"
+  hdr:
+    aplicador_min: [30, 45]
+    imagen_TC_min: [15, 20]
+    planeacion_min: [30, 45]
+    tratamiento_min: [15, 30]      # Co-60 Flexitron, incluye conexión
+    retiro_recuperacion_min: [45, 75]
+    primera_llegada: "07:30"
+    intervalo_min: 60
+    camas_recuperacion: 2
+  gammacamara:
+    protocolos:   # nombre: [fracción, [pasos]]; paso = [tipo, minutos] con tipo iny|espera|camara|esfuerzo
+      oseo:        [0.40, [[iny, 5], [espera, 180], [camara, 25]]]
+      perfusion:   [0.20, [[iny, 5], [espera, 45], [camara, 20], [esfuerzo, 20], [espera, 30], [camara, 20]]]
+      renal:       [0.10, [[camara, 35]]]
+      tiroides:    [0.15, [[iny, 5], [espera, 20], [camara, 15]]]
+      otros:       [0.15, [[iny, 5], [espera, 60], [camara, 30]]]
+    primera_llegada: "07:15"
+    acompanantes: 1
+  i131:
+    estancia_noches: [2, 3]        # liberación por tasa de dosis; [BD] diseño: 3 días
+    descontaminacion_d: 1
+    semanas: 52
+
+# --------------------------------------------------------------------------- personal (referencia OIEA, orientativa)
+personal:
+  # IAEA Human Health Reports No. 13 (2015) "Staffing in radiotherapy: an activity based approach";
+  # IAEA "Nuclear Medicine Resources Manual" (2020); IAEA Radioisotopes and Radiopharmaceuticals
+  # Series No. 3 "Cyclotron produced radionuclides: guidance on facility design and production of FDG" (2012).
+  rtt_por_unidad_turno: 2
+  fisico_rt_por_unidad: 1
+  fisico_rt_por_pacientes_nuevos_anio: 450
+  dosimetrista_por_pacientes_nuevos_anio: 300
+  oncologo_por_pacientes_nuevos_anio: 250
+  ingeniero_por_unidades_mv: 2
+  tecnologo_pet_por_escaner_turno: 2
+  enfermeria_pet_por_salas_captacion: 4
+  medico_nuclear_por_estudios_dia: 25
+  tecnologo_gc_por_camara_turno: 1.5
+  fisico_mn_por_equipos: 4           # PET + gammacámaras + activímetros
+  radiofarmacia_por_turno: {operador_ciclotron: 1, radioquimico: 1, analista_cc: 1}
+  radiofarmacia_fijo: {responsable_sanitario: 1, ingeniero_ciclotron: 1, logistica_choferes_por_ruta: 1}
+  gk_por_unidad: {fisico: 1, neurocirujano: 1, enfermeria: 1, tecnologo: 1}
+  hdr_por_unidad: {fisico: 1, oncologo: 1, enfermeria: 1, anestesiologo: 1, rtt: 1}
+  dias_laborales_anio: 250
+
+# --------------------------------------------------------------------------- supuestos de diseño del blindaje
+diseno_blindaje:
+  linac:  {W_Gy_sem: 900, base: "30 pac/jornada x 2 turnos x 5 d x 3 Gy (GAMMA 28-10-26; F87/F88)",
+           dosis_fx_Gy: 2.0, factor_IMRT: 3.0, fraccion_IMRT: 1.0, TVL_fuga_hormigon_cm: 33}
+  pet:    {pacientes_sem: 60, A0_MBq: 740, salas_captacion: 4, escaneres: 1, t_captacion_h: 1.0, t_escaneo_h: 0.5,
+           base: "TG-108: 60 pac/sem, 20 mCi (GAMMA 28-10-26)"}
+  i131:   {pacientes_sem: 2, A_GBq: 7.4, noches: 3, base: "2 pac/sem x 3 días, 200 mCi"}
+  hdr:    {pacientes_sem: 50, Gy_paciente: 7, base: "40-50 pac/sem, 7 Gy, 25 min"}
+  gk:     {pacientes_sem: 20, base: "20 pac/sem, 6600 Ci + 10 %"}
+  gammacamara: {pacientes_sem: 43, base: "40 Tc-99m + 2 I-131 + 1 Lu-177 por semana"}
+  tc_simulador: {pacientes_sem: 125, base: "[EST] F88: 25 pac/día x 5"}
+  dias_semana: 5
+  tg108: {gamma_uSv_m2_MBq_h: 0.092, factor_vaciado: 0.85}   # 0.143 x 0.64 (autoatenuación del paciente)

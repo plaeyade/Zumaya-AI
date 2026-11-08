@@ -1,0 +1,4 @@
+escenario,pet_espera_sala_captacion_min,pet_retraso_inyeccion_p95_min,pet_espera_escaner_min,pet_fin_jornada,pet_tiempo_extra_min,linac_espera_media_min,linac_espera_p95_min,linac_tiempo_extra_min,gk_fin,gk_tiempo_extra_min,gk_espera_equipo_min,gk_fin_con_mascara_y_planeacion_previa,gk_tiempo_extra_con_mascara_min,hdr_ciclo_h,hdr_espera_TC_min,hdr_tiempo_extra_min,gc_espera_camara_min,gc_tiempo_extra_min,i131_cuartos_pico,i131_dias_sobrecupo_anio,asientos_espera_linac_p95
+E1_inicial,0.1,1.4,0.2,13:55,0.0,10.3,24.7,22.0,14:03,0.0,51.8,12:12,0.0,3.05,7.0,0.0,15.6,35.0,1,0,7
+E2_medio,0.1,0.8,0.2,17:15,135.0,9.4,22.3,248.0,17:05,19.0,103.1,15:14,0.0,3.0,4.9,0.0,20.4,304.0,2,0,5
+E3_maximo,77.8,130.7,1.5,17:38,158.0,9.6,22.9,15.0,21:34,274.0,183.3,19:42,162.0,3.3,7.3,19.0,24.5,584.0,3,27,6

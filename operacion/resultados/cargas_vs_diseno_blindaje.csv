@@ -1,0 +1,56 @@
+escenario,area,magnitud,valor,diseno,unidad,razon,excede,nota
+E1_inicial,Linac,W primaria (isocentro),300.0,900,Gy/sem,0.33,False,30 pac/jornada x 2 turnos x 5 d x 3 Gy (GAMMA 28-10-26; F87/F88)
+E1_inicial,Linac,W fuga (IMRT x3),900.0,900,Gy/sem,1.0,False,barreras secundarias: +0 cm de hormigón 2.35 si el diseño usó 900 Gy sin factor IMRT
+E1_inicial,PET/CT,pacientes/semana,60,60,pac/sem,1.0,False,"TG-108: 60 pac/sem, 20 mCi (GAMMA 28-10-26)"
+E1_inicial,PET/CT,actividad inyectada semanal (A0=370 MBq),22.2,44.4,GBq/sem,0.5,False,
+E1_inicial,PET/CT,"TG-108 sala de captación a 1 m (A0=370, 4 salas)",0.43,0.85,mSv/sem,0.5,False,
+E1_inicial,PET/CT,"TG-108 sala del tomógrafo a 1 m (A0=370, 1 escáner)",0.42,1.08,mSv/sem,0.38,False,
+E1_inicial,PET/CT,actividad inyectada semanal (A0=555 MBq),33.3,44.4,GBq/sem,0.75,False,
+E1_inicial,PET/CT,"TG-108 sala de captación a 1 m (A0=555, 4 salas)",0.64,0.85,mSv/sem,0.75,False,
+E1_inicial,PET/CT,"TG-108 sala del tomógrafo a 1 m (A0=555, 1 escáner)",0.62,1.08,mSv/sem,0.58,False,
+E1_inicial,I-131,pacientes/semana,1,2,pac/sem,0.5,False,"2 pac/sem x 3 días, 200 mCi"
+E1_inicial,I-131,actividad semanal administrada,7.4,14.8,GBq/sem,0.5,False,
+E1_inicial,HDR,pacientes/semana,15,50,pac/sem,0.3,False,"40-50 pac/sem, 7 Gy, 25 min"
+E1_inicial,Gamma Knife,pacientes/semana,15,20,pac/sem,0.75,False,"20 pac/sem, 6600 Ci + 10 %"
+E1_inicial,Gammacámara,pacientes/semana,75,43,pac/sem,1.74,True,40 Tc-99m + 2 I-131 + 1 Lu-177 por semana
+E1_inicial,TC simulador,estudios/semana,22.5,125,est/sem,0.18,False,[EST] F88: 25 pac/día x 5
+E1_inicial,Ciclotrón,carga integrada,384.85,12000,uA·h/sem,0.03,False,presupuesto_operativo@1
+E1_inicial,Ciclotrón,corriente máxima,80,300,uA,0.27,False,
+E1_inicial,Ciclotrón,horas de haz por día (FDG + Cu-64 prorrateado),0.96,8,h/día,0.12,False,estimación GAMMA (8 h/día a 300 uA)
+E2_medio,Linac,W primaria (isocentro),450.0,900,Gy/sem,0.5,False,30 pac/jornada x 2 turnos x 5 d x 3 Gy (GAMMA 28-10-26; F87/F88)
+E2_medio,Linac,W fuga (IMRT x3),1350.0,900,Gy/sem,1.5,True,barreras secundarias: +6 cm de hormigón 2.35 si el diseño usó 900 Gy sin factor IMRT
+E2_medio,PET/CT,pacientes/semana,100,60,pac/sem,1.67,True,"TG-108: 60 pac/sem, 20 mCi (GAMMA 28-10-26)"
+E2_medio,PET/CT,actividad inyectada semanal (A0=370 MBq),37.0,44.4,GBq/sem,0.83,False,
+E2_medio,PET/CT,"TG-108 sala de captación a 1 m (A0=370, 4 salas)",0.71,0.85,mSv/sem,0.83,False,
+E2_medio,PET/CT,"TG-108 sala del tomógrafo a 1 m (A0=370, 1 escáner)",0.69,1.08,mSv/sem,0.64,False,
+E2_medio,PET/CT,actividad inyectada semanal (A0=555 MBq),55.5,44.4,GBq/sem,1.25,True,
+E2_medio,PET/CT,"TG-108 sala de captación a 1 m (A0=555, 4 salas)",1.06,0.85,mSv/sem,1.25,True,
+E2_medio,PET/CT,"TG-108 sala del tomógrafo a 1 m (A0=555, 1 escáner)",1.04,1.08,mSv/sem,0.96,False,
+E2_medio,I-131,pacientes/semana,2,2,pac/sem,1.0,False,"2 pac/sem x 3 días, 200 mCi"
+E2_medio,I-131,actividad semanal administrada,14.8,14.8,GBq/sem,1.0,False,
+E2_medio,HDR,pacientes/semana,25,50,pac/sem,0.5,False,"40-50 pac/sem, 7 Gy, 25 min"
+E2_medio,Gamma Knife,pacientes/semana,25,20,pac/sem,1.25,True,"20 pac/sem, 6600 Ci + 10 %"
+E2_medio,Gammacámara,pacientes/semana,125,43,pac/sem,2.91,True,40 Tc-99m + 2 I-131 + 1 Lu-177 por semana
+E2_medio,TC simulador,estudios/semana,36.25,125,est/sem,0.29,False,[EST] F88: 25 pac/día x 5
+E2_medio,Ciclotrón,carga integrada,699.85,12000,uA·h/sem,0.06,False,presupuesto_operativo@1
+E2_medio,Ciclotrón,corriente máxima,80,300,uA,0.27,False,
+E2_medio,Ciclotrón,horas de haz por día (FDG + Cu-64 prorrateado),2.25,8,h/día,0.28,False,estimación GAMMA (8 h/día a 300 uA)
+E3_maximo,Linac,W primaria (isocentro),600.0,900,Gy/sem,0.67,False,30 pac/jornada x 2 turnos x 5 d x 3 Gy (GAMMA 28-10-26; F87/F88)
+E3_maximo,Linac,W fuga (IMRT x3),1800.0,900,Gy/sem,2.0,True,barreras secundarias: +10 cm de hormigón 2.35 si el diseño usó 900 Gy sin factor IMRT
+E3_maximo,PET/CT,pacientes/semana,150,60,pac/sem,2.5,True,"TG-108: 60 pac/sem, 20 mCi (GAMMA 28-10-26)"
+E3_maximo,PET/CT,actividad inyectada semanal (A0=370 MBq),55.5,44.4,GBq/sem,1.25,True,
+E3_maximo,PET/CT,"TG-108 sala de captación a 1 m (A0=370, 6 salas)",0.71,0.85,mSv/sem,0.83,False,
+E3_maximo,PET/CT,"TG-108 sala del tomógrafo a 1 m (A0=370, 2 escáner)",0.52,1.08,mSv/sem,0.48,False,2.º escáner sin diseño de blindaje
+E3_maximo,PET/CT,actividad inyectada semanal (A0=555 MBq),83.25,44.4,GBq/sem,1.88,True,
+E3_maximo,PET/CT,"TG-108 sala de captación a 1 m (A0=555, 6 salas)",1.06,0.85,mSv/sem,1.25,True,
+E3_maximo,PET/CT,"TG-108 sala del tomógrafo a 1 m (A0=555, 2 escáner)",0.78,1.08,mSv/sem,0.72,False,2.º escáner sin diseño de blindaje
+E3_maximo,PET/CT,salas de captación requeridas,6,4,salas,1.5,True,salas adicionales sin diseño de blindaje
+E3_maximo,I-131,pacientes/semana,3,2,pac/sem,1.5,True,"2 pac/sem x 3 días, 200 mCi"
+E3_maximo,I-131,actividad semanal administrada,22.2,14.8,GBq/sem,1.5,True,
+E3_maximo,HDR,pacientes/semana,40,50,pac/sem,0.8,False,"40-50 pac/sem, 7 Gy, 25 min"
+E3_maximo,Gamma Knife,pacientes/semana,40,20,pac/sem,2.0,True,"20 pac/sem, 6600 Ci + 10 %"
+E3_maximo,Gammacámara,pacientes/semana,175,43,pac/sem,4.07,True,40 Tc-99m + 2 I-131 + 1 Lu-177 por semana
+E3_maximo,TC simulador,estudios/semana,55.0,125,est/sem,0.44,False,[EST] F88: 25 pac/día x 5
+E3_maximo,Ciclotrón,carga integrada,1163.38,12000,uA·h/sem,0.1,False,presupuesto_operativo@1
+E3_maximo,Ciclotrón,corriente máxima,80,300,uA,0.27,False,
+E3_maximo,Ciclotrón,horas de haz por día (FDG + Cu-64 prorrateado),3.41,8,h/día,0.43,False,estimación GAMMA (8 h/día a 300 uA)

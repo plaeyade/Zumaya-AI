@@ -1,0 +1,76 @@
+escenario,area,puesto,personas,base
+E1_inicial,Radioterapia,Técnico radioterapeuta (RTT),3,2 por unidad y turno + 1 TC simulador
+E1_inicial,Radioterapia,Físico médico RT,3,"1 por unidad (linac, GK, HDR) o 1/450 nuevos/año; +1 por turno extra"
+E1_inicial,Radioterapia,Dosimetrista,2,1 por 300 nuevos/año
+E1_inicial,Radioterapia,Radio-oncólogo,3,1 por 250 nuevos/año
+E1_inicial,Radioterapia,Ingeniero de mantenimiento MV,1,1 por 2 unidades (linac + GK)
+E1_inicial,Gamma Knife,Físico médico,1,por unidad (+1 físico si > 5 pac/día)
+E1_inicial,Gamma Knife,Neurocirujano,1,por unidad (+1 físico si > 5 pac/día)
+E1_inicial,Gamma Knife,Enfermería,1,por unidad (+1 físico si > 5 pac/día)
+E1_inicial,Gamma Knife,Tecnólogo,1,por unidad (+1 físico si > 5 pac/día)
+E1_inicial,HDR,Físico médico,1,por unidad
+E1_inicial,HDR,Radio-oncólogo,1,por unidad
+E1_inicial,HDR,Enfermería,1,por unidad
+E1_inicial,HDR,Anestesiólogo,1,por unidad
+E1_inicial,HDR,Técnico radioterapeuta (RTT),1,por unidad
+E1_inicial,PET/CT,Tecnólogo PET/CT,2,2 por escáner y turno
+E1_inicial,PET/CT,Enfermería (inyección),1,1 por 4 salas de captación
+E1_inicial,Medicina nuclear,Tecnólogo gammacámara,3,1.5 por cámara y turno
+E1_inicial,Medicina nuclear,Médico nuclear,2,1 por 25 estudios/día
+E1_inicial,Medicina nuclear,Físico médico MN,1,1 por 4 equipos
+E1_inicial,Ciclotrón/radiofarmacia,Operador de ciclotrón,1,1 turno(s) para 6.8 h de producción
+E1_inicial,Ciclotrón/radiofarmacia,Radioquímico,1,1 turno(s) para 6.8 h de producción
+E1_inicial,Ciclotrón/radiofarmacia,Analista de control de calidad,1,1 turno(s) para 6.8 h de producción
+E1_inicial,Ciclotrón/radiofarmacia,Responsable sanitario (QP),1,liberación de lotes
+E1_inicial,Ciclotrón/radiofarmacia,Ingeniero de ciclotrón,1,mantenimiento
+E1_inicial,Ciclotrón/radiofarmacia,Chofer de distribución,5,5 rutas/día
+E2_medio,Radioterapia,Técnico radioterapeuta (RTT),3,2 por unidad y turno + 1 TC simulador
+E2_medio,Radioterapia,Físico médico RT,3,"1 por unidad (linac, GK, HDR) o 1/450 nuevos/año; +1 por turno extra"
+E2_medio,Radioterapia,Dosimetrista,3,1 por 300 nuevos/año
+E2_medio,Radioterapia,Radio-oncólogo,4,1 por 250 nuevos/año
+E2_medio,Radioterapia,Ingeniero de mantenimiento MV,1,1 por 2 unidades (linac + GK)
+E2_medio,Gamma Knife,Físico médico,1,por unidad (+1 físico si > 5 pac/día)
+E2_medio,Gamma Knife,Neurocirujano,1,por unidad (+1 físico si > 5 pac/día)
+E2_medio,Gamma Knife,Enfermería,1,por unidad (+1 físico si > 5 pac/día)
+E2_medio,Gamma Knife,Tecnólogo,1,por unidad (+1 físico si > 5 pac/día)
+E2_medio,HDR,Físico médico,1,por unidad
+E2_medio,HDR,Radio-oncólogo,1,por unidad
+E2_medio,HDR,Enfermería,1,por unidad
+E2_medio,HDR,Anestesiólogo,1,por unidad
+E2_medio,HDR,Técnico radioterapeuta (RTT),1,por unidad
+E2_medio,PET/CT,Tecnólogo PET/CT,2,2 por escáner y turno
+E2_medio,PET/CT,Enfermería (inyección),1,1 por 4 salas de captación
+E2_medio,Medicina nuclear,Tecnólogo gammacámara,3,1.5 por cámara y turno
+E2_medio,Medicina nuclear,Médico nuclear,2,1 por 25 estudios/día
+E2_medio,Medicina nuclear,Físico médico MN,1,1 por 4 equipos
+E2_medio,Ciclotrón/radiofarmacia,Operador de ciclotrón,1,1 turno(s) para 7.3 h de producción
+E2_medio,Ciclotrón/radiofarmacia,Radioquímico,1,1 turno(s) para 7.3 h de producción
+E2_medio,Ciclotrón/radiofarmacia,Analista de control de calidad,1,1 turno(s) para 7.3 h de producción
+E2_medio,Ciclotrón/radiofarmacia,Responsable sanitario (QP),1,liberación de lotes
+E2_medio,Ciclotrón/radiofarmacia,Ingeniero de ciclotrón,1,mantenimiento
+E2_medio,Ciclotrón/radiofarmacia,Chofer de distribución,5,5 rutas/día
+E3_maximo,Radioterapia,Técnico radioterapeuta (RTT),5,2 por unidad y turno + 1 TC simulador
+E3_maximo,Radioterapia,Físico médico RT,4,"1 por unidad (linac, GK, HDR) o 1/450 nuevos/año; +1 por turno extra"
+E3_maximo,Radioterapia,Dosimetrista,5,1 por 300 nuevos/año
+E3_maximo,Radioterapia,Radio-oncólogo,5,1 por 250 nuevos/año
+E3_maximo,Radioterapia,Ingeniero de mantenimiento MV,1,1 por 2 unidades (linac + GK)
+E3_maximo,Gamma Knife,Físico médico,2,por unidad (+1 físico si > 5 pac/día)
+E3_maximo,Gamma Knife,Neurocirujano,1,por unidad (+1 físico si > 5 pac/día)
+E3_maximo,Gamma Knife,Enfermería,1,por unidad (+1 físico si > 5 pac/día)
+E3_maximo,Gamma Knife,Tecnólogo,1,por unidad (+1 físico si > 5 pac/día)
+E3_maximo,HDR,Físico médico,1,por unidad
+E3_maximo,HDR,Radio-oncólogo,1,por unidad
+E3_maximo,HDR,Enfermería,1,por unidad
+E3_maximo,HDR,Anestesiólogo,1,por unidad
+E3_maximo,HDR,Técnico radioterapeuta (RTT),1,por unidad
+E3_maximo,PET/CT,Tecnólogo PET/CT,4,2 por escáner y turno
+E3_maximo,PET/CT,Enfermería (inyección),2,1 por 4 salas de captación
+E3_maximo,Medicina nuclear,Tecnólogo gammacámara,6,1.5 por cámara y turno
+E3_maximo,Medicina nuclear,Médico nuclear,3,1 por 25 estudios/día
+E3_maximo,Medicina nuclear,Físico médico MN,2,1 por 4 equipos
+E3_maximo,Ciclotrón/radiofarmacia,Operador de ciclotrón,2,2 turno(s) para 10.1 h de producción
+E3_maximo,Ciclotrón/radiofarmacia,Radioquímico,2,2 turno(s) para 10.1 h de producción
+E3_maximo,Ciclotrón/radiofarmacia,Analista de control de calidad,2,2 turno(s) para 10.1 h de producción
+E3_maximo,Ciclotrón/radiofarmacia,Responsable sanitario (QP),1,liberación de lotes
+E3_maximo,Ciclotrón/radiofarmacia,Ingeniero de ciclotrón,1,mantenimiento
+E3_maximo,Ciclotrón/radiofarmacia,Chofer de distribución,5,5 rutas/día

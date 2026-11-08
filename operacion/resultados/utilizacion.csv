@@ -1,0 +1,34 @@
+escenario,recurso,utilizacion,cuello_de_botella
+E1_inicial,Tomógrafo PET/CT,0.56,False
+E1_inicial,Salas de captación PET,0.523,False
+E1_inicial,Acelerador (clínico),0.804,False
+E1_inicial,Acelerador (clínico + QA),1.09,True
+E1_inicial,TC simulador,0.199,False
+E1_inicial,Gamma Knife,0.458,False
+E1_inicial,RM (flujo GK),0.188,False
+E1_inicial,HDR (Flexitron),0.141,False
+E1_inicial,Sala de procedimientos HDR,0.236,False
+E1_inicial,Gammacámara,0.918,True
+E1_inicial,Cuartos I-131,0.245,False
+E2_medio,Tomógrafo PET/CT,0.94,True
+E2_medio,Salas de captación PET,0.88,True
+E2_medio,Acelerador (clínico),1.192,True
+E2_medio,Acelerador (clínico + QA),1.508,True
+E2_medio,TC simulador,0.292,False
+E2_medio,Gamma Knife,0.759,False
+E2_medio,RM (flujo GK),0.312,False
+E2_medio,HDR (Flexitron),0.236,False
+E2_medio,Sala de procedimientos HDR,0.39,False
+E2_medio,Gammacámara,1.503,True
+E2_medio,Cuartos I-131,0.495,False
+E3_maximo,Tomógrafo PET/CT,0.703,False
+E3_maximo,Salas de captación PET,1.124,True
+E3_maximo,Acelerador (clínico),0.804,False
+E3_maximo,Acelerador (clínico + QA),1.003,True
+E3_maximo,TC simulador,0.458,False
+E3_maximo,Gamma Knife,1.202,True
+E3_maximo,RM (flujo GK),0.495,False
+E3_maximo,HDR (Flexitron),0.374,False
+E3_maximo,Sala de procedimientos HDR,0.626,False
+E3_maximo,Gammacámara,2.091,True
+E3_maximo,Cuartos I-131,0.747,False
