@@ -1,0 +1,8 @@
+escenario,corrida,inicio_haz,EOB,EOS,liberacion,corriente_total_uA,t_irr_min,uAh,A_EOB_GBq,A_EOS_GBq,A_EOS_requerida_GBq,dosis_locales,destinos,alerta
+E1_inicial,Corrida 1,04:57,05:35,06:10,07:00,80,37.7,50.3,157.5,82.1,82.1,7,Coatzacoalcos (3/3); Ciudad del Carmen (2/2); Tuxtla Gutiérrez (4/4); Campeche (2/2); Veracruz (4/4),
+E1_inicial,Corrida 2,08:45,09:05,09:40,10:30,80,20,26.7,88.2,45.9,2.6,3,,
+E2_medio,Corrida 1,04:28,05:35,06:10,07:00,80,67.0,89.3,256.3,133.6,133.6,7,Coatzacoalcos (6/6); Ciudad del Carmen (4/4); Tuxtla Gutiérrez (8/8); Campeche (4/4); Veracruz (4/8),
+E2_medio,Corrida 2,08:45,09:05,09:40,10:30,80,20,26.7,88.2,45.9,18.4,10,,
+E3_maximo,Corrida 1,03:38,05:35,06:10,07:00,80,116.5,155.3,387.1,201.7,201.7,11,Coatzacoalcos (9/9); Ciudad del Carmen (6/6); Tuxtla Gutiérrez (11/12); Campeche (6/6); Veracruz (4/12),
+E3_maximo,Corrida 2,08:15,08:35,09:10,10:00,80,20,26.7,88.2,45.9,9.3,10,,
+E3_maximo,Corrida 3,10:45,11:05,11:40,12:30,80,20,26.7,88.2,45.9,3.6,5,,

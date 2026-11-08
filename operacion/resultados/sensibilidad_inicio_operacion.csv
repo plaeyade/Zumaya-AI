@@ -1,0 +1,10 @@
+escenario,caso,sintesis_FDG_min,qc_FDG_min,rcy_FDG_corregido,inicio_operacion,inicio_operacion_a_300uA,A_EOS_corrida1_GBq
+E1_inicial,optimista,25,45,0.7,04:28,04:40,79.5
+E1_inicial,nominal,30,50,0.65,04:12,04:30,82.1
+E1_inicial,pesimista,35,60,0.6,03:49,04:15,87.4
+E2_medio,optimista,25,45,0.7,04:03,04:40,129.4
+E2_medio,nominal,30,50,0.65,03:43,04:30,133.6
+E2_medio,pesimista,35,60,0.6,03:11,04:15,142.3
+E3_maximo,optimista,25,45,0.7,03:24,04:40,195.4
+E3_maximo,nominal,30,50,0.65,02:53,04:26,201.7
+E3_maximo,pesimista,35,60,0.6,03:10,04:06,214.9

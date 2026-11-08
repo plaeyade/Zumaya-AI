@@ -1,0 +1,22 @@
+escenario,ciudad,km,transito_h,liberacion,llegada,primera_dosis,ultima_dosis,dosis_solicitadas,dosis_entregables,A_EOS_GBq,A_salida_GBq,factor_decaimiento,factible,parcial,motivo,liberacion_dedicada,inicio_operacion_dedicada,t_irr_min_a_300uA
+E1_inicial,Coatzacoalcos,170,2.12,05:02,07:30,08:00,08:40,3,3,5.86,3.77,5.28,True,False,ok,05:02,02:32,20
+E1_inicial,Ciudad del Carmen,175,2.19,04:59,07:30,08:00,08:20,2,2,3.74,2.41,5.06,True,False,ok,04:59,02:29,20
+E1_inicial,Tuxtla Gutiérrez,290,3.62,03:32,07:30,08:00,09:00,4,4,14.76,9.48,9.97,True,False,ok,03:32,01:02,20
+E1_inicial,Campeche,375,4.94,02:14,07:30,08:00,08:20,2,2,10.61,6.82,14.33,True,False,ok,02:14,(-1d) 23:44,20
+E1_inicial,Veracruz,470,6.12,01:02,07:30,08:00,09:00,4,4,38.05,24.45,25.71,True,False,ok,01:02,(-1d) 22:32,20
+E1_inicial,Mérida,555,7.19,(-1d) 23:59,07:30,08:00,09:00,4,4,56.9,36.57,38.45,True,False,ok,(-1d) 23:59,(-1d) 21:29,20
+E1_inicial,Oaxaca,700,9.25,(-1d) 21:55,07:30,-,-,3,0,0.0,0.0,,False,False,llega después de la ventana o de la caducidad,(-1d) 21:55,(-1d) 17:45,120
+E2_medio,Coatzacoalcos,170,2.12,05:02,07:30,08:00,09:40,6,6,14.41,9.26,6.49,True,False,ok,05:02,02:32,20
+E2_medio,Ciudad del Carmen,175,2.19,04:59,07:30,08:00,09:00,4,4,8.56,5.5,5.78,True,False,ok,04:59,02:29,20
+E2_medio,Tuxtla Gutiérrez,290,3.62,03:32,07:30,08:00,10:20,8,8,39.21,25.2,13.25,True,False,ok,03:32,01:02,20
+E2_medio,Campeche,375,4.94,02:14,07:30,08:00,09:00,4,4,24.26,15.59,16.39,True,False,ok,02:14,(-1d) 23:44,20
+E2_medio,Veracruz,470,6.12,01:02,07:30,08:00,10:00,8,7,82.23,52.86,31.75,False,True,solo 7 dosis antes del cierre/caducidad,01:02,(-1d) 22:32,20
+E2_medio,Mérida,555,7.19,(-1d) 23:59,07:30,08:00,09:00,8,4,56.9,36.57,38.45,False,True,solo 4 dosis antes del cierre/caducidad,(-1d) 23:59,(-1d) 21:29,20
+E2_medio,Oaxaca,700,9.25,(-1d) 21:55,07:30,-,-,6,0,0.0,0.0,,False,False,llega después de la ventana o de la caducidad,(-1d) 21:55,(-1d) 17:45,120
+E3_maximo,Coatzacoalcos,170,2.12,05:02,07:30,08:00,10:40,9,9,26.91,17.3,8.08,True,False,ok,05:02,02:32,20
+E3_maximo,Ciudad del Carmen,175,2.19,04:59,07:30,08:00,09:40,6,6,14.76,9.49,6.65,True,False,ok,04:59,02:29,20
+E3_maximo,Tuxtla Gutiérrez,290,3.62,03:32,07:30,08:00,11:40,12,12,79.73,51.25,17.96,True,False,ok,03:32,01:02,20
+E3_maximo,Campeche,375,4.94,02:14,07:30,08:00,09:40,6,6,41.84,26.89,18.85,True,False,ok,02:14,(-1d) 23:44,20
+E3_maximo,Veracruz,470,6.12,01:02,07:30,08:00,10:00,12,7,82.23,52.86,31.75,False,True,solo 7 dosis antes del cierre/caducidad,01:02,(-1d) 22:32,20
+E3_maximo,Mérida,555,7.19,(-1d) 23:59,07:30,08:00,09:00,12,4,56.9,36.57,38.45,False,True,solo 4 dosis antes del cierre/caducidad,(-1d) 23:59,(-1d) 21:29,20
+E3_maximo,Oaxaca,700,9.25,(-1d) 21:55,07:30,-,-,9,0,0.0,0.0,,False,False,llega después de la ventana o de la caducidad,(-1d) 21:55,(-1d) 17:45,120

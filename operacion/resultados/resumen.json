@@ -1,0 +1,213 @@
+{
+ "replicas": 60,
+ "escenarios": {
+  "E1_inicial": {
+   "inicio_operacion": "04:12",
+   "inicio_operacion_a_300uA": "04:30",
+   "uAh_dia": 77.0,
+   "horas_haz_dia": 0.96,
+   "ciudades_factibles": [
+    "Campeche",
+    "Ciudad del Carmen",
+    "Coatzacoalcos",
+    "Tuxtla Gutiérrez",
+    "Veracruz"
+   ],
+   "ciudades_parciales": [],
+   "ga68": {
+    "lotes": [
+     {
+      "elucion": "07:35",
+      "A_GBq": 0.61,
+      "pacientes": 1
+     },
+     {
+      "elucion": "10:05",
+      "A_GBq": 0.48,
+      "pacientes": 1
+     }
+    ],
+    "no_atendidos": 0,
+    "blanco_liquido": {
+     "Ysat_GBq_uA": 0.49,
+     "A_EOB_GBq": 8.97,
+     "A_liberacion_GBq": 4.7,
+     "dosis_150MBq_a_1h": 16,
+     "uAh": 40.0
+    }
+   },
+   "cu64": {
+    "Ysat_GBq_uA": 3.66,
+    "A_EOB_GBq": 21.56,
+    "A_liberacion_GBq": 13.87,
+    "dosis_a_liberacion": 69,
+    "horas_util_1dosis": 77.67,
+    "uAh_lote": 0.0,
+    "pacientes_semana": 0
+   },
+   "minimos": {
+    "salas_captacion_min": 3,
+    "vestidores_min": 1,
+    "asientos_espera_pet_p95": 10,
+    "gammacamaras_min": 2,
+    "asientos_espera_gc_p95": 28
+   },
+   "cuellos_de_botella": [
+    "Acelerador (clínico + QA)",
+    "Gammacámara"
+   ],
+   "excede_diseno": [
+    "Gammacámara: pacientes/semana (1.74x)"
+   ]
+  },
+  "E2_medio": {
+   "inicio_operacion": "03:43",
+   "inicio_operacion_a_300uA": "04:30",
+   "uAh_dia": 116.0,
+   "horas_haz_dia": 1.45,
+   "ciudades_factibles": [
+    "Campeche",
+    "Ciudad del Carmen",
+    "Coatzacoalcos",
+    "Tuxtla Gutiérrez"
+   ],
+   "ciudades_parciales": [
+    "Veracruz"
+   ],
+   "ga68": {
+    "lotes": [
+     {
+      "elucion": "07:35",
+      "A_GBq": 0.61,
+      "pacientes": 1
+     },
+     {
+      "elucion": "10:05",
+      "A_GBq": 0.48,
+      "pacientes": 1
+     },
+     {
+      "elucion": "13:00",
+      "A_GBq": 0.51,
+      "pacientes": 1
+     }
+    ],
+    "no_atendidos": 0,
+    "blanco_liquido": {
+     "Ysat_GBq_uA": 0.49,
+     "A_EOB_GBq": 8.97,
+     "A_liberacion_GBq": 4.7,
+     "dosis_150MBq_a_1h": 16,
+     "uAh": 40.0
+    }
+   },
+   "cu64": {
+    "Ysat_GBq_uA": 3.66,
+    "A_EOB_GBq": 21.56,
+    "A_liberacion_GBq": 13.87,
+    "dosis_a_liberacion": 69,
+    "horas_util_1dosis": 77.67,
+    "uAh_lote": 120.0,
+    "pacientes_semana": 2
+   },
+   "minimos": {
+    "salas_captacion_min": 3,
+    "vestidores_min": 1,
+    "asientos_espera_pet_p95": 10,
+    "gammacamaras_min": 2,
+    "asientos_espera_gc_p95": 38
+   },
+   "cuellos_de_botella": [
+    "Tomógrafo PET/CT",
+    "Salas de captación PET",
+    "Acelerador (clínico)",
+    "Acelerador (clínico + QA)",
+    "Gammacámara"
+   ],
+   "excede_diseno": [
+    "Linac: W fuga (IMRT x3) (1.5x)",
+    "PET/CT: pacientes/semana (1.67x)",
+    "PET/CT: actividad inyectada semanal (A0=555 MBq) (1.25x)",
+    "PET/CT: TG-108 sala de captación a 1 m (A0=555, 4 salas) (1.25x)",
+    "Gamma Knife: pacientes/semana (1.25x)",
+    "Gammacámara: pacientes/semana (2.91x)"
+   ]
+  },
+  "E3_maximo": {
+   "inicio_operacion": "02:53",
+   "inicio_operacion_a_300uA": "04:26",
+   "uAh_dia": 208.7,
+   "horas_haz_dia": 2.61,
+   "ciudades_factibles": [
+    "Campeche",
+    "Ciudad del Carmen",
+    "Coatzacoalcos"
+   ],
+   "ciudades_parciales": [
+    "Tuxtla Gutiérrez",
+    "Veracruz"
+   ],
+   "ga68": {
+    "lotes": [
+     {
+      "elucion": "07:10",
+      "A_GBq": 0.61,
+      "pacientes": 2
+     },
+     {
+      "elucion": "10:18",
+      "A_GBq": 0.52,
+      "pacientes": 1
+     },
+     {
+      "elucion": "11:45",
+      "A_GBq": 0.36,
+      "pacientes": 1
+     }
+    ],
+    "no_atendidos": 0,
+    "blanco_liquido": {
+     "Ysat_GBq_uA": 0.49,
+     "A_EOB_GBq": 8.97,
+     "A_liberacion_GBq": 4.7,
+     "dosis_150MBq_a_1h": 16,
+     "uAh": 40.0
+    }
+   },
+   "cu64": {
+    "Ysat_GBq_uA": 3.66,
+    "A_EOB_GBq": 21.56,
+    "A_liberacion_GBq": 13.87,
+    "dosis_a_liberacion": 69,
+    "horas_util_1dosis": 77.67,
+    "uAh_lote": 120.0,
+    "pacientes_semana": 4
+   },
+   "minimos": {
+    "salas_captacion_min": 6,
+    "vestidores_min": 1,
+    "asientos_espera_pet_p95": 19,
+    "gammacamaras_min": 4,
+    "asientos_espera_gc_p95": 62
+   },
+   "cuellos_de_botella": [
+    "Salas de captación PET",
+    "Acelerador (clínico + QA)",
+    "Gamma Knife",
+    "Gammacámara"
+   ],
+   "excede_diseno": [
+    "Linac: W fuga (IMRT x3) (2.0x)",
+    "PET/CT: pacientes/semana (2.5x)",
+    "PET/CT: actividad inyectada semanal (A0=370 MBq) (1.25x)",
+    "PET/CT: actividad inyectada semanal (A0=555 MBq) (1.88x)",
+    "PET/CT: TG-108 sala de captación a 1 m (A0=555, 6 salas) (1.25x)",
+    "PET/CT: salas de captación requeridas (1.5x)",
+    "I-131: pacientes/semana (1.5x)",
+    "I-131: actividad semanal administrada (1.5x)",
+    "Gamma Knife: pacientes/semana (2.0x)",
+    "Gammacámara: pacientes/semana (4.07x)"
+   ]
+  }
+ }
+}

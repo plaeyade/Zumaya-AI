@@ -1,0 +1,4 @@
+escenario,salas_captacion_min,vestidores_min,asientos_espera_pet_p95,gammacamaras_min,asientos_espera_gc_p95,cuartos_I131_pico
+E1_inicial,3,1,10,2,28,1
+E2_medio,3,1,10,2,38,2
+E3_maximo,6,1,19,4,62,3

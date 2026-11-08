@@ -71,6 +71,7 @@ analisis_plano/  extracción DWG → DXF (LibreDWG + ezdxf) y figuras
 mc_ciclotron/    configuraciones y resultados del MC de la bóveda
 estructural/     análisis estructural preliminar
 licencia/        presupuesto operativo
+operacion/       modelo operacional: producción, distribución, flujos (SimPy) y cargas vs blindaje
 informes/        informes de blindaje en PDF
 fuentes/         documentos fuente
 herramientas/    manifiesto para GAMMA
