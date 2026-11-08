@@ -32,7 +32,7 @@ con el que se diseñó cada blindaje.
 
 | Recinto | Estado |
 |---|---|
-| Ciclotrón IBA KIUBE (doble haz, 2 × 150 µA) | Espesores interinos de tabique TD-250 por Monte Carlo: este 2.08 m, oeste 1.95 m, sur 1.82 m, techo 1.95 m; definitivos al cerrar el MC F90 |
+| Ciclotrón IBA KIUBE (doble haz, 2 × 150 µA) | Espesores definitivos de tabique TD-250 por Monte Carlo F90 (70 lotes): este 2.08 m, oeste 1.95 m, sur 1.82 m, techo 1.95 m. Válidos con ρ = 2.5 g/cm³: verificar el peso de las piezas del lote (≈ 10.7 kg) |
 | Ventilación de la bóveda | Ar-41 bajo el DAC ~45 min tras apagar el haz con 10 renovaciones/h (~21 min con 20) |
 | Linac Versa HD 15 MV | Muros cortos con TD-550; pendientes laberinto y puerta |
 | Gamma Knife, HDR, PET-CT, medicina nuclear, CT simulador | Estimaciones de blindaje con fuente; pendientes puertas HDR y PET |
@@ -90,7 +90,7 @@ instalaciones, y física médica para la revisión de blindajes.
 
 ## Hoja de ruta
 
-1. Cerrar el MC F90 y fijar los espesores definitivos del búnker.
+1. Verificar en obra la densidad del TD-250 (peso por pieza) y su composición (H) para la variante de neutrones.
 2. Composición química del TD-250 (análisis en proceso) para el MC.
 3. Laberinto y puerta del linac, puertas HDR y PET, distribución de la radiofarmacia.
 4. Cargas del blindaje al cálculo estructural definitivo.
